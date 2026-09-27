@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Expo
+.expo/
+**/.expo/
+dist/
+**/dist/
+web-build/
+**/web-build/
+
+# Android & Gradle Build Artifacts
+.gradle/
+**/.gradle/
+build/
+**/build/
+.kotlin/
+**/.kotlin/
+
+# iOS / Xcode
+Pods/
+**/Pods/
+*.xcworkspace
+*.xcuserdata
+
+# IDE / Editor
+.idea/
+**/.idea/
+.cursor/
+**/.cursor/
+.vscode/
+**/.vscode/
+
+# Environment files
+.env
+.env.*
+.env*.local
+!.env.example
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/*.log

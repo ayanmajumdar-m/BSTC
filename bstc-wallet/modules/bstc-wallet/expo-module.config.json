@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["BstcWalletModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.bstcwallet.BstcWalletModule"]
+  }
+}
