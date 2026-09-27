@@ -1,180 +1,335 @@
-# =========================================================
-# BSTC Wallet - Git Ignore
-# =========================================================
+# ============================================================
+# BSTC Wallet
+# Git Ignore
+# Expo + React Native + TypeScript + Native Modules
+# ============================================================
 
-# ---------------------------------------------------------
+
+# ------------------------------------------------------------
 # Dependencies
-# ---------------------------------------------------------
+# ------------------------------------------------------------
+
 node_modules/
 
-# ---------------------------------------------------------
+
+# ------------------------------------------------------------
 # Expo
-# ---------------------------------------------------------
+# ------------------------------------------------------------
+
 .expo/
+.expo-shared/
 dist/
 web-build/
+
+# Generated Expo environment declaration
 expo-env.d.ts
 
-# Expo / EAS local files
+# EAS local state
 .eas/
 .eas-build/
 eas.json.local
 
-# ---------------------------------------------------------
-# Generated native projects
-# ---------------------------------------------------------
-/android
-/ios
 
-# ---------------------------------------------------------
-# Metro / React Native
-# ---------------------------------------------------------
-.metro-health-check*
+# ------------------------------------------------------------
+# Metro / React Native caches
+# ------------------------------------------------------------
+
 .metro/
+.metro-health-check*
+.cache/
 
-# ---------------------------------------------------------
-# Logs / Debug
-# ---------------------------------------------------------
-*.log
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-pnpm-debug.*
 
-# ---------------------------------------------------------
-# TypeScript
-# ---------------------------------------------------------
-*.tsbuildinfo
+# ------------------------------------------------------------
+# General build output
+# ------------------------------------------------------------
 
-# ---------------------------------------------------------
-# Environment files / Secrets
-# ---------------------------------------------------------
-.env
-.env.*
-.env*.local
-!.env.example
+build/
+out/
 
-# ---------------------------------------------------------
-# Android / Gradle / Kotlin
-# ---------------------------------------------------------
+
+# ------------------------------------------------------------
+# Android
+#
+# IMPORTANT:
+# android/ itself is intentionally NOT ignored.
+# The native Android project is part of BSTC Wallet source.
+# ------------------------------------------------------------
+
+android/.gradle/
+android/app/build/
+android/build/
+android/.cxx/
+android/app/.cxx/
+
+# Gradle generated reports
+android/**/build/reports/
+android/**/build/test-results/
+
+# Gradle temporary files
 .gradle/
 **/.gradle/
-build/
-**/build/
-.kotlin/
-*.orig.*
 
-# Android signing / keystores
+# Android local machine configuration
+local.properties
+
+# Kotlin / Java generated files
+*.class
+.kotlin/
+
+
+# ------------------------------------------------------------
+# iOS
+#
+# IMPORTANT:
+# ios/ itself is intentionally NOT ignored.
+# The native iOS project is part of BSTC Wallet source.
+# ------------------------------------------------------------
+
+ios/build/
+ios/Pods/
+ios/DerivedData/
+ios/.xcode.env.local/
+
+# Xcode user-specific files
+ios/**/xcuserdata/
+xcuserdata/
+*.xcuserstate
+
+# Xcode archives
+*.xcarchive
+
+
+# ------------------------------------------------------------
+# React Native generated files
+# ------------------------------------------------------------
+
+*.generated.*
+
+
+# ------------------------------------------------------------
+# TypeScript
+# ------------------------------------------------------------
+
+*.tsbuildinfo
+
+
+# ------------------------------------------------------------
+# Environment variables
+# ------------------------------------------------------------
+
+.env
+.env.*
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Safe template is allowed
+!.env.example
+
+
+# ------------------------------------------------------------
+# Wallet / Crypto Sensitive Files
+#
+# NEVER commit recovery phrases, private keys, seed files,
+# wallet backups, or local secret material.
+# ------------------------------------------------------------
+
+*.mnemonic
+*.seed
+*.secret
+*.secrets
+
+*.privatekey
+*.private-key
+*.private_key
+
+*.wallet
+*.wallet.json
+
+# Recovery phrases
+seed-phrase*
+seed_phrase*
+mnemonic*
+recovery-phrase*
+recovery_phrase*
+
+# Wallet backups
+wallet-backup*
+wallet_backup*
+*.wallet-backup
+
+
+# ------------------------------------------------------------
+# Credentials
+# ------------------------------------------------------------
+
+credentials.json
+service-account.json
+google-credentials.json
+
+# Local API / credential files
+*credentials.local.json
+*credentials.local.*
+
+
+# ------------------------------------------------------------
+# Android / iOS Signing Credentials
+# ------------------------------------------------------------
+
 *.jks
 *.keystore
 
-# ---------------------------------------------------------
-# iOS signing / certificates
-# ---------------------------------------------------------
-*.p8
 *.p12
-*.key
+*.pfx
+
 *.mobileprovision
-*.cer
-*.crt
+
+# Private signing keys / certificates
+*.key
 *.pem
 
-# ---------------------------------------------------------
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+logs/
+log/
+
+
+# ------------------------------------------------------------
+# Testing / Coverage
+# ------------------------------------------------------------
+
+coverage/
+.nyc_output/
+*.lcov
+
+
+# ------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------
+
 # macOS
-# ---------------------------------------------------------
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# ---------------------------------------------------------
 # Windows
-# ---------------------------------------------------------
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
 Desktop.ini
 
-# ---------------------------------------------------------
 # Linux
-# ---------------------------------------------------------
 *~
 .directory
 
-# ---------------------------------------------------------
+
+# ------------------------------------------------------------
+# Editors / IDEs
+# ------------------------------------------------------------
+
 # VS Code
-# Keep shared project configuration if desired
-# ---------------------------------------------------------
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 
-# ---------------------------------------------------------
-# JetBrains / IntelliJ / Android Studio
-# ---------------------------------------------------------
+# Cursor
+.cursor/
+
+# JetBrains
 .idea/
 *.iml
 *.ipr
 *.iws
 
-# ---------------------------------------------------------
-# Vim / Nano / temporary editor files
-# ---------------------------------------------------------
+# Vim
 *.swp
 *.swo
 *.swn
+
+
+# ------------------------------------------------------------
+# Temporary / Backup Files
+# ------------------------------------------------------------
+
 *.tmp
 *.temp
-
-# ---------------------------------------------------------
-# Test / Coverage
-# ---------------------------------------------------------
-coverage/
-.nyc_output/
-
-# ---------------------------------------------------------
-# Generated / temporary files
-# ---------------------------------------------------------
-*.generated.*
 *.bak
 *.backup
+*.orig
 
-# ---------------------------------------------------------
-# Local databases
-# ---------------------------------------------------------
+tmp/
+temp/
+
+
+# ------------------------------------------------------------
+# Local Databases
+# ------------------------------------------------------------
+
 *.sqlite
 *.sqlite3
 *.db
 
-# ---------------------------------------------------------
-# Wallet / Crypto sensitive local files
-# ---------------------------------------------------------
-*.seed
-*.mnemonic
-*.secret
-*.secrets
-*.wallet
-*.wallet.json
-wallet-backup*
-wallet-backup-*
-seed*
-mnemonic*
-private-key*
-private_key*
-secret*
-secrets*
 
-# ---------------------------------------------------------
-# Local development credentials
-# ---------------------------------------------------------
-credentials.json
-service-account.json
-google-credentials.json
+# ------------------------------------------------------------
+# Package Manager Caches
+# ------------------------------------------------------------
 
-# ---------------------------------------------------------
-# OS / tooling caches
-# ---------------------------------------------------------
-.cache/
+.npm/
+.yarn/
+.pnpm-store/
+
+
+# ------------------------------------------------------------
+# Tooling Caches
+# ------------------------------------------------------------
+
 .parcel-cache/
 .turbo/
+
+
+# ------------------------------------------------------------
+# Miscellaneous Generated Files
+# ------------------------------------------------------------
+
+*.pid
+*.dump
+
+
+# ============================================================
+# IMPORTANT — DO NOT IGNORE
+# ============================================================
+#
+# These are real project source files and MUST remain tracked:
+#
+# modules/bstc-wallet/
+# src/
+# assets/
+# android/
+# ios/
+# package.json
+# package-lock.json
+# app.json
+# tsconfig.json
+# README.md
+# LICENSE
+#
+# The Android/iOS projects contain native source required by
+# BSTC Wallet and must NOT be globally ignored.
+#
+# ============================================================

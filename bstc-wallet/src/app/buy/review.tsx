@@ -37,7 +37,7 @@ export default function BuyReviewScreen() {
   const purchaseNum = (fiatNum - feeNum).toFixed(2);
 
   const handlePay = () => {
-    router.push({
+    router.replace({
       pathname: '/buy/processing',
       params: {
         fiatAmount,

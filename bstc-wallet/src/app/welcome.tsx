@@ -105,9 +105,7 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     justifyContent: 'space-between',
-    paddingHorizontal: spacing.margin,
-    paddingTop: spacing.xxl,
-    paddingBottom: spacing.xxl,
+    paddingBottom: spacing.lg,
   },
   ambientGlow: {
     position: 'absolute',

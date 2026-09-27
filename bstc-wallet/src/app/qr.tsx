@@ -15,7 +15,7 @@ export default function QRScannerScreen() {
   const [torchActive, setTorchActive] = useState(false);
 
   return (
-    <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
+    <View style={[styles.container, { paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, spacing.md) }]}>
       {/* Background simulated optical viewfinder */}
       <View style={StyleSheet.absoluteFill} pointerEvents="none">
         <View style={styles.darkBackground} />

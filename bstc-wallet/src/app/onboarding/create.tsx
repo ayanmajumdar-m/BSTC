@@ -103,7 +103,7 @@ export default function CreateWalletScreen() {
         <Button
           label="Import Existing Wallet"
           variant="ghost"
-          onPress={() => router.push('/onboarding/import')}
+          onPress={() => router.replace('/onboarding/import')}
           style={styles.secondaryBtn}
         />
       </View>

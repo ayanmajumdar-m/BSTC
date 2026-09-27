@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { Tabs } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/ui';
 import { colors, resolveFontFamily } from '@/theme';
 import { icons } from '@/theme/icons';
@@ -10,11 +11,20 @@ import { icons } from '@/theme/icons';
  * Wallet · History · Web3 · Settings
  */
 export default function TabLayout() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tabs
+      backBehavior="firstRoute"
       screenOptions={{
         headerShown: false,
-        tabBarStyle: styles.tabBar,
+        tabBarStyle: [
+          styles.tabBar,
+          {
+            height: 56 + Math.max(insets.bottom, 10),
+            paddingBottom: Math.max(insets.bottom, 6),
+          },
+        ],
         tabBarActiveTintColor: colors.brand,
         tabBarInactiveTintColor: colors.tabInactive,
         tabBarLabelStyle: styles.tabBarLabel,
@@ -65,9 +75,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#191c1f', // colors.surfaceContainerLow
     borderTopColor: 'rgba(68, 70, 85, 0.3)', // border-outline-variant/30
     borderTopWidth: 1,
-    height: Platform.OS === 'ios' ? 84 : 64,
-    paddingBottom: Platform.OS === 'ios' ? 24 : 8,
-    paddingTop: 8,
+    paddingTop: 6,
     elevation: 0,
   },
   tabBarLabel: {

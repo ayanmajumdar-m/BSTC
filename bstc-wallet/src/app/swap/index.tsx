@@ -80,7 +80,7 @@ export default function SwapScreen() {
   const receiveBalance = receiveSymbol === 'ETH' ? '1.45 ETH' : '4,120.50 USDT';
 
   return (
-    <Screen scroll contentContainerStyle={styles.content}>
+    <Screen scroll keyboardAvoiding contentContainerStyle={styles.content}>
       {/* Header */}
       <ScreenHeader
         title="Swap"

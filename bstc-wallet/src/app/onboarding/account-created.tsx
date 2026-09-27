@@ -24,7 +24,10 @@ export default function AccountCreatedScreen() {
     <Screen scroll contentContainerStyle={styles.content}>
       <ScreenHeader
         title="BSTC Wallet"
-        onBack={() => router.back()}
+        onBack={() => {
+          setHasWallet(true);
+          router.replace('/');
+        }}
         right={
           <IconButton
             accessibilityLabel="Help"

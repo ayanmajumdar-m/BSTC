@@ -2,7 +2,7 @@
 
 > **Institutional-grade, non-custodial mobile cryptocurrency wallet built with React Native, Expo SDK 57, and the Obsidian Terminal fintech design system.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](bstc-wallet/LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-lightgrey.svg)](#platform-support)
 [![React Native](https://img.shields.io/badge/React%20Native-0.86.3-61DAFB?logo=react&logoColor=black)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-57.0.24-000020?logo=expo&logoColor=white)](https://expo.dev/)
@@ -415,4 +415,4 @@ export function ExampleWidget() {
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
+This project is open-source software licensed under the [MIT License](bstc-wallet/LICENSE).

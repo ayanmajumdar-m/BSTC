@@ -31,7 +31,7 @@ export default function WalletHomeScreen() {
   const { walletName, networkLabel } = useWalletState();
 
   const goHistory = useCallback(() => {
-    router.push('/history');
+    router.navigate('/history');
   }, [router]);
 
   return (

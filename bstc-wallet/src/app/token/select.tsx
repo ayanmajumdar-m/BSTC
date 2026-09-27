@@ -32,15 +32,17 @@ export default function SelectTokenScreen() {
 
   const handleSelectToken = (tokenId: string) => {
     if (target === 'send') {
-      router.push({
+      router.navigate({
         pathname: '/send',
         params: { tokenId },
       });
     } else if (target === 'receive') {
-      router.push({
+      router.navigate({
         pathname: '/receive',
         params: { tokenId },
       });
+    } else if (target === 'swapPay' || target === 'swapReceive') {
+      router.back();
     } else {
       router.push({
         pathname: '/token/[id]',

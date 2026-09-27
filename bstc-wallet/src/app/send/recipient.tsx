@@ -33,7 +33,7 @@ export default function RecipientAddressScreen() {
   };
 
   const handleSelectRecipient = (selectedAddress: string) => {
-    router.push({
+    router.navigate({
       pathname: '/send',
       params: {
         tokenId: token.id,

@@ -41,7 +41,7 @@ export default function SwapReviewScreen() {
   const receiveColor = receiveSymbol === 'ETH' ? colors.ethereum : colors.usdt;
 
   const handleConfirm = () => {
-    router.push({
+    router.replace({
       pathname: '/swap/processing',
       params: {
         paySymbol,

@@ -93,7 +93,7 @@ export default function BackupConfirmationScreen() {
           label="Confirm & Finish"
           variant="primary"
           iconRight={<Icon name={icons.arrowForward} size={18} color={colors.textOnPrimary} />}
-          onPress={() => router.push('/onboarding/account-created')}
+          onPress={() => router.replace('/onboarding/account-created')}
           style={styles.primaryBtn}
         />
       </View>

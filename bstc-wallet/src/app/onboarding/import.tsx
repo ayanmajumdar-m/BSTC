@@ -42,7 +42,7 @@ export default function ImportWalletScreen() {
   };
 
   return (
-    <Screen scroll contentContainerStyle={styles.content}>
+    <Screen scroll keyboardAvoiding contentContainerStyle={styles.content}>
       <ScreenHeader title="Import Wallet" onBack={() => router.back()} />
 
       {/* Word Count Segmented Control */}
@@ -155,7 +155,7 @@ export default function ImportWalletScreen() {
           label="Import Wallet"
           variant="primary"
           iconRight={<Icon name={icons.arrowForward} size={18} color={colors.textOnPrimary} />}
-          onPress={() => router.push('/onboarding/account-created')}
+          onPress={() => router.replace('/onboarding/account-created')}
           style={styles.primaryBtn}
         />
       </View>

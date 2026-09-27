@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -42,6 +42,12 @@ export default function SendScreen() {
   const [isUsdMode, setIsUsdMode] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [sentSuccess, setSentSuccess] = useState(false);
+
+  useEffect(() => {
+    if (params.recipient) {
+      setRecipient(params.recipient);
+    }
+  }, [params.recipient]);
 
   // Quick paste simulation
   const handlePaste = () => {
@@ -89,12 +95,12 @@ export default function SendScreen() {
     setSentSuccess(true);
     setTimeout(() => {
       setSentSuccess(false);
-      router.push('/history');
+      router.replace('/history');
     }, 1800);
   };
 
   return (
-    <Screen scroll contentContainerStyle={styles.content}>
+    <Screen scroll keyboardAvoiding contentContainerStyle={styles.content}>
       {/* Top App Bar Header */}
       <ScreenHeader
         title="Send"

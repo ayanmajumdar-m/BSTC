@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 import {
+  KeyboardAvoidingView,
+  Platform,
   ScrollView,
   ScrollViewProps,
   StyleSheet,
@@ -19,6 +21,7 @@ type ScreenProps = ViewProps & {
   tabBarInset?: boolean;
   contentContainerStyle?: ViewStyle;
   scrollProps?: Omit<ScrollViewProps, 'contentContainerStyle' | 'style'>;
+  keyboardAvoiding?: boolean;
 };
 
 /**
@@ -29,38 +32,51 @@ export function Screen({
   scroll = false,
   padded = true,
   tabBarInset = false,
+  keyboardAvoiding = false,
   style,
   contentContainerStyle,
   scrollProps,
   ...rest
 }: ScreenProps) {
   const insets = useSafeAreaInsets();
+  const bottomInset = tabBarInset
+    ? spacing.xl
+    : Math.max(insets.bottom, spacing.md);
+
   const paddingStyle: ViewStyle = {
     paddingTop: insets.top,
     paddingLeft: Math.max(insets.left, padded ? spacing.margin : 0),
     paddingRight: Math.max(insets.right, padded ? spacing.margin : 0),
-    paddingBottom: tabBarInset
-      ? insets.bottom + spacing.xxl
-      : Math.max(insets.bottom, spacing.sm),
+    paddingBottom: bottomInset,
   };
 
-  if (scroll) {
-    return (
-      <View style={[styles.root, style]} {...rest}>
-        <ScrollView
-          {...scrollProps}
-          style={styles.flex}
-          contentContainerStyle={[paddingStyle, contentContainerStyle]}
-          showsVerticalScrollIndicator={false}>
-          {children}
-        </ScrollView>
-      </View>
-    );
-  }
+  const body = scroll ? (
+    <ScrollView
+      keyboardShouldPersistTaps="handled"
+      keyboardDismissMode="on-drag"
+      {...scrollProps}
+      style={styles.flex}
+      contentContainerStyle={[paddingStyle, contentContainerStyle]}
+      showsVerticalScrollIndicator={false}>
+      {children}
+    </ScrollView>
+  ) : (
+    <View style={[styles.flex, paddingStyle, contentContainerStyle]}>
+      {children}
+    </View>
+  );
 
   return (
-    <View style={[styles.root, paddingStyle, style]} {...rest}>
-      {children}
+    <View style={[styles.root, style]} {...rest}>
+      {keyboardAvoiding ? (
+        <KeyboardAvoidingView
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+          style={styles.flex}>
+          {body}
+        </KeyboardAvoidingView>
+      ) : (
+        body
+      )}
     </View>
   );
 }

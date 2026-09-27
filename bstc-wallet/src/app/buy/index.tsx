@@ -37,7 +37,7 @@ export default function BuyScreen() {
   };
 
   return (
-    <Screen scroll contentContainerStyle={styles.content}>
+    <Screen scroll keyboardAvoiding contentContainerStyle={styles.content}>
       {/* Header */}
       <ScreenHeader
         title="Buy Crypto"

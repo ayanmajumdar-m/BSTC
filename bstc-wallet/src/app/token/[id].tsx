@@ -222,7 +222,7 @@ export default function TokenDetailScreen() {
             Recent Transactions
           </HeadlineText>
           <Pressable
-            onPress={() => router.push('/history')}
+            onPress={() => router.navigate('/history')}
             accessibilityRole="button"
             accessibilityLabel="View all transactions">
             <BodyText weight="500" style={styles.viewAllText}>

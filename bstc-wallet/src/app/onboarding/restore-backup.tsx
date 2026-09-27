@@ -25,12 +25,12 @@ export default function RestoreBackupScreen() {
     setRestoring(true);
     setTimeout(() => {
       setRestoring(false);
-      router.push('/onboarding/account-created');
+      router.replace('/onboarding/account-created');
     }, 1200);
   };
 
   return (
-    <Screen scroll contentContainerStyle={styles.content}>
+    <Screen scroll keyboardAvoiding contentContainerStyle={styles.content}>
       <ScreenHeader
         title="Restore Backup"
         onBack={() => router.back()}
