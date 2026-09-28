@@ -1,16 +1,32 @@
-import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { useState, useMemo } from 'react';
+import { Pressable, StyleSheet, View, Modal, TextInput, FlatList, KeyboardAvoidingView, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import {
   BodyText,
   Card,
-  HeadlineText,
   Icon,
   Screen,
   ScreenHeader,
+  HeadlineText,
+  Button,
 } from '@/components/ui';
 import { colors, icons, radii, spacing, typography } from '@/theme';
+
+const CURRENCIES = [
+  'USD ($)', 'EUR (€)', 'GBP (£)', 'JPY (¥)',
+  'CAD ($)', 'AUD ($)', 'CHF (Fr)', 'CNY (¥)'
+];
+
+const LANGUAGES = [
+  'English (US)', 'Español', 'Français', 'Deutsch',
+  '日本語', '한국어', '中文 (简体)', 'Italiano'
+];
+
+const THEMES = [
+  'System Default', 'Obsidian Dark', 'Midnight Black'
+];
 
 export default function PreferencesScreen() {
   const router = useRouter();
@@ -18,22 +34,29 @@ export default function PreferencesScreen() {
   const [language, setLanguage] = useState('English (US)');
   const [theme, setTheme] = useState('System Default');
 
-  const cycleCurrency = () => {
-    const list = ['USD ($)', 'EUR (€)', 'GBP (£)', 'JPY (¥)'];
-    const idx = list.indexOf(currency);
-    setCurrency(list[(idx + 1) % list.length]);
+  const [activeSelector, setActiveSelector] = useState<'currency' | 'language' | 'theme' | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredOptions = useMemo(() => {
+    let list: string[] = [];
+    if (activeSelector === 'currency') list = CURRENCIES;
+    if (activeSelector === 'language') list = LANGUAGES;
+    if (activeSelector === 'theme') list = THEMES;
+
+    if (!searchQuery.trim() || activeSelector === 'theme') return list;
+    return list.filter(item => item.toLowerCase().includes(searchQuery.toLowerCase()));
+  }, [activeSelector, searchQuery]);
+
+  const handleSelect = (val: string) => {
+    if (activeSelector === 'currency') setCurrency(val);
+    if (activeSelector === 'language') setLanguage(val);
+    if (activeSelector === 'theme') setTheme(val);
+    closeModal();
   };
 
-  const cycleLanguage = () => {
-    const list = ['English (US)', 'Español', 'Français', 'Deutsch', '日本語'];
-    const idx = list.indexOf(language);
-    setLanguage(list[(idx + 1) % list.length]);
-  };
-
-  const cycleTheme = () => {
-    const list = ['System Default', 'Obsidian Dark', 'Midnight Black'];
-    const idx = list.indexOf(theme);
-    setTheme(list[(idx + 1) % list.length]);
+  const closeModal = () => {
+    setActiveSelector(null);
+    setSearchQuery('');
   };
 
   return (
@@ -49,21 +72,15 @@ export default function PreferencesScreen() {
         </BodyText>
       </View>
 
-      {/* Options Surface */}
       <Card variant="low" padding="none" style={styles.optionsCard}>
-        {/* Row 1: Currency */}
         <Pressable
-          onPress={cycleCurrency}
-          accessibilityRole="button"
-          accessibilityLabel={`Currency: ${currency}`}
+          onPress={() => setActiveSelector('currency')}
           style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
           <View style={styles.rowLeft}>
             <View style={styles.iconWrap}>
               <Icon name={icons.payments} size={20} color={colors.primaryTint} />
             </View>
-            <BodyText weight="500" style={styles.rowTitle}>
-              Currency
-            </BodyText>
+            <BodyText weight="500" style={styles.rowTitle}>Currency</BodyText>
           </View>
           <View style={styles.rowRight}>
             <BodyText style={styles.rowValue}>{currency}</BodyText>
@@ -73,19 +90,14 @@ export default function PreferencesScreen() {
 
         <View style={styles.divider} />
 
-        {/* Row 2: Language */}
         <Pressable
-          onPress={cycleLanguage}
-          accessibilityRole="button"
-          accessibilityLabel={`Language: ${language}`}
+          onPress={() => setActiveSelector('language')}
           style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
           <View style={styles.rowLeft}>
             <View style={styles.iconWrap}>
               <Icon name={icons.language} size={20} color={colors.primaryTint} />
             </View>
-            <BodyText weight="500" style={styles.rowTitle}>
-              Language
-            </BodyText>
+            <BodyText weight="500" style={styles.rowTitle}>Language</BodyText>
           </View>
           <View style={styles.rowRight}>
             <BodyText style={styles.rowValue}>{language}</BodyText>
@@ -95,19 +107,14 @@ export default function PreferencesScreen() {
 
         <View style={styles.divider} />
 
-        {/* Row 3: Theme */}
         <Pressable
-          onPress={cycleTheme}
-          accessibilityRole="button"
-          accessibilityLabel={`Theme: ${theme}`}
+          onPress={() => setActiveSelector('theme')}
           style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
           <View style={styles.rowLeft}>
             <View style={styles.iconWrap}>
               <Icon name={icons.darkMode} size={20} color={colors.primaryTint} />
             </View>
-            <BodyText weight="500" style={styles.rowTitle}>
-              Theme
-            </BodyText>
+            <BodyText weight="500" style={styles.rowTitle}>Theme</BodyText>
           </View>
           <View style={styles.rowRight}>
             <BodyText style={styles.rowValue}>{theme}</BodyText>
@@ -116,12 +123,68 @@ export default function PreferencesScreen() {
         </Pressable>
       </Card>
 
-      {/* Discreet Footer Note */}
       <View style={styles.footerNote}>
         <BodyText style={styles.footerText}>
           Preferences apply across all linked wallets and devices.
         </BodyText>
       </View>
+
+      <Modal visible={!!activeSelector} transparent animationType="slide">
+        <SafeAreaView style={styles.modalOverlay} edges={['top', 'bottom']}>
+          <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'padding'}
+            style={styles.keyboardAvoiding}
+          >
+            <View style={styles.modalContent}>
+              <View style={styles.modalHeader}>
+                <HeadlineText style={styles.modalTitle}>
+                  Select {activeSelector === 'currency' ? 'Currency' : activeSelector === 'language' ? 'Language' : 'Theme'}
+                </HeadlineText>
+                <Pressable onPress={closeModal} style={styles.closeBtn}>
+                  <Icon name={icons.close} size={24} color={colors.outline} />
+                </Pressable>
+              </View>
+
+              {activeSelector !== 'theme' && (
+                <View style={styles.searchContainer}>
+                  <Icon name={icons.search} size={18} color={colors.textPrimary} />
+                  <TextInput
+                    style={styles.searchInput}
+                    placeholder={`Search ${activeSelector}...`}
+                    placeholderTextColor={colors.outline}
+                    value={searchQuery}
+                    onChangeText={setSearchQuery}
+                  />
+                </View>
+              )}
+
+              <FlatList
+                data={filteredOptions}
+                keyExtractor={(item) => item}
+                style={styles.list}
+                keyboardShouldPersistTaps="handled"
+                renderItem={({ item }) => {
+                  const isSelected = item === (
+                    activeSelector === 'currency' ? currency :
+                    activeSelector === 'language' ? language : theme
+                  );
+                  return (
+                    <Pressable
+                      style={({ pressed }) => [styles.optionRow, pressed && styles.rowPressed]}
+                      onPress={() => handleSelect(item)}
+                    >
+                      <BodyText style={[styles.optionText, isSelected && { color: colors.primaryTint, fontWeight: '600' }]}>
+                        {item}
+                      </BodyText>
+                      {isSelected && <Icon name={icons.check} size={20} color={colors.primaryTint} />}
+                    </Pressable>
+                  );
+                }}
+              />
+            </View>
+          </KeyboardAvoidingView>
+        </SafeAreaView>
+      </Modal>
     </Screen>
   );
 }
@@ -196,5 +259,65 @@ const styles = StyleSheet.create({
     color: colors.outline,
     textAlign: 'center',
     lineHeight: 18,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  keyboardAvoiding: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: radii.xl,
+    borderTopRightRadius: radii.xl,
+    maxHeight: '80%',
+    minHeight: '40%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: spacing.lg,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.borderSubtle,
+  },
+  modalTitle: {
+    fontSize: 18,
+    color: colors.textPrimary,
+  },
+  closeBtn: {
+    padding: spacing.xs,
+  },
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.surfaceContainer,
+    margin: spacing.lg,
+    paddingHorizontal: spacing.md,
+    borderRadius: radii.md,
+    height: 44,
+    gap: spacing.sm,
+  },
+  searchInput: {
+    flex: 1,
+    color: colors.textPrimary,
+    fontSize: 16,
+  },
+  list: {
+    paddingHorizontal: spacing.sm,
+    paddingBottom: spacing.xxl,
+  },
+  optionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: spacing.md,
+    borderRadius: radii.md,
+  },
+  optionText: {
+    fontSize: 16,
+    color: colors.textPrimary,
   },
 });

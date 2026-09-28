@@ -174,10 +174,10 @@
     "semantic_hash": "4bb7bc80690d105131e51bdf5f7bb885"
   },
   "bstc-wallet/src/app/(tabs)/settings.tsx": {
-    "mtime": 1790528219.4781666,
-    "seen": 1790580554.2095408,
-    "ast_hash": "9dee2d4d8948991538997713103ae45a",
-    "semantic_hash": "9dee2d4d8948991538997713103ae45a"
+    "mtime": 1790615736.9117427,
+    "seen": 1790615911.1546817,
+    "ast_hash": "9a9b2b601b6a0c01a544b4922b69289c",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/(tabs)/web3.tsx": {
     "mtime": 1790528002.9193702,
@@ -186,10 +186,10 @@
     "semantic_hash": "6220b482977bb2df7de752ee002f64f7"
   },
   "bstc-wallet/src/app/_layout.tsx": {
-    "mtime": 1790528109.2548287,
-    "seen": 1790580554.2095466,
-    "ast_hash": "49bc83890ce70b9d30278fc0afe0c7fb",
-    "semantic_hash": "49bc83890ce70b9d30278fc0afe0c7fb"
+    "mtime": 1790617230.7528548,
+    "seen": 1790617365.978875,
+    "ast_hash": "db71e205fa36cf086b237b5aaea859fe",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/buy/completed.tsx": {
     "mtime": 1790520251.29007,
@@ -264,10 +264,10 @@
     "semantic_hash": "d7545391e51cd82ee42797fb25334443"
   },
   "bstc-wallet/src/app/onboarding/restore-backup.tsx": {
-    "mtime": 1790538200.7380087,
-    "seen": 1790580554.209666,
-    "ast_hash": "0772e722cefd1b08fa5d7d785297775c",
-    "semantic_hash": "0772e722cefd1b08fa5d7d785297775c"
+    "mtime": 1790618754.256094,
+    "seen": 1790618851.5994818,
+    "ast_hash": "8d79c4246741c679978530422f184b07",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/qr.tsx": {
     "mtime": 1790538239.482399,
@@ -324,10 +324,10 @@
     "semantic_hash": "8b8c2096bba8d05ced472a79cfbe3f62"
   },
   "bstc-wallet/src/app/settings/preferences.tsx": {
-    "mtime": 1790523828.526965,
-    "seen": 1790580554.2097137,
-    "ast_hash": "579628640e9d813c555aad9780d06d16",
-    "semantic_hash": "579628640e9d813c555aad9780d06d16"
+    "mtime": 1790617318.6768622,
+    "seen": 1790617365.9790149,
+    "ast_hash": "e0b8542bd6e7c3eda1866ee3018f7bbe",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/settings/restore-backup.tsx": {
     "mtime": 1790523578.9840155,
@@ -336,16 +336,16 @@
     "semantic_hash": "60384c975374429fd082c626892782aa"
   },
   "bstc-wallet/src/app/settings/security.tsx": {
-    "mtime": 1790523859.8828313,
-    "seen": 1790580554.2097232,
-    "ast_hash": "9b6fb8887046087e6b966618b9b763a5",
-    "semantic_hash": "9b6fb8887046087e6b966618b9b763a5"
+    "mtime": 1790618711.1566632,
+    "seen": 1790618851.5995572,
+    "ast_hash": "90598483cdcda03634fdb661b37e306f",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/settings/wallet-management.tsx": {
-    "mtime": 1790527311.1419098,
-    "seen": 1790580554.2097268,
-    "ast_hash": "94366cc38a30a70983da82b33f216b21",
-    "semantic_hash": "94366cc38a30a70983da82b33f216b21"
+    "mtime": 1790615877.6423013,
+    "seen": 1790615911.1548457,
+    "ast_hash": "a8e3dbbabe8d76e9b76c5dbee8f96641",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/app/swap/completed.tsx": {
     "mtime": 1790520206.8497298,
@@ -534,10 +534,10 @@
     "semantic_hash": "d1fc2d853c079c24f83b522fdeb532cf"
   },
   "bstc-wallet/src/components/ui/Screen.tsx": {
-    "mtime": 1790538020.8076892,
-    "seen": 1790580554.209828,
-    "ast_hash": "f8dab839eec2edc3b2cac17b2230de3c",
-    "semantic_hash": "f8dab839eec2edc3b2cac17b2230de3c"
+    "mtime": 1790581280.1854365,
+    "seen": 1790581418.4328883,
+    "ast_hash": "3703683f2b95f35c872f000a4543eaa3",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/components/ui/ScreenHeader.tsx": {
     "mtime": 1790508196.1077247,
@@ -1120,5 +1120,17 @@
     "seen": 1790580554.2102423,
     "ast_hash": "37cdeda9d1af5d7432716d9671b098da",
     "semantic_hash": "37cdeda9d1af5d7432716d9671b098da"
+  },
+  "graphify-out/memory/query_20260928_073410_f9fd7a23_how_does_the_native_wallet_bridge_integrate_with_t.md": {
+    "mtime": 1790580850.37372,
+    "seen": 1790581418.433111,
+    "ast_hash": "347559a5877d3a75a3ed82eccc6a81e3",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/settings/secret-phrase.tsx": {
+    "mtime": 1790615869.966658,
+    "seen": 1790615911.154835,
+    "ast_hash": "bc2b7e06a314ca8e6deee92e9f54c50c",
+    "semantic_hash": ""
   }
 }

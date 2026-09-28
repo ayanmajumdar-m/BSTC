@@ -58,15 +58,6 @@ export default function SettingsScreen() {
         <Icon name={icons.chevronRight} size={20} color={colors.outline} />
       </Pressable>
 
-      {/* ACCOUNT Section */}
-      <SettingSection title="ACCOUNT">
-        <SettingRow
-          label="Account"
-          icon={icons.person}
-          onPress={() => router.push('/settings/account')}
-        />
-      </SettingSection>
-
       {/* SECURITY Section */}
       <SettingSection title="SECURITY">
         <SettingRow
@@ -82,16 +73,6 @@ export default function SettingsScreen() {
           label="Wallet Management"
           icon={icons.wallet}
           onPress={() => router.push('/settings/wallet-management')}
-        />
-        <SettingRow
-          label="Network Management"
-          icon={icons.hub}
-          onPress={() => router.push('/settings/network-management')}
-        />
-        <SettingRow
-          label="Token Management"
-          icon={icons.token}
-          onPress={() => router.push('/token/manage')}
         />
       </SettingSection>
 

@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View, Modal, FlatList } from 'react-native';
 import { useRouter } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { KeyboardAvoidingView, Platform } from 'react-native';
 
 import {
   BodyText,
@@ -15,10 +17,22 @@ import {
 } from '@/components/ui';
 import { colors, icons, radii, spacing, typography } from '@/theme';
 
+const AUTO_LOCK_OPTIONS = [
+  'Immediately',
+  '1 Minute',
+  '5 Minutes',
+  '15 Minutes',
+  '30 Minutes',
+  'Never'
+];
+
 export default function SecurityScreen() {
   const router = useRouter();
   const [biometricLock, setBiometricLock] = useState(true);
   const [privacyScreen, setPrivacyScreen] = useState(true);
+  
+  const [autoLockOption, setAutoLockOption] = useState('Immediately');
+  const [showAutoLockModal, setShowAutoLockModal] = useState(false);
 
   return (
     <Screen scroll contentContainerStyle={styles.content}>
@@ -50,7 +64,6 @@ export default function SecurityScreen() {
             </BodyText>
           </View>
         </View>
-
         <View style={styles.optimalBadge}>
           <View style={styles.statusDot} />
           <BodyText weight="600" style={styles.optimalText}>
@@ -66,31 +79,7 @@ export default function SecurityScreen() {
         </BodyText>
 
         <Card variant="low" padding="none" style={styles.cardGroup}>
-          {/* Biometric Lock */}
-          <View style={styles.row}>
-            <View style={styles.rowLeft}>
-              <View style={styles.iconWrap}>
-                <Icon name={icons.fingerprint} size={20} color={colors.primaryTint} />
-              </View>
-              <View style={styles.rowMeta}>
-                <BodyText weight="600" style={styles.rowTitle}>
-                  Biometric Lock
-                </BodyText>
-                <BodyText style={styles.rowDesc}>
-                  Face ID / Fingerprint verification
-                </BodyText>
-              </View>
-            </View>
-            <Toggle
-              value={biometricLock}
-              onValueChange={setBiometricLock}
-              accessibilityLabel="Toggle Biometric Lock"
-            />
-          </View>
-
-          <View style={styles.divider} />
-
-          {/* Change PIN / Passcode */}
+          {/* PIN Settings */}
           <Pressable
             onPress={() => router.push('/settings/pin')}
             style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
@@ -100,24 +89,50 @@ export default function SecurityScreen() {
               </View>
               <View style={styles.rowMeta}>
                 <BodyText weight="600" style={styles.rowTitle}>
-                  Change PIN / Passcode
+                  App PIN Code
                 </BodyText>
                 <BodyText style={styles.rowDesc}>
-                  Local master authentication
+                  Used for transfers & settings
                 </BodyText>
               </View>
             </View>
             <View style={styles.rowRight}>
-              <MonoText style={styles.pinBadge}>6-Digit PIN Set</MonoText>
+              <BodyText weight="600" style={styles.pinBadge}>
+                Enabled
+              </BodyText>
               <Icon name={icons.chevronRight} size={18} color={colors.outline} />
             </View>
           </Pressable>
 
           <View style={styles.divider} />
 
+          {/* Biometric Unlock */}
+          <View style={styles.row}>
+            <View style={styles.rowLeft}>
+              <View style={styles.iconWrap}>
+                <Icon name={icons.fingerprint} size={20} color={colors.primaryTint} />
+              </View>
+              <View style={styles.rowMeta}>
+                <BodyText weight="600" style={styles.rowTitle}>
+                  Biometric Unlock
+                </BodyText>
+                <BodyText style={styles.rowDesc}>
+                  FaceID / TouchID authentication
+                </BodyText>
+              </View>
+            </View>
+            <Toggle
+              value={biometricLock}
+              onValueChange={setBiometricLock}
+              accessibilityLabel="Toggle Biometrics"
+            />
+          </View>
+
+          <View style={styles.divider} />
+
           {/* Auto-Lock */}
           <Pressable
-            onPress={() => {}}
+            onPress={() => setShowAutoLockModal(true)}
             style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
             <View style={styles.rowLeft}>
               <View style={styles.iconWrap}>
@@ -134,7 +149,7 @@ export default function SecurityScreen() {
             </View>
             <View style={styles.rowRight}>
               <BodyText weight="600" style={styles.autoLockValue}>
-                Immediately upon exit
+                {autoLockOption}
               </BodyText>
               <Icon name={icons.chevronRight} size={18} color={colors.outline} />
             </View>
@@ -173,36 +188,6 @@ export default function SecurityScreen() {
         </BodyText>
 
         <Card variant="low" padding="none" style={styles.cardGroup}>
-          {/* Recovery Phrase */}
-          <Pressable
-            onPress={() => router.push('/onboarding/recovery-phrase')}
-            style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
-            <View style={styles.rowLeft}>
-              <View style={styles.iconWrap}>
-                <Icon name={icons.key} size={20} color={colors.primaryTint} />
-              </View>
-              <View style={styles.rowMeta}>
-                <BodyText weight="600" style={styles.rowTitle}>
-                  Recovery Phrase
-                </BodyText>
-                <BodyText style={styles.rowDesc}>
-                  12-word cryptographic seed
-                </BodyText>
-              </View>
-            </View>
-            <View style={styles.rowRight}>
-              <View style={styles.verifiedChip}>
-                <View style={styles.statusDot} />
-                <BodyText weight="600" style={styles.verifiedChipText}>
-                  Verified
-                </BodyText>
-              </View>
-              <Icon name={icons.chevronRight} size={18} color={colors.outline} />
-            </View>
-          </Pressable>
-
-          <View style={styles.divider} />
-
           {/* Cloud Backup */}
           <Pressable
             onPress={() => router.push('/settings/cloud-backup')}
@@ -235,6 +220,49 @@ export default function SecurityScreen() {
           BSTC zero-knowledge architecture prevents remote extraction.
         </BodyText>
       </View>
+
+      {/* Auto-Lock Modal */}
+      <Modal visible={showAutoLockModal} transparent animationType="slide">
+        <SafeAreaView style={styles.modalOverlay} edges={['top', 'bottom']}>
+          <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'padding'}
+            style={styles.keyboardAvoiding}
+          >
+            <View style={styles.modalContent}>
+              <View style={styles.modalHeader}>
+                <HeadlineText style={styles.modalTitle}>Auto-Lock</HeadlineText>
+                <Pressable onPress={() => setShowAutoLockModal(false)} style={styles.closeBtn}>
+                  <Icon name={icons.close} size={24} color={colors.outline} />
+                </Pressable>
+              </View>
+
+              <FlatList
+                data={AUTO_LOCK_OPTIONS}
+                keyExtractor={(item) => item}
+                style={styles.list}
+                renderItem={({ item }) => {
+                  const isSelected = item === autoLockOption;
+                  return (
+                    <Pressable
+                      style={({ pressed }) => [styles.optionRow, pressed && styles.rowPressed]}
+                      onPress={() => {
+                        setAutoLockOption(item);
+                        setShowAutoLockModal(false);
+                      }}
+                    >
+                      <BodyText style={[styles.optionText, isSelected && { color: colors.primaryTint, fontWeight: '600' }]}>
+                        {item}
+                      </BodyText>
+                      {isSelected && <Icon name={icons.check} size={20} color={colors.primaryTint} />}
+                    </Pressable>
+                  );
+                }}
+              />
+            </View>
+          </KeyboardAvoidingView>
+        </SafeAreaView>
+      </Modal>
+
     </Screen>
   );
 }
@@ -393,5 +421,50 @@ const styles = StyleSheet.create({
     color: colors.outline,
     flex: 1,
     lineHeight: 18,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  keyboardAvoiding: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: radii.xl,
+    borderTopRightRadius: radii.xl,
+    maxHeight: '80%',
+    minHeight: '40%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: spacing.lg,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.borderSubtle,
+  },
+  modalTitle: {
+    fontSize: 18,
+    color: colors.textPrimary,
+  },
+  closeBtn: {
+    padding: spacing.xs,
+  },
+  list: {
+    paddingHorizontal: spacing.sm,
+    paddingBottom: spacing.xxl,
+  },
+  optionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: spacing.md,
+    borderRadius: radii.md,
+  },
+  optionText: {
+    fontSize: 16,
+    color: colors.textPrimary,
   },
 });

@@ -1,0 +1,1136 @@
+{
+  "bstc-wallet/.claude/settings.json": {
+    "mtime": 1789885896.3653266,
+    "seen": 1790580554.2093918,
+    "ast_hash": "dc580fca35a0e98ed20777ede5e545a1",
+    "semantic_hash": "dc580fca35a0e98ed20777ede5e545a1"
+  },
+  "bstc-wallet/android/app/build.gradle": {
+    "mtime": 1789923576.2875137,
+    "seen": 1790580554.209412,
+    "ast_hash": "9e5f6c26a35149fd8feb28debdd7e1b2",
+    "semantic_hash": "9e5f6c26a35149fd8feb28debdd7e1b2"
+  },
+  "bstc-wallet/android/app/src/main/java/com/anonymous/bstcwallet/MainActivity.kt": {
+    "mtime": 1789923576.2515118,
+    "seen": 1790580554.2094197,
+    "ast_hash": "ee340bf349698cad512d8f40e17c98cf",
+    "semantic_hash": "ee340bf349698cad512d8f40e17c98cf"
+  },
+  "bstc-wallet/android/app/src/main/java/com/anonymous/bstcwallet/MainApplication.kt": {
+    "mtime": 1789923574.6514287,
+    "seen": 1790580554.2094264,
+    "ast_hash": "592107017571c3480b6d9a7500411a9f",
+    "semantic_hash": "592107017571c3480b6d9a7500411a9f"
+  },
+  "bstc-wallet/android/build.gradle": {
+    "mtime": 1790161319.0648842,
+    "seen": 1790580554.20943,
+    "ast_hash": "8077da5246069ce6829fc2bd7df52a8f",
+    "semantic_hash": "8077da5246069ce6829fc2bd7df52a8f"
+  },
+  "bstc-wallet/android/gradlew": {
+    "mtime": 1789923573.6753776,
+    "seen": 1790580554.2094333,
+    "ast_hash": "780b1d3e23a3b82154795f73df943a14",
+    "semantic_hash": "780b1d3e23a3b82154795f73df943a14"
+  },
+  "bstc-wallet/android/settings.gradle": {
+    "mtime": 1789923576.2835135,
+    "seen": 1790580554.2094383,
+    "ast_hash": "0148f7398b4bc6d749d9012f011c4169",
+    "semantic_hash": "0148f7398b4bc6d749d9012f011c4169"
+  },
+  "bstc-wallet/app.json": {
+    "mtime": 1789887777.5028875,
+    "seen": 1790580554.2094448,
+    "ast_hash": "c3b6c3520fd51d92543e17aeee162790",
+    "semantic_hash": "c3b6c3520fd51d92543e17aeee162790"
+  },
+  "bstc-wallet/assets/expo.icon/icon.json": {
+    "mtime": 1789885779.8726547,
+    "seen": 1790580554.2094498,
+    "ast_hash": "35cb915a0bebbebbe69cf7815e174462",
+    "semantic_hash": "35cb915a0bebbebbe69cf7815e174462"
+  },
+  "bstc-wallet/ios/Podfile.properties.json": {
+    "mtime": 1789887779.5546517,
+    "seen": 1790580554.2094572,
+    "ast_hash": "fdcb6d01efff410197dc220d0796bfb4",
+    "semantic_hash": "fdcb6d01efff410197dc220d0796bfb4"
+  },
+  "bstc-wallet/ios/bstcwallet/AppDelegate.swift": {
+    "mtime": 1789887779.502658,
+    "seen": 1790580554.2094636,
+    "ast_hash": "7b4732bf9de8da05ae1ebcf616bdb672",
+    "semantic_hash": "7b4732bf9de8da05ae1ebcf616bdb672"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1789887777.6748679,
+    "seen": 1790580554.2094736,
+    "ast_hash": "a588282d6ad9a445f9389ae222624ca7",
+    "semantic_hash": "a588282d6ad9a445f9389ae222624ca7"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/Contents.json": {
+    "mtime": 1789887777.6748679,
+    "seen": 1790580554.2094765,
+    "ast_hash": "96cbaeb138eab0aceebfdf0022c7d835",
+    "semantic_hash": "96cbaeb138eab0aceebfdf0022c7d835"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/SplashScreenBackground.colorset/Contents.json": {
+    "mtime": 1789887778.8387341,
+    "seen": 1790580554.2094812,
+    "ast_hash": "38a5bd19f315d19217ae8b8dd6780cef",
+    "semantic_hash": "38a5bd19f315d19217ae8b8dd6780cef"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/SplashScreenLogo.imageset/Contents.json": {
+    "mtime": 1789887778.8427336,
+    "seen": 1790580554.209484,
+    "ast_hash": "a84d44e2229df0082c16210906e94575",
+    "semantic_hash": "a84d44e2229df0082c16210906e94575"
+  },
+  "bstc-wallet/ios/bstcwallet/bstcwallet-Bridging-Header.h": {
+    "mtime": 1789887777.6748679,
+    "seen": 1790580554.2094889,
+    "ast_hash": "15ff0b9e396e448453a3401293a1ee14",
+    "semantic_hash": "15ff0b9e396e448453a3401293a1ee14"
+  },
+  "bstc-wallet/ios/bstcwallet/expo.icon/icon.json": {
+    "mtime": 1789887778.8227358,
+    "seen": 1790580554.209492,
+    "ast_hash": "35cb915a0bebbebbe69cf7815e174462",
+    "semantic_hash": "35cb915a0bebbebbe69cf7815e174462"
+  },
+  "bstc-wallet/modules/bstc-wallet/android/build.gradle": {
+    "mtime": 1789923435.6852605,
+    "seen": 1790580554.2094955,
+    "ast_hash": "7519b0bbbf57f2fd208fda7a7058486f",
+    "semantic_hash": "7519b0bbbf57f2fd208fda7a7058486f"
+  },
+  "bstc-wallet/modules/bstc-wallet/android/src/main/java/expo/modules/bstcwallet/BstcWalletModule.kt": {
+    "mtime": 1790227444.675429,
+    "seen": 1790580554.2094998,
+    "ast_hash": "be03f7dc8a2566a1f487883ffa10624c",
+    "semantic_hash": "be03f7dc8a2566a1f487883ffa10624c"
+  },
+  "bstc-wallet/modules/bstc-wallet/expo-module.config.json": {
+    "mtime": 1789886369.201275,
+    "seen": 1790580554.209504,
+    "ast_hash": "6a75279a83cd8ae16781a145f8d7ce7e",
+    "semantic_hash": "6a75279a83cd8ae16781a145f8d7ce7e"
+  },
+  "bstc-wallet/modules/bstc-wallet/ios/BstcWalletModule.swift": {
+    "mtime": 1789886369.2052746,
+    "seen": 1790580554.2095072,
+    "ast_hash": "7ea5c9ad183df7ebe3d061da3d06e844",
+    "semantic_hash": "7ea5c9ad183df7ebe3d061da3d06e844"
+  },
+  "bstc-wallet/modules/bstc-wallet/src/BstcWallet.types.ts": {
+    "mtime": 1789886369.2172732,
+    "seen": 1790580554.2095098,
+    "ast_hash": "e1134d57a9dd548fe474a1813bd44327",
+    "semantic_hash": "e1134d57a9dd548fe474a1813bd44327"
+  },
+  "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.ts": {
+    "mtime": 1790227573.7497318,
+    "seen": 1790580554.209517,
+    "ast_hash": "4ae2ea7638a7b0d0895af44fcbcc7d8e",
+    "semantic_hash": "4ae2ea7638a7b0d0895af44fcbcc7d8e"
+  },
+  "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.web.ts": {
+    "mtime": 1789886369.2132735,
+    "seen": 1790580554.209521,
+    "ast_hash": "0a11383bdd18b463a416c5c49def8c80",
+    "semantic_hash": "0a11383bdd18b463a416c5c49def8c80"
+  },
+  "bstc-wallet/package.json": {
+    "mtime": 1789887778.4147828,
+    "seen": 1790580554.2095246,
+    "ast_hash": "61ac4a8070b4d030c10b8b096908fc19",
+    "semantic_hash": "61ac4a8070b4d030c10b8b096908fc19"
+  },
+  "bstc-wallet/scripts/reset-project.js": {
+    "mtime": 1789885779.868655,
+    "seen": 1790580554.2095275,
+    "ast_hash": "ca9d75cf60f51e7a2d67fd08ddfb8275",
+    "semantic_hash": "ca9d75cf60f51e7a2d67fd08ddfb8275"
+  },
+  "bstc-wallet/src/app/(tabs)/_layout.tsx": {
+    "mtime": 1790538055.8602147,
+    "seen": 1790580554.2095315,
+    "ast_hash": "f33b3b8606bc01ccd9d82bd5b869e0dd",
+    "semantic_hash": "f33b3b8606bc01ccd9d82bd5b869e0dd"
+  },
+  "bstc-wallet/src/app/(tabs)/history.tsx": {
+    "mtime": 1790527969.8622391,
+    "seen": 1790580554.209534,
+    "ast_hash": "081b5721bd8e077db673d80cfa1def9d",
+    "semantic_hash": "081b5721bd8e077db673d80cfa1def9d"
+  },
+  "bstc-wallet/src/app/(tabs)/index.tsx": {
+    "mtime": 1790538223.2102392,
+    "seen": 1790580554.2095373,
+    "ast_hash": "4bb7bc80690d105131e51bdf5f7bb885",
+    "semantic_hash": "4bb7bc80690d105131e51bdf5f7bb885"
+  },
+  "bstc-wallet/src/app/(tabs)/settings.tsx": {
+    "mtime": 1790615736.9117427,
+    "seen": 1790615911.1546817,
+    "ast_hash": "9a9b2b601b6a0c01a544b4922b69289c",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/(tabs)/web3.tsx": {
+    "mtime": 1790528002.9193702,
+    "seen": 1790580554.2095442,
+    "ast_hash": "6220b482977bb2df7de752ee002f64f7",
+    "semantic_hash": "6220b482977bb2df7de752ee002f64f7"
+  },
+  "bstc-wallet/src/app/_layout.tsx": {
+    "mtime": 1790617230.7528548,
+    "seen": 1790617365.978875,
+    "ast_hash": "db71e205fa36cf086b237b5aaea859fe",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/buy/completed.tsx": {
+    "mtime": 1790520251.29007,
+    "seen": 1790580554.2095506,
+    "ast_hash": "b863fb8c105678669474ab8449097830",
+    "semantic_hash": "b863fb8c105678669474ab8449097830"
+  },
+  "bstc-wallet/src/app/buy/index.tsx": {
+    "mtime": 1790538278.2307568,
+    "seen": 1790580554.2095525,
+    "ast_hash": "b154b5498e256b4290eead65ce316ce6",
+    "semantic_hash": "b154b5498e256b4290eead65ce316ce6"
+  },
+  "bstc-wallet/src/app/buy/payment.tsx": {
+    "mtime": 1790520227.1019106,
+    "seen": 1790580554.2095568,
+    "ast_hash": "6daaa014dfd2a5805d1526a542ebd93d",
+    "semantic_hash": "6daaa014dfd2a5805d1526a542ebd93d"
+  },
+  "bstc-wallet/src/app/buy/processing.tsx": {
+    "mtime": 1790520242.9620214,
+    "seen": 1790580554.2095594,
+    "ast_hash": "362763437445f150c7cb5031309ee8b8",
+    "semantic_hash": "362763437445f150c7cb5031309ee8b8"
+  },
+  "bstc-wallet/src/app/buy/review.tsx": {
+    "mtime": 1790538141.6173446,
+    "seen": 1790580554.2095623,
+    "ast_hash": "ee9a461b0e7efed986df7492131f7f7f",
+    "semantic_hash": "ee9a461b0e7efed986df7492131f7f7f"
+  },
+  "bstc-wallet/src/app/history/[id].tsx": {
+    "mtime": 1790510947.381705,
+    "seen": 1790580554.209566,
+    "ast_hash": "9b969b933477bb7949aefdaccf2f873c",
+    "semantic_hash": "9b969b933477bb7949aefdaccf2f873c"
+  },
+  "bstc-wallet/src/app/onboarding/account-created.tsx": {
+    "mtime": 1790538210.0181053,
+    "seen": 1790580554.2095695,
+    "ast_hash": "94a6fc601d6290783ec18a10e23a0b59",
+    "semantic_hash": "94a6fc601d6290783ec18a10e23a0b59"
+  },
+  "bstc-wallet/src/app/onboarding/backup-confirmation.tsx": {
+    "mtime": 1790538160.2575634,
+    "seen": 1790580554.2095726,
+    "ast_hash": "91e9b59e70d501823db178b900d7cd2a",
+    "semantic_hash": "91e9b59e70d501823db178b900d7cd2a"
+  },
+  "bstc-wallet/src/app/onboarding/cloud-backup.tsx": {
+    "mtime": 1790523483.7044086,
+    "seen": 1790580554.2095752,
+    "ast_hash": "2acc18311619f0b54931ae6e50e52b33",
+    "semantic_hash": "2acc18311619f0b54931ae6e50e52b33"
+  },
+  "bstc-wallet/src/app/onboarding/create.tsx": {
+    "mtime": 1790538149.9854438,
+    "seen": 1790580554.2096524,
+    "ast_hash": "4aca24466662116180422791c10300e2",
+    "semantic_hash": "4aca24466662116180422791c10300e2"
+  },
+  "bstc-wallet/src/app/onboarding/import.tsx": {
+    "mtime": 1790538189.4458885,
+    "seen": 1790580554.2096555,
+    "ast_hash": "9f94ff1c0ce25fbb40645af419ef70b0",
+    "semantic_hash": "9f94ff1c0ce25fbb40645af419ef70b0"
+  },
+  "bstc-wallet/src/app/onboarding/recovery-phrase.tsx": {
+    "mtime": 1790523747.4153092,
+    "seen": 1790580554.209663,
+    "ast_hash": "d7545391e51cd82ee42797fb25334443",
+    "semantic_hash": "d7545391e51cd82ee42797fb25334443"
+  },
+  "bstc-wallet/src/app/onboarding/restore-backup.tsx": {
+    "mtime": 1790619405.9854383,
+    "seen": 1790619443.539975,
+    "ast_hash": "445e38715933227bbed18d92e5606b46",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/qr.tsx": {
+    "mtime": 1790538239.482399,
+    "seen": 1790580554.2096715,
+    "ast_hash": "9f9b3cbb1d5357cb310e596223895898",
+    "semantic_hash": "9f9b3cbb1d5357cb310e596223895898"
+  },
+  "bstc-wallet/src/app/receive/index.tsx": {
+    "mtime": 1790510935.1927602,
+    "seen": 1790580554.2096767,
+    "ast_hash": "78485ada78bd115a4038ccffff7ca078",
+    "semantic_hash": "78485ada78bd115a4038ccffff7ca078"
+  },
+  "bstc-wallet/src/app/send/index.tsx": {
+    "mtime": 1790538091.3167076,
+    "seen": 1790580554.2096822,
+    "ast_hash": "4a737ce7254636df489ba385e6d99bca",
+    "semantic_hash": "4a737ce7254636df489ba385e6d99bca"
+  },
+  "bstc-wallet/src/app/send/recipient.tsx": {
+    "mtime": 1790538103.3848667,
+    "seen": 1790580554.2096877,
+    "ast_hash": "e612ce43714cec2756cc9e1b59158693",
+    "semantic_hash": "e612ce43714cec2756cc9e1b59158693"
+  },
+  "bstc-wallet/src/app/settings/account.tsx": {
+    "mtime": 1790528053.1050348,
+    "seen": 1790580554.209692,
+    "ast_hash": "05e9b375ee32e8dac2174dd94e36311d",
+    "semantic_hash": "05e9b375ee32e8dac2174dd94e36311d"
+  },
+  "bstc-wallet/src/app/settings/cloud-backup.tsx": {
+    "mtime": 1790523567.9720612,
+    "seen": 1790580554.209696,
+    "ast_hash": "e88f3059434b89f540e7cc497fbaa4c6",
+    "semantic_hash": "e88f3059434b89f540e7cc497fbaa4c6"
+  },
+  "bstc-wallet/src/app/settings/network-management.tsx": {
+    "mtime": 1790527319.246483,
+    "seen": 1790580554.2097,
+    "ast_hash": "93944d28b581f718ddcc44b4ba386c9c",
+    "semantic_hash": "93944d28b581f718ddcc44b4ba386c9c"
+  },
+  "bstc-wallet/src/app/settings/notifications.tsx": {
+    "mtime": 1790528255.7592187,
+    "seen": 1790580554.2097042,
+    "ast_hash": "2fcfdab02540947b86de688e8cec6cba",
+    "semantic_hash": "2fcfdab02540947b86de688e8cec6cba"
+  },
+  "bstc-wallet/src/app/settings/pin.tsx": {
+    "mtime": 1790523806.6830578,
+    "seen": 1790580554.2097087,
+    "ast_hash": "8b8c2096bba8d05ced472a79cfbe3f62",
+    "semantic_hash": "8b8c2096bba8d05ced472a79cfbe3f62"
+  },
+  "bstc-wallet/src/app/settings/preferences.tsx": {
+    "mtime": 1790617318.6768622,
+    "seen": 1790617365.9790149,
+    "ast_hash": "e0b8542bd6e7c3eda1866ee3018f7bbe",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/settings/restore-backup.tsx": {
+    "mtime": 1790523578.9840155,
+    "seen": 1790580554.2097192,
+    "ast_hash": "60384c975374429fd082c626892782aa",
+    "semantic_hash": "60384c975374429fd082c626892782aa"
+  },
+  "bstc-wallet/src/app/settings/security.tsx": {
+    "mtime": 1790618711.1566632,
+    "seen": 1790618851.5995572,
+    "ast_hash": "90598483cdcda03634fdb661b37e306f",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/settings/wallet-management.tsx": {
+    "mtime": 1790615877.6423013,
+    "seen": 1790615911.1548457,
+    "ast_hash": "a8e3dbbabe8d76e9b76c5dbee8f96641",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/swap/completed.tsx": {
+    "mtime": 1790520206.8497298,
+    "seen": 1790580554.209729,
+    "ast_hash": "f33d151c1b1d1580f04437bd2a745526",
+    "semantic_hash": "f33d151c1b1d1580f04437bd2a745526"
+  },
+  "bstc-wallet/src/app/swap/index.tsx": {
+    "mtime": 1790538290.4748635,
+    "seen": 1790580554.2097313,
+    "ast_hash": "f1c59276b170dcf56fbc9b1a6caaec73",
+    "semantic_hash": "f1c59276b170dcf56fbc9b1a6caaec73"
+  },
+  "bstc-wallet/src/app/swap/processing.tsx": {
+    "mtime": 1790520196.65362,
+    "seen": 1790580554.2097337,
+    "ast_hash": "d5611b8dff86adfffb78286aa2d6f693",
+    "semantic_hash": "d5611b8dff86adfffb78286aa2d6f693"
+  },
+  "bstc-wallet/src/app/swap/review.tsx": {
+    "mtime": 1790538126.4051592,
+    "seen": 1790580554.2097356,
+    "ast_hash": "215acae29235c34aa6e68fc6d9406168",
+    "semantic_hash": "215acae29235c34aa6e68fc6d9406168"
+  },
+  "bstc-wallet/src/app/token/[id].tsx": {
+    "mtime": 1790538230.5663123,
+    "seen": 1790580554.209738,
+    "ast_hash": "2999f8764d02a039ba5464189eb2219f",
+    "semantic_hash": "2999f8764d02a039ba5464189eb2219f"
+  },
+  "bstc-wallet/src/app/token/manage.tsx": {
+    "mtime": 1790528286.0040803,
+    "seen": 1790580554.2097404,
+    "ast_hash": "a1cdca3dfe23374b0ab7f77c7a7d20fd",
+    "semantic_hash": "a1cdca3dfe23374b0ab7f77c7a7d20fd"
+  },
+  "bstc-wallet/src/app/token/select.tsx": {
+    "mtime": 1790538111.5929728,
+    "seen": 1790580554.2097428,
+    "ast_hash": "65e392bff71f3bec501b53a5b128397c",
+    "semantic_hash": "65e392bff71f3bec501b53a5b128397c"
+  },
+  "bstc-wallet/src/app/web3/approvals.tsx": {
+    "mtime": 1790520983.055225,
+    "seen": 1790580554.2097456,
+    "ast_hash": "88cb7b513266815091ea0e8c2b681b08",
+    "semantic_hash": "88cb7b513266815091ea0e8c2b681b08"
+  },
+  "bstc-wallet/src/app/web3/connect.tsx": {
+    "mtime": 1790521067.6707358,
+    "seen": 1790580554.2097485,
+    "ast_hash": "ded0fbb654150883b6b550ae5cbc6009",
+    "semantic_hash": "ded0fbb654150883b6b550ae5cbc6009"
+  },
+  "bstc-wallet/src/app/web3/sign.tsx": {
+    "mtime": 1790521077.9186766,
+    "seen": 1790580554.2097511,
+    "ast_hash": "9b85970e0a05ac3a175c7a149d08f237",
+    "semantic_hash": "9b85970e0a05ac3a175c7a149d08f237"
+  },
+  "bstc-wallet/src/app/web3/warning.tsx": {
+    "mtime": 1790521100.438547,
+    "seen": 1790580554.2097533,
+    "ast_hash": "888483051e9f2d371be5a9565bdf43d3",
+    "semantic_hash": "888483051e9f2d371be5a9565bdf43d3"
+  },
+  "bstc-wallet/src/app/welcome.tsx": {
+    "mtime": 1790538259.5465882,
+    "seen": 1790580554.2097561,
+    "ast_hash": "6fc22947648c95c3525bcbb0fddc8edb",
+    "semantic_hash": "6fc22947648c95c3525bcbb0fddc8edb"
+  },
+  "bstc-wallet/src/components/animated-icon.tsx": {
+    "mtime": 1789885779.9246502,
+    "seen": 1790580554.2097588,
+    "ast_hash": "46cea5b4aaa994fa61f8a3d1574b2ff8",
+    "semantic_hash": "46cea5b4aaa994fa61f8a3d1574b2ff8"
+  },
+  "bstc-wallet/src/components/animated-icon.web.tsx": {
+    "mtime": 1789885779.9246502,
+    "seen": 1790580554.2097607,
+    "ast_hash": "2defa175163e104a6e2232436fa77e30",
+    "semantic_hash": "2defa175163e104a6e2232436fa77e30"
+  },
+  "bstc-wallet/src/components/app-tabs.tsx": {
+    "mtime": 1790413038.3327246,
+    "seen": 1790580554.2097657,
+    "ast_hash": "7e6f35841d25ef71f92113adcd976a65",
+    "semantic_hash": "7e6f35841d25ef71f92113adcd976a65"
+  },
+  "bstc-wallet/src/components/app-tabs.web.tsx": {
+    "mtime": 1790413041.3606362,
+    "seen": 1790580554.2097697,
+    "ast_hash": "f15ea376bb5b628013be89b324fe0425",
+    "semantic_hash": "f15ea376bb5b628013be89b324fe0425"
+  },
+  "bstc-wallet/src/components/external-link.tsx": {
+    "mtime": 1789885779.9326494,
+    "seen": 1790580554.2097747,
+    "ast_hash": "a71bdc8e0bd55812a1e97662ade442d1",
+    "semantic_hash": "a71bdc8e0bd55812a1e97662ade442d1"
+  },
+  "bstc-wallet/src/components/hint-row.tsx": {
+    "mtime": 1789885779.936649,
+    "seen": 1790580554.2097802,
+    "ast_hash": "1ac80baf6b0a5c3d8c1ea371d5a0dbc5",
+    "semantic_hash": "1ac80baf6b0a5c3d8c1ea371d5a0dbc5"
+  },
+  "bstc-wallet/src/components/themed-text.tsx": {
+    "mtime": 1789885779.9406488,
+    "seen": 1790580554.2097836,
+    "ast_hash": "41869b896e1e9f3472f5c2183af58918",
+    "semantic_hash": "41869b896e1e9f3472f5c2183af58918"
+  },
+  "bstc-wallet/src/components/themed-view.tsx": {
+    "mtime": 1789885779.9406488,
+    "seen": 1790580554.2097862,
+    "ast_hash": "f935dbbcf5a5067a417ea7b329727653",
+    "semantic_hash": "f935dbbcf5a5067a417ea7b329727653"
+  },
+  "bstc-wallet/src/components/ui/Avatar.tsx": {
+    "mtime": 1790412972.4350982,
+    "seen": 1790580554.2097886,
+    "ast_hash": "18afafa30a2e51392690c9dae17b133f",
+    "semantic_hash": "18afafa30a2e51392690c9dae17b133f"
+  },
+  "bstc-wallet/src/components/ui/Badge.tsx": {
+    "mtime": 1790412911.0424216,
+    "seen": 1790580554.2097914,
+    "ast_hash": "d442b58a9cca1b3997709b0c354b169d",
+    "semantic_hash": "d442b58a9cca1b3997709b0c354b169d"
+  },
+  "bstc-wallet/src/components/ui/Button.tsx": {
+    "mtime": 1790509958.7451327,
+    "seen": 1790580554.2097945,
+    "ast_hash": "c1f4e11022396e03278aedef6ff1557e",
+    "semantic_hash": "c1f4e11022396e03278aedef6ff1557e"
+  },
+  "bstc-wallet/src/components/ui/Card.tsx": {
+    "mtime": 1790508246.782654,
+    "seen": 1790580554.2097971,
+    "ast_hash": "5f9f1335218c0ffb52755b9ff3a9d9be",
+    "semantic_hash": "5f9f1335218c0ffb52755b9ff3a9d9be"
+  },
+  "bstc-wallet/src/components/ui/Divider.tsx": {
+    "mtime": 1790412889.7479396,
+    "seen": 1790580554.209802,
+    "ast_hash": "81a0284896660c362aec9dae1f4a933c",
+    "semantic_hash": "81a0284896660c362aec9dae1f4a933c"
+  },
+  "bstc-wallet/src/components/ui/EmptyState.tsx": {
+    "mtime": 1790412977.746869,
+    "seen": 1790580554.209808,
+    "ast_hash": "1e636efd0573da1fd0b0762cc79cb124",
+    "semantic_hash": "1e636efd0573da1fd0b0762cc79cb124"
+  },
+  "bstc-wallet/src/components/ui/Icon.tsx": {
+    "mtime": 1790528209.0138593,
+    "seen": 1790580554.209811,
+    "ast_hash": "1900eaa96fbc78f6f164d96d57e9d96b",
+    "semantic_hash": "1900eaa96fbc78f6f164d96d57e9d96b"
+  },
+  "bstc-wallet/src/components/ui/Input.tsx": {
+    "mtime": 1790508255.2396965,
+    "seen": 1790580554.2098134,
+    "ast_hash": "c255f6ecb66c6fdf92d20a8bb6995473",
+    "semantic_hash": "c255f6ecb66c6fdf92d20a8bb6995473"
+  },
+  "bstc-wallet/src/components/ui/ListRow.tsx": {
+    "mtime": 1790412902.4310083,
+    "seen": 1790580554.2098188,
+    "ast_hash": "0b5089ad30464576d89f86678e9195d5",
+    "semantic_hash": "0b5089ad30464576d89f86678e9195d5"
+  },
+  "bstc-wallet/src/components/ui/NetworkBadge.tsx": {
+    "mtime": 1790412929.4452782,
+    "seen": 1790580554.2098217,
+    "ast_hash": "5f54533cf4c285228020bad0404dc681",
+    "semantic_hash": "5f54533cf4c285228020bad0404dc681"
+  },
+  "bstc-wallet/src/components/ui/QuickAction.tsx": {
+    "mtime": 1790509874.021578,
+    "seen": 1790580554.2098238,
+    "ast_hash": "d1fc2d853c079c24f83b522fdeb532cf",
+    "semantic_hash": "d1fc2d853c079c24f83b522fdeb532cf"
+  },
+  "bstc-wallet/src/components/ui/Screen.tsx": {
+    "mtime": 1790581280.1854365,
+    "seen": 1790581418.4328883,
+    "ast_hash": "3703683f2b95f35c872f000a4543eaa3",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/components/ui/ScreenHeader.tsx": {
+    "mtime": 1790508196.1077247,
+    "seen": 1790580554.2098331,
+    "ast_hash": "db2521e4c6ff4d192ca7612cef3007ca",
+    "semantic_hash": "db2521e4c6ff4d192ca7612cef3007ca"
+  },
+  "bstc-wallet/src/components/ui/SearchBar.tsx": {
+    "mtime": 1790508211.5290384,
+    "seen": 1790580554.2098377,
+    "ast_hash": "fae001c443346dd5f12fb9ca5ecd1e5f",
+    "semantic_hash": "fae001c443346dd5f12fb9ca5ecd1e5f"
+  },
+  "bstc-wallet/src/components/ui/SegmentedControl.tsx": {
+    "mtime": 1790412925.7574959,
+    "seen": 1790580554.2098403,
+    "ast_hash": "72ef2e84fc6e748a2e1f38a1fc64610b",
+    "semantic_hash": "72ef2e84fc6e748a2e1f38a1fc64610b"
+  },
+  "bstc-wallet/src/components/ui/SettingRow.tsx": {
+    "mtime": 1790509916.1094816,
+    "seen": 1790580554.2098436,
+    "ast_hash": "807fdbaf61a96f126102639a49426bdb",
+    "semantic_hash": "807fdbaf61a96f126102639a49426bdb"
+  },
+  "bstc-wallet/src/components/ui/Toggle.tsx": {
+    "mtime": 1790412914.154218,
+    "seen": 1790580554.2098463,
+    "ast_hash": "901610b5a4d0200dcc09dcba1bb62760",
+    "semantic_hash": "901610b5a4d0200dcc09dcba1bb62760"
+  },
+  "bstc-wallet/src/components/ui/TokenRow.tsx": {
+    "mtime": 1790509890.3855724,
+    "seen": 1790580554.2098484,
+    "ast_hash": "cff1f773c2ba636c6bd18528941c3a88",
+    "semantic_hash": "cff1f773c2ba636c6bd18528941c3a88"
+  },
+  "bstc-wallet/src/components/ui/TransactionRow.tsx": {
+    "mtime": 1790412957.347794,
+    "seen": 1790580554.209851,
+    "ast_hash": "abbdcdcde81599b3429b935f5db4d74e",
+    "semantic_hash": "abbdcdcde81599b3429b935f5db4d74e"
+  },
+  "bstc-wallet/src/components/ui/collapsible.tsx": {
+    "mtime": 1789885779.9286497,
+    "seen": 1790580554.2098534,
+    "ast_hash": "24105f00e6631a1cb1daeaef9d4aa808",
+    "semantic_hash": "24105f00e6631a1cb1daeaef9d4aa808"
+  },
+  "bstc-wallet/src/components/ui/index.ts": {
+    "mtime": 1790508353.2660804,
+    "seen": 1790580554.209856,
+    "ast_hash": "87f5f54c4125baf476518f265fd8b43f",
+    "semantic_hash": "87f5f54c4125baf476518f265fd8b43f"
+  },
+  "bstc-wallet/src/components/wallet/PortfolioHeader.tsx": {
+    "mtime": 1790509880.4575808,
+    "seen": 1790580554.2098591,
+    "ast_hash": "c803fafc6c88cef896d17a8462352dd7",
+    "semantic_hash": "c803fafc6c88cef896d17a8462352dd7"
+  },
+  "bstc-wallet/src/components/wallet/QRCodeView.tsx": {
+    "mtime": 1790510891.4128969,
+    "seen": 1790580554.2098615,
+    "ast_hash": "1b83edaed9b896bf2785e2ba7ef11655",
+    "semantic_hash": "1b83edaed9b896bf2785e2ba7ef11655"
+  },
+  "bstc-wallet/src/components/wallet/RecentActivity.tsx": {
+    "mtime": 1790509895.0695634,
+    "seen": 1790580554.2098646,
+    "ast_hash": "02a63e76fec5acfe5ffcce3036b5a1e3",
+    "semantic_hash": "02a63e76fec5acfe5ffcce3036b5a1e3"
+  },
+  "bstc-wallet/src/components/wallet/WalletSelector.tsx": {
+    "mtime": 1790509308.2642884,
+    "seen": 1790580554.2098703,
+    "ast_hash": "745ceca9b62526e41b02d9ce7823c634",
+    "semantic_hash": "745ceca9b62526e41b02d9ce7823c634"
+  },
+  "bstc-wallet/src/components/web-badge.tsx": {
+    "mtime": 1789885779.9406488,
+    "seen": 1790580554.2098765,
+    "ast_hash": "6d02b3c146c2ed6a3d3b7b8764e17602",
+    "semantic_hash": "6d02b3c146c2ed6a3d3b7b8764e17602"
+  },
+  "bstc-wallet/src/constants/theme.ts": {
+    "mtime": 1789885779.9206505,
+    "seen": 1790580554.2098808,
+    "ast_hash": "9507bd7aa3ee042af2ad8a99ebbaa8b6",
+    "semantic_hash": "9507bd7aa3ee042af2ad8a99ebbaa8b6"
+  },
+  "bstc-wallet/src/hooks/use-color-scheme.ts": {
+    "mtime": 1789885779.9246502,
+    "seen": 1790580554.209885,
+    "ast_hash": "6f3444fcb9c7013a839a7832be518831",
+    "semantic_hash": "6f3444fcb9c7013a839a7832be518831"
+  },
+  "bstc-wallet/src/hooks/use-color-scheme.web.ts": {
+    "mtime": 1789885779.9246502,
+    "seen": 1790580554.209889,
+    "ast_hash": "071fbb9a1a05ffb8af4b7d3b1ffa72d6",
+    "semantic_hash": "071fbb9a1a05ffb8af4b7d3b1ffa72d6"
+  },
+  "bstc-wallet/src/hooks/use-theme.ts": {
+    "mtime": 1789885779.9246502,
+    "seen": 1790580554.2098932,
+    "ast_hash": "e058af4f5801bcaa97dad62f12085a27",
+    "semantic_hash": "e058af4f5801bcaa97dad62f12085a27"
+  },
+  "bstc-wallet/src/hooks/usePortfolio.ts": {
+    "mtime": 1790413014.0054924,
+    "seen": 1790580554.2098973,
+    "ast_hash": "76403a3136019184e3a4b3984ffd2dab",
+    "semantic_hash": "76403a3136019184e3a4b3984ffd2dab"
+  },
+  "bstc-wallet/src/services/mockWallet.ts": {
+    "mtime": 1790521038.2989054,
+    "seen": 1790580554.2099013,
+    "ast_hash": "6e38a73a58aeec3c60c652b289b98ab4",
+    "semantic_hash": "6e38a73a58aeec3c60c652b289b98ab4"
+  },
+  "bstc-wallet/src/state/wallet-state.tsx": {
+    "mtime": 1790527260.7701986,
+    "seen": 1790580554.2099054,
+    "ast_hash": "88f89dae452fb55f23cfbc7ae6a45d18",
+    "semantic_hash": "88f89dae452fb55f23cfbc7ae6a45d18"
+  },
+  "bstc-wallet/src/theme/colors.ts": {
+    "mtime": 1790508132.814079,
+    "seen": 1790580554.2099094,
+    "ast_hash": "8b78a4e794822bc0e66e2b28c1af1766",
+    "semantic_hash": "8b78a4e794822bc0e66e2b28c1af1766"
+  },
+  "bstc-wallet/src/theme/fonts.ts": {
+    "mtime": 1790412868.1682417,
+    "seen": 1790580554.209914,
+    "ast_hash": "086804303a9334220d193f5cb7398a1b",
+    "semantic_hash": "086804303a9334220d193f5cb7398a1b"
+  },
+  "bstc-wallet/src/theme/icons.ts": {
+    "mtime": 1790527427.4175613,
+    "seen": 1790580554.2099178,
+    "ast_hash": "8e6c4d03f9073240a4e40fdc315df150",
+    "semantic_hash": "8e6c4d03f9073240a4e40fdc315df150"
+  },
+  "bstc-wallet/src/theme/index.ts": {
+    "mtime": 1790412869.6602411,
+    "seen": 1790580554.2099218,
+    "ast_hash": "d1a56495aa90c0cc0b70d46e39145a58",
+    "semantic_hash": "d1a56495aa90c0cc0b70d46e39145a58"
+  },
+  "bstc-wallet/src/theme/radii.ts": {
+    "mtime": 1790412857.508248,
+    "seen": 1790580554.2099257,
+    "ast_hash": "c9fa82e3c11d7e596c7d5c78c94be69e",
+    "semantic_hash": "c9fa82e3c11d7e596c7d5c78c94be69e"
+  },
+  "bstc-wallet/src/theme/shadows.ts": {
+    "mtime": 1790412859.5842466,
+    "seen": 1790580554.2099297,
+    "ast_hash": "f7b6a937437445a0fce86333c64fcf6b",
+    "semantic_hash": "f7b6a937437445a0fce86333c64fcf6b"
+  },
+  "bstc-wallet/src/theme/spacing.ts": {
+    "mtime": 1790508137.628314,
+    "seen": 1790580554.209934,
+    "ast_hash": "125b3900550d0e12b002bfdca0eb1a0c",
+    "semantic_hash": "125b3900550d0e12b002bfdca0eb1a0c"
+  },
+  "bstc-wallet/src/theme/typography.ts": {
+    "mtime": 1790508148.0465887,
+    "seen": 1790580554.2099383,
+    "ast_hash": "e3f866dfbc98f1bcd70bcd09912ed42e",
+    "semantic_hash": "e3f866dfbc98f1bcd70bcd09912ed42e"
+  },
+  "bstc-wallet/tsconfig.json": {
+    "mtime": 1789885779.8766544,
+    "seen": 1790580554.2099423,
+    "ast_hash": "6794be22dd9dd00003515895d3b4ff06",
+    "semantic_hash": "6794be22dd9dd00003515895d3b4ff06"
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1790538032.9118752,
+    "seen": 1790580554.2099466,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": "f1e53ecc9194573d3c28fc116c743a2e"
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1790538032.9198754,
+    "seen": 1790580554.2099504,
+    "ast_hash": "6d73634a678cf1e1c71930adf80bd1f0",
+    "semantic_hash": "6d73634a678cf1e1c71930adf80bd1f0"
+  },
+  "README.md": {
+    "mtime": 1790574782.6548343,
+    "seen": 1790580554.2099547,
+    "ast_hash": "5b57d579ee0fcd634c4ef37da0571af4",
+    "semantic_hash": "5b57d579ee0fcd634c4ef37da0571af4"
+  },
+  "bstc-wallet/AGENTS.md": {
+    "mtime": 1790523636.7557745,
+    "seen": 1790580554.2099679,
+    "ast_hash": "1ba421c6b0c6dcf66a1720c7fb8e0464",
+    "semantic_hash": "1ba421c6b0c6dcf66a1720c7fb8e0464"
+  },
+  "bstc-wallet/CLAUDE.md": {
+    "mtime": 1790401698.6400795,
+    "seen": 1790580554.209972,
+    "ast_hash": "485f308262a13e3644c9e592fe57659f",
+    "semantic_hash": "485f308262a13e3644c9e592fe57659f"
+  },
+  "bstc-wallet/README.md": {
+    "mtime": 1790533013.1629362,
+    "seen": 1790580554.209976,
+    "ast_hash": "580e827f26794aa6cd6375697dd4d279",
+    "semantic_hash": "580e827f26794aa6cd6375697dd4d279"
+  },
+  "bstc-wallet/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png": {
+    "mtime": 1789923576.0355008,
+    "seen": 1790580554.2099802,
+    "ast_hash": "58037bf84ec75f43e2d232e4f093f5f8",
+    "semantic_hash": "58037bf84ec75f43e2d232e4f093f5f8"
+  },
+  "bstc-wallet/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png": {
+    "mtime": 1789923576.0355008,
+    "seen": 1790580554.2099843,
+    "ast_hash": "4e45a713ed1348ba738d9c5a9ac86db1",
+    "semantic_hash": "4e45a713ed1348ba738d9c5a9ac86db1"
+  },
+  "bstc-wallet/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png": {
+    "mtime": 1789923576.0355008,
+    "seen": 1790580554.2099884,
+    "ast_hash": "1cfc0f2dc6240eeb1fc8afb7db4d475b",
+    "semantic_hash": "1cfc0f2dc6240eeb1fc8afb7db4d475b"
+  },
+  "bstc-wallet/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png": {
+    "mtime": 1789923576.0355008,
+    "seen": 1790580554.2099922,
+    "ast_hash": "1cf70908908d00425a15043a697ec40e",
+    "semantic_hash": "1cf70908908d00425a15043a697ec40e"
+  },
+  "bstc-wallet/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png": {
+    "mtime": 1789923576.2435114,
+    "seen": 1790580554.2099962,
+    "ast_hash": "d92619f05e3e1afb9e9ed1cb5db74e0a",
+    "semantic_hash": "d92619f05e3e1afb9e9ed1cb5db74e0a"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp": {
+    "mtime": 1789923574.67543,
+    "seen": 1790580554.2100003,
+    "ast_hash": "d7cf6bd483b05223c9db1cbb4313c822",
+    "semantic_hash": "d7cf6bd483b05223c9db1cbb4313c822"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher_background.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100043,
+    "ast_hash": "8b804c2e3ffcb414d81159cdbe8e1338",
+    "semantic_hash": "8b804c2e3ffcb414d81159cdbe8e1338"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100084,
+    "ast_hash": "23d6c4c853d373ebc8a6b78e01a565f5",
+    "semantic_hash": "23d6c4c853d373ebc8a6b78e01a565f5"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher_monochrome.webp": {
+    "mtime": 1789923574.7034316,
+    "seen": 1790580554.2100124,
+    "ast_hash": "ddc9ce93ec17a515f270e1334f4d096d",
+    "semantic_hash": "ddc9ce93ec17a515f270e1334f4d096d"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp": {
+    "mtime": 1789923574.6994312,
+    "seen": 1790580554.2100165,
+    "ast_hash": "67472eb2236bfc5b2d091e7921da8c32",
+    "semantic_hash": "67472eb2236bfc5b2d091e7921da8c32"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-mdpi/ic_launcher.webp": {
+    "mtime": 1789923574.67543,
+    "seen": 1790580554.2100236,
+    "ast_hash": "f88f9c4db361d2212950c7ce0be22ff0",
+    "semantic_hash": "f88f9c4db361d2212950c7ce0be22ff0"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-mdpi/ic_launcher_background.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.210029,
+    "ast_hash": "5fc5ff595a9708fb1186f29d4cba0165",
+    "semantic_hash": "5fc5ff595a9708fb1186f29d4cba0165"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100334,
+    "ast_hash": "21c6ff184e62fe81d5d99486c994b4a1",
+    "semantic_hash": "21c6ff184e62fe81d5d99486c994b4a1"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-mdpi/ic_launcher_monochrome.webp": {
+    "mtime": 1789923574.7034316,
+    "seen": 1790580554.2100384,
+    "ast_hash": "3d7d2cdcf1efff070cd99b3a24b2af0a",
+    "semantic_hash": "3d7d2cdcf1efff070cd99b3a24b2af0a"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp": {
+    "mtime": 1789923574.6994312,
+    "seen": 1790580554.2100425,
+    "ast_hash": "eca26ecb0dc8eff09633ebe78538b48b",
+    "semantic_hash": "eca26ecb0dc8eff09633ebe78538b48b"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp": {
+    "mtime": 1789923574.6794302,
+    "seen": 1790580554.2100472,
+    "ast_hash": "3e714948adb59f6ba04c88d7b4cb66c8",
+    "semantic_hash": "3e714948adb59f6ba04c88d7b4cb66c8"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.210052,
+    "ast_hash": "1e8461bcda400d6f2e6ba0a789e9df32",
+    "semantic_hash": "1e8461bcda400d6f2e6ba0a789e9df32"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100563,
+    "ast_hash": "94e64d4a7a895c46bee57dd117eaaa4e",
+    "semantic_hash": "94e64d4a7a895c46bee57dd117eaaa4e"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xhdpi/ic_launcher_monochrome.webp": {
+    "mtime": 1789923574.7034316,
+    "seen": 1790580554.2100604,
+    "ast_hash": "25ce7486d6cf2a88b12191bdc327889c",
+    "semantic_hash": "25ce7486d6cf2a88b12191bdc327889c"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp": {
+    "mtime": 1789923574.6994312,
+    "seen": 1790580554.2100642,
+    "ast_hash": "054d790dfedac0f509aa327ef63b40b8",
+    "semantic_hash": "054d790dfedac0f509aa327ef63b40b8"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp": {
+    "mtime": 1789923574.6794302,
+    "seen": 1790580554.2100682,
+    "ast_hash": "e87e6b426dba5f86bd7407375f411095",
+    "semantic_hash": "e87e6b426dba5f86bd7407375f411095"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100723,
+    "ast_hash": "3a76914a81170ce0bafc194cf299e0b8",
+    "semantic_hash": "3a76914a81170ce0bafc194cf299e0b8"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100763,
+    "ast_hash": "54904135a542a76951f4c4aa7618d942",
+    "semantic_hash": "54904135a542a76951f4c4aa7618d942"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_monochrome.webp": {
+    "mtime": 1789923574.7034316,
+    "seen": 1790580554.2100801,
+    "ast_hash": "c74b95ed269648784a5341dc7fc8c5d2",
+    "semantic_hash": "c74b95ed269648784a5341dc7fc8c5d2"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp": {
+    "mtime": 1789923574.6994312,
+    "seen": 1790580554.2100847,
+    "ast_hash": "357643c2e40eafcd02240a98f9981dcf",
+    "semantic_hash": "357643c2e40eafcd02240a98f9981dcf"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp": {
+    "mtime": 1789923574.6794302,
+    "seen": 1790580554.2100885,
+    "ast_hash": "bd8ba999324c483b7e26c33509ccf747",
+    "semantic_hash": "bd8ba999324c483b7e26c33509ccf747"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100928,
+    "ast_hash": "11c5ebf85672a8b1a823b29ffcc023a6",
+    "semantic_hash": "11c5ebf85672a8b1a823b29ffcc023a6"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp": {
+    "mtime": 1789923574.711432,
+    "seen": 1790580554.2100968,
+    "ast_hash": "56f4339ea33cd98feee64cf1b83ecd24",
+    "semantic_hash": "56f4339ea33cd98feee64cf1b83ecd24"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_monochrome.webp": {
+    "mtime": 1789923574.7034316,
+    "seen": 1790580554.210101,
+    "ast_hash": "d294024561d781537913c8be15eed1e1",
+    "semantic_hash": "d294024561d781537913c8be15eed1e1"
+  },
+  "bstc-wallet/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp": {
+    "mtime": 1789923574.6994312,
+    "seen": 1790580554.2101095,
+    "ast_hash": "3af4438647fb4238ce48dc24a07c6ed7",
+    "semantic_hash": "3af4438647fb4238ce48dc24a07c6ed7"
+  },
+  "bstc-wallet/assets/expo.icon/Assets/expo-symbol 2.svg": {
+    "mtime": 1789885779.9206505,
+    "seen": 1790580554.2101138,
+    "ast_hash": "6979b664c1ce82c10426a051082412a7",
+    "semantic_hash": "6979b664c1ce82c10426a051082412a7"
+  },
+  "bstc-wallet/assets/expo.icon/Assets/grid.png": {
+    "mtime": 1789885779.8886533,
+    "seen": 1790580554.2101176,
+    "ast_hash": "37cdeda9d1af5d7432716d9671b098da",
+    "semantic_hash": "37cdeda9d1af5d7432716d9671b098da"
+  },
+  "bstc-wallet/assets/images/android-icon-background.png": {
+    "mtime": 1789885779.8806539,
+    "seen": 1790580554.2101216,
+    "ast_hash": "2d65569cc0e2afdcea0af9f9902d4173",
+    "semantic_hash": "2d65569cc0e2afdcea0af9f9902d4173"
+  },
+  "bstc-wallet/assets/images/android-icon-foreground.png": {
+    "mtime": 1789885779.8806539,
+    "seen": 1790580554.210126,
+    "ast_hash": "72e71a9c846c6aa4ae32476641a00e18",
+    "semantic_hash": "72e71a9c846c6aa4ae32476641a00e18"
+  },
+  "bstc-wallet/assets/images/android-icon-monochrome.png": {
+    "mtime": 1789885779.8806539,
+    "seen": 1790580554.21013,
+    "ast_hash": "1e097dab989759fc0b69440092ca22cd",
+    "semantic_hash": "1e097dab989759fc0b69440092ca22cd"
+  },
+  "bstc-wallet/assets/images/expo-badge-white.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.210134,
+    "ast_hash": "02efb8472f161bcf8afc8c8489a28fca",
+    "semantic_hash": "02efb8472f161bcf8afc8c8489a28fca"
+  },
+  "bstc-wallet/assets/images/expo-badge.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.210138,
+    "ast_hash": "6b0da8ec880685d1bd053c0f5ea9d09d",
+    "semantic_hash": "6b0da8ec880685d1bd053c0f5ea9d09d"
+  },
+  "bstc-wallet/assets/images/expo-logo.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.2101421,
+    "ast_hash": "5ee5db91d59518c45ebcc99a2f5afc57",
+    "semantic_hash": "5ee5db91d59518c45ebcc99a2f5afc57"
+  },
+  "bstc-wallet/assets/images/favicon.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.2101462,
+    "ast_hash": "d9f444efbdfbe7931aa93beada07318a",
+    "semantic_hash": "d9f444efbdfbe7931aa93beada07318a"
+  },
+  "bstc-wallet/assets/images/icon.png": {
+    "mtime": 1789885779.9046519,
+    "seen": 1790580554.2101505,
+    "ast_hash": "8d892ef03dbd43e8d899c1d605ad42df",
+    "semantic_hash": "8d892ef03dbd43e8d899c1d605ad42df"
+  },
+  "bstc-wallet/assets/images/logo-glow.png": {
+    "mtime": 1789885779.912651,
+    "seen": 1790580554.2101543,
+    "ast_hash": "dbca075a49dc45e550c5d2e3e9601039",
+    "semantic_hash": "dbca075a49dc45e550c5d2e3e9601039"
+  },
+  "bstc-wallet/assets/images/react-logo.png": {
+    "mtime": 1789885779.912651,
+    "seen": 1790580554.2101583,
+    "ast_hash": "695d5a1c6f29a689130f3aaa573aec6e",
+    "semantic_hash": "695d5a1c6f29a689130f3aaa573aec6e"
+  },
+  "bstc-wallet/assets/images/react-logo@2x.png": {
+    "mtime": 1789885779.9166508,
+    "seen": 1790580554.2101624,
+    "ast_hash": "b507e7f2c91ebc8fe24dee79ccb3b600",
+    "semantic_hash": "b507e7f2c91ebc8fe24dee79ccb3b600"
+  },
+  "bstc-wallet/assets/images/react-logo@3x.png": {
+    "mtime": 1789885779.9166508,
+    "seen": 1790580554.2101703,
+    "ast_hash": "8a4d0e5b845044e56e3b2df627d01cfd",
+    "semantic_hash": "8a4d0e5b845044e56e3b2df627d01cfd"
+  },
+  "bstc-wallet/assets/images/splash-icon.png": {
+    "mtime": 1789885779.9206505,
+    "seen": 1790580554.2101746,
+    "ast_hash": "5ee5db91d59518c45ebcc99a2f5afc57",
+    "semantic_hash": "5ee5db91d59518c45ebcc99a2f5afc57"
+  },
+  "bstc-wallet/assets/images/tabIcons/explore.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.210182,
+    "ast_hash": "8409922f7d5c981001e3c9b25e4bfae5",
+    "semantic_hash": "8409922f7d5c981001e3c9b25e4bfae5"
+  },
+  "bstc-wallet/assets/images/tabIcons/explore@2x.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.2101858,
+    "ast_hash": "dd40200ba8e8d98061578292d6b73791",
+    "semantic_hash": "dd40200ba8e8d98061578292d6b73791"
+  },
+  "bstc-wallet/assets/images/tabIcons/explore@3x.png": {
+    "mtime": 1789885779.8846536,
+    "seen": 1790580554.2101898,
+    "ast_hash": "c4278d79298bb11a8b0e68ed3e40da9e",
+    "semantic_hash": "c4278d79298bb11a8b0e68ed3e40da9e"
+  },
+  "bstc-wallet/assets/images/tabIcons/history.png": {
+    "mtime": 1790412836.5562696,
+    "seen": 1790580554.2101939,
+    "ast_hash": "be206ea1a3f523dcf99c6dad13480ee6",
+    "semantic_hash": "be206ea1a3f523dcf99c6dad13480ee6"
+  },
+  "bstc-wallet/assets/images/tabIcons/home.png": {
+    "mtime": 1789885779.8886533,
+    "seen": 1790580554.210198,
+    "ast_hash": "eeb5de2ac12ace75b31dfda235208956",
+    "semantic_hash": "eeb5de2ac12ace75b31dfda235208956"
+  },
+  "bstc-wallet/assets/images/tabIcons/home@2x.png": {
+    "mtime": 1789885779.8886533,
+    "seen": 1790580554.2102017,
+    "ast_hash": "456346cfb0b82cc0f39e921e05d082d9",
+    "semantic_hash": "456346cfb0b82cc0f39e921e05d082d9"
+  },
+  "bstc-wallet/assets/images/tabIcons/home@3x.png": {
+    "mtime": 1789885779.8886533,
+    "seen": 1790580554.210206,
+    "ast_hash": "5d86e963002b3664ab81c128c838559d",
+    "semantic_hash": "5d86e963002b3664ab81c128c838559d"
+  },
+  "bstc-wallet/assets/images/tabIcons/settings.png": {
+    "mtime": 1790412836.5762696,
+    "seen": 1790580554.21021,
+    "ast_hash": "6ccfce3af53e3ec63bd5a348c0f130d8",
+    "semantic_hash": "6ccfce3af53e3ec63bd5a348c0f130d8"
+  },
+  "bstc-wallet/assets/images/tabIcons/wallet.png": {
+    "mtime": 1790412836.5482697,
+    "seen": 1790580554.2102141,
+    "ast_hash": "dbaa1e2e3357c559c92b2f333a783b60",
+    "semantic_hash": "dbaa1e2e3357c559c92b2f333a783b60"
+  },
+  "bstc-wallet/assets/images/tabIcons/web3.png": {
+    "mtime": 1790412836.5642698,
+    "seen": 1790580554.2102182,
+    "ast_hash": "478ad0d4affa29c0be84065134e911f0",
+    "semantic_hash": "478ad0d4affa29c0be84065134e911f0"
+  },
+  "bstc-wallet/assets/images/tutorial-web.png": {
+    "mtime": 1789885779.9206505,
+    "seen": 1790580554.210222,
+    "ast_hash": "c62d22797f3002396754d8cc55b0ae1a",
+    "semantic_hash": "c62d22797f3002396754d8cc55b0ae1a"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/SplashScreenLogo.imageset/image.png": {
+    "mtime": 1789887779.326678,
+    "seen": 1790580554.210226,
+    "ast_hash": "08c3765c191ade62941ec91e8c6ce13d",
+    "semantic_hash": "08c3765c191ade62941ec91e8c6ce13d"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/SplashScreenLogo.imageset/image@2x.png": {
+    "mtime": 1789887779.326678,
+    "seen": 1790580554.2102304,
+    "ast_hash": "d80bec67289000dda01033edeb75d3ff",
+    "semantic_hash": "d80bec67289000dda01033edeb75d3ff"
+  },
+  "bstc-wallet/ios/bstcwallet/Images.xcassets/SplashScreenLogo.imageset/image@3x.png": {
+    "mtime": 1789887779.326678,
+    "seen": 1790580554.2102342,
+    "ast_hash": "64ee7c1a316c6e02fbaa8f98e6e8e0c9",
+    "semantic_hash": "64ee7c1a316c6e02fbaa8f98e6e8e0c9"
+  },
+  "bstc-wallet/ios/bstcwallet/expo.icon/Assets/expo-symbol 2.svg": {
+    "mtime": 1789887778.830735,
+    "seen": 1790580554.2102385,
+    "ast_hash": "6979b664c1ce82c10426a051082412a7",
+    "semantic_hash": "6979b664c1ce82c10426a051082412a7"
+  },
+  "bstc-wallet/ios/bstcwallet/expo.icon/Assets/grid.png": {
+    "mtime": 1789887778.8267355,
+    "seen": 1790580554.2102423,
+    "ast_hash": "37cdeda9d1af5d7432716d9671b098da",
+    "semantic_hash": "37cdeda9d1af5d7432716d9671b098da"
+  },
+  "graphify-out/memory/query_20260928_073410_f9fd7a23_how_does_the_native_wallet_bridge_integrate_with_t.md": {
+    "mtime": 1790580850.37372,
+    "seen": 1790581418.433111,
+    "ast_hash": "347559a5877d3a75a3ed82eccc6a81e3",
+    "semantic_hash": ""
+  },
+  "bstc-wallet/src/app/settings/secret-phrase.tsx": {
+    "mtime": 1790615869.966658,
+    "seen": 1790615911.154835,
+    "ast_hash": "bc2b7e06a314ca8e6deee92e9f54c50c",
+    "semantic_hash": ""
+  }
+}

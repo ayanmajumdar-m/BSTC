@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { useState, useRef, useEffect } from 'react';
+import { Pressable, StyleSheet, View, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import {
@@ -14,19 +14,52 @@ import {
   ScreenHeader,
 } from '@/components/ui';
 import { colors, icons, radii, spacing, typography } from '@/theme';
+import { useWalletState } from '@/state/wallet-state';
 
 export default function RestoreBackupScreen() {
   const router = useRouter();
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [restoring, setRestoring] = useState(false);
+  
+  const [restoreStatus, setRestoreStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleRestore = () => {
+  const { restoreWallet } = useWalletState();
+  
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleRestore = async () => {
+    if (restoring) return; // Prevent duplicate requests
     setRestoring(true);
-    setTimeout(() => {
+    setRestoreStatus('idle');
+    setErrorMessage('');
+    
+    try {
+      await restoreWallet(password);
+      setRestoreStatus('success');
+      
+      timeoutRef.current = setTimeout(() => {
+        setRestoreStatus('idle');
+        router.replace('/(tabs)');
+      }, 2500);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setErrorMessage(message);
+      setRestoreStatus('error');
+      
+      timeoutRef.current = setTimeout(() => {
+        setRestoreStatus('idle');
+      }, 3000);
+    } finally {
       setRestoring(false);
-      router.replace('/onboarding/account-created');
-    }, 1200);
+    }
   };
 
   return (
@@ -135,6 +168,27 @@ export default function RestoreBackupScreen() {
           style={styles.primaryBtn}
         />
       </View>
+
+      {/* Floating Status Message */}
+      <Modal visible={restoreStatus !== 'idle'} transparent animationType="fade">
+        <View style={styles.floatingOverlay}>
+          <View style={[
+            styles.floatingMessage, 
+            restoreStatus === 'success' ? styles.floatingSuccess : styles.floatingError
+          ]}>
+            <Icon
+              name={restoreStatus === 'success' ? icons.checkCircle : icons.warning}
+              size={28}
+              color={restoreStatus === 'success' ? colors.success : colors.error}
+            />
+            <BodyText style={styles.floatingText}>
+              {restoreStatus === 'success'
+                ? 'Backup restored successfully'
+                : `Backup restore failed: ${errorMessage}`}
+            </BodyText>
+          </View>
+        </View>
+      </Modal>
     </Screen>
   );
 }
@@ -222,5 +276,41 @@ const styles = StyleSheet.create({
   primaryBtn: {
     width: '100%',
     minHeight: 50,
+  },
+  floatingOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.6)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: spacing.xl,
+  },
+  floatingMessage: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.surfaceElevated,
+    borderRadius: radii.lg,
+    padding: spacing.xl,
+    gap: spacing.md,
+    maxWidth: 300,
+    width: '100%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 20,
+    elevation: 10,
+    borderWidth: 1,
+  },
+  floatingSuccess: {
+    borderColor: 'rgba(14, 203, 129, 0.3)',
+  },
+  floatingError: {
+    borderColor: 'rgba(246, 70, 93, 0.3)',
+  },
+  floatingText: {
+    fontSize: 16,
+    color: colors.textPrimary,
+    textAlign: 'center',
+    lineHeight: 22,
   },
 });

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View, Modal, TextInput } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import {
@@ -11,6 +11,7 @@ import {
   MonoText,
   Screen,
   ScreenHeader,
+  Button,
 } from '@/components/ui';
 import { useWalletState } from '@/state/wallet-state';
 import { colors, icons, radii, spacing, typography } from '@/theme';
@@ -40,10 +41,41 @@ const INITIAL_WALLETS: WalletItem[] = [
 export default function WalletManagementScreen() {
   const router = useRouter();
   const { walletName, setWalletName } = useWalletState();
-  const [wallets] = useState<WalletItem[]>(INITIAL_WALLETS);
+  const [wallets, setWallets] = useState<WalletItem[]>(INITIAL_WALLETS);
+
+  const [activeMenuWallet, setActiveMenuWallet] = useState<WalletItem | null>(null);
+  const [renameWallet, setRenameWallet] = useState<WalletItem | null>(null);
+  const [deleteWallet, setDeleteWallet] = useState<WalletItem | null>(null);
+  const [newName, setNewName] = useState('');
 
   const handleSelectWallet = (wallet: WalletItem) => {
     setWalletName(wallet.name);
+  };
+
+  const handleSaveRename = () => {
+    if (renameWallet && newName.trim()) {
+      setWallets((prev) =>
+        prev.map((w) =>
+          w.id === renameWallet.id ? { ...w, name: newName.trim() } : w
+        )
+      );
+      // Update global wallet name if it's active
+      if (
+        renameWallet.name.toLowerCase() === walletName.toLowerCase() ||
+        (renameWallet.id === 'wallet-1' &&
+          (walletName === 'Main Wallet 01' || walletName === 'Main Wallet'))
+      ) {
+        setWalletName(newName.trim());
+      }
+    }
+    setRenameWallet(null);
+  };
+
+  const handleConfirmDelete = () => {
+    if (deleteWallet) {
+      setWallets((prev) => prev.filter((w) => w.id !== deleteWallet.id));
+    }
+    setDeleteWallet(null);
   };
 
   return (
@@ -51,28 +83,18 @@ export default function WalletManagementScreen() {
       <ScreenHeader
         title="Wallet Management"
         onBack={() => router.back()}
-        right={
-          <IconButton
-            accessibilityLabel="Wallet details"
-            size={36}
-            variant="ghost">
-            <Icon name={icons.info} size={20} color={colors.outline} />
-          </IconButton>
-        }
       />
 
       <View style={styles.subtitleWrap}>
         <BodyText style={styles.subtitle}>
-          Switch between active wallets, configure names, or import
-          decentralized keys safely.
+          Manage your seed phrases, private keys, and connected accounts.
         </BodyText>
       </View>
 
-      {/* Wallets List Section */}
       <View style={styles.section}>
         <View style={styles.sectionHeaderRow}>
           <BodyText weight="600" style={styles.sectionHeader}>
-            MY WALLETS
+            YOUR WALLETS
           </BodyText>
           <MonoText style={styles.sectionCount}>
             {wallets.length} Connected
@@ -132,7 +154,7 @@ export default function WalletManagementScreen() {
                     accessibilityLabel="More options"
                     size={36}
                     variant="ghost"
-                    onPress={() => router.push('/settings/account')}>
+                    onPress={() => setActiveMenuWallet(wallet)}>
                     <Icon
                       name={icons.moreVert}
                       size={20}
@@ -146,14 +168,12 @@ export default function WalletManagementScreen() {
         </Card>
       </View>
 
-      {/* Add & Connect Section */}
       <View style={styles.section}>
         <BodyText weight="600" style={styles.sectionHeader}>
           ADD & CONNECT
         </BodyText>
 
         <Card variant="low" padding="none" style={styles.actionCardGroup}>
-          {/* Create New Wallet */}
           <Pressable
             onPress={() => router.push('/onboarding/create')}
             style={({ pressed }) => [styles.actionRow, pressed && styles.rowPressed]}>
@@ -175,7 +195,6 @@ export default function WalletManagementScreen() {
 
           <View style={styles.divider} />
 
-          {/* Import Existing Wallet */}
           <Pressable
             onPress={() => router.push('/onboarding/import')}
             style={({ pressed }) => [styles.actionRow, pressed && styles.rowPressed]}>
@@ -196,6 +215,86 @@ export default function WalletManagementScreen() {
           </Pressable>
         </Card>
       </View>
+
+      {/* Floating Menu Modal */}
+      <Modal visible={!!activeMenuWallet} transparent animationType="fade">
+        <Pressable style={styles.modalOverlay} onPress={() => setActiveMenuWallet(null)}>
+          <View style={styles.modalMenu}>
+            <BodyText weight="600" style={styles.modalHeader}>
+              {activeMenuWallet?.name} Options
+            </BodyText>
+            <View style={styles.divider} />
+            <Pressable
+              style={styles.modalMenuItem}
+              onPress={() => {
+                const w = activeMenuWallet;
+                setActiveMenuWallet(null);
+                setNewName(w?.name || '');
+                setRenameWallet(w);
+              }}>
+              <Icon name={icons.edit} size={20} color={colors.textPrimary} />
+              <BodyText style={styles.modalMenuText}>Rename Wallet</BodyText>
+            </Pressable>
+            <Pressable
+              style={styles.modalMenuItem}
+              onPress={() => {
+                const w = activeMenuWallet;
+                setActiveMenuWallet(null);
+                router.push({ pathname: '/settings/secret-phrase' as any, params: { id: w?.id, name: w?.name } });
+              }}>
+              <Icon name={icons.security} size={20} color={colors.textPrimary} />
+              <BodyText style={styles.modalMenuText}>Show Secret Phrase</BodyText>
+            </Pressable>
+            <Pressable
+              style={styles.modalMenuItem}
+              onPress={() => {
+                const w = activeMenuWallet;
+                setActiveMenuWallet(null);
+                setDeleteWallet(w);
+              }}>
+              <Icon name={icons.close} size={20} color={colors.error} />
+              <BodyText style={[styles.modalMenuText, { color: colors.error }]}>Delete Wallet</BodyText>
+            </Pressable>
+          </View>
+        </Pressable>
+      </Modal>
+
+      {/* Rename Modal */}
+      <Modal visible={!!renameWallet} transparent animationType="fade">
+        <View style={styles.modalOverlayCenter}>
+          <View style={styles.dialog}>
+            <HeadlineText style={styles.dialogTitle}>Rename Wallet</HeadlineText>
+            <TextInput
+              style={styles.input}
+              value={newName}
+              onChangeText={setNewName}
+              placeholder="Wallet Name"
+              placeholderTextColor={colors.outline}
+              autoFocus
+            />
+            <View style={styles.dialogActions}>
+              <Button label="Cancel" variant="ghost" onPress={() => setRenameWallet(null)} style={{ flex: 1 }} />
+              <Button label="Save" variant="primary" onPress={handleSaveRename} style={{ flex: 1 }} />
+            </View>
+          </View>
+        </View>
+      </Modal>
+
+      {/* Delete Modal */}
+      <Modal visible={!!deleteWallet} transparent animationType="fade">
+        <View style={styles.modalOverlayCenter}>
+          <View style={styles.dialog}>
+            <HeadlineText style={styles.dialogTitle}>Delete Wallet</HeadlineText>
+            <BodyText style={styles.dialogBody}>
+              Are you sure you want to delete {deleteWallet?.name}?
+            </BodyText>
+            <View style={styles.dialogActions}>
+              <Button label="Cancel" variant="ghost" onPress={() => setDeleteWallet(null)} style={{ flex: 1 }} />
+              <Button label="Delete" variant="destructive" onPress={handleConfirmDelete} style={{ flex: 1 }} />
+            </View>
+          </View>
+        </View>
+      </Modal>
     </Screen>
   );
 }
@@ -350,5 +449,66 @@ const styles = StyleSheet.create({
   divider: {
     height: 1,
     backgroundColor: colors.borderSubtle,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'flex-end',
+  },
+  modalOverlayCenter: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: spacing.xl,
+  },
+  modalMenu: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: radii.xl,
+    borderTopRightRadius: radii.xl,
+    paddingBottom: spacing.xxl,
+  },
+  modalHeader: {
+    padding: spacing.lg,
+    fontSize: 16,
+    textAlign: 'center',
+    color: colors.outline,
+  },
+  modalMenuItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: spacing.lg,
+    gap: spacing.md,
+  },
+  modalMenuText: {
+    fontSize: 16,
+    color: colors.textPrimary,
+  },
+  dialog: {
+    backgroundColor: colors.surface,
+    borderRadius: radii.xl,
+    padding: spacing.xl,
+    width: '100%',
+    gap: spacing.lg,
+  },
+  dialogTitle: {
+    fontSize: 20,
+    color: colors.textPrimary,
+  },
+  dialogBody: {
+    color: colors.textSecondary,
+    fontSize: 15,
+  },
+  input: {
+    backgroundColor: colors.surfaceContainer,
+    color: colors.textPrimary,
+    padding: spacing.md,
+    borderRadius: radii.md,
+    fontSize: 16,
+  },
+  dialogActions: {
+    flexDirection: 'row',
+    gap: spacing.md,
+    marginTop: spacing.sm,
   },
 });

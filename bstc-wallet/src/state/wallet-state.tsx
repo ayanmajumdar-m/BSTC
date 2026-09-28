@@ -9,6 +9,7 @@ export type WalletContextType = {
   setNetworkLabel: (network: string) => void;
   signOut: () => void;
   createWallet: (name?: string) => void;
+  restoreWallet: (password: string) => Promise<void>;
 };
 
 const WalletContext = createContext<WalletContextType | undefined>(undefined);
@@ -29,6 +30,23 @@ export function WalletProvider({ children }: { children: ReactNode }) {
     setHasWallet(true);
   };
 
+  const restoreWallet = async (password: string) => {
+    // Mock decryption and restoration process
+    return new Promise<void>((resolve, reject) => {
+      setTimeout(() => {
+        if (password.length < 6) {
+          reject(new Error('Decryption failed: Invalid password format'));
+        } else if (password === 'wrongpassword') {
+          reject(new Error('Decryption failed: Incorrect password or corrupted backup'));
+        } else {
+          setWalletName('Personal Vault (Restored)');
+          setHasWallet(true);
+          resolve();
+        }
+      }, 1200);
+    });
+  };
+
   return (
     <WalletContext.Provider
       value={{
@@ -40,6 +58,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         setNetworkLabel,
         signOut,
         createWallet,
+        restoreWallet,
       }}>
       {children}
     </WalletContext.Provider>

@@ -43,7 +43,7 @@ function RootNavigation() {
 
     if (!hasWallet && !isWelcomeOrOnboarding) {
       router.replace('/welcome');
-    } else if (hasWallet && isWelcomeOrOnboarding) {
+    } else if (hasWallet && rootSegment === 'welcome') {
       router.replace('/(tabs)');
     }
   }, [hasWallet, navReady, segments, router]);
