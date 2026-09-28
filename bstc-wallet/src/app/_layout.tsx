@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { DarkTheme, ThemeProvider, Stack, useRouter, useSegments } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { WalletProvider, useWalletState } from '@/state/wallet-state';
 import { colors, loadAppFonts } from '@/theme';
@@ -81,11 +82,13 @@ export default function RootLayout() {
   }
 
   return (
-    <WalletProvider>
-      <ThemeProvider value={bstcDarkTheme}>
-        <StatusBar style="light" />
-        <RootNavigation />
-      </ThemeProvider>
-    </WalletProvider>
+    <SafeAreaProvider>
+      <WalletProvider>
+        <ThemeProvider value={bstcDarkTheme}>
+          <StatusBar style="light" />
+          <RootNavigation />
+        </ThemeProvider>
+      </WalletProvider>
+    </SafeAreaProvider>
   );
 }

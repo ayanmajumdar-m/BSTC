@@ -43,11 +43,14 @@ export function Screen({
     ? spacing.xl
     : Math.max(insets.bottom, spacing.md);
 
-  const paddingStyle: ViewStyle = {
+  const safeAreaStyle: ViewStyle = {
     paddingTop: insets.top,
+    paddingBottom: bottomInset,
+  };
+
+  const horizontalPadding: ViewStyle = {
     paddingLeft: Math.max(insets.left, padded ? spacing.margin : 0),
     paddingRight: Math.max(insets.right, padded ? spacing.margin : 0),
-    paddingBottom: bottomInset,
   };
 
   const body = scroll ? (
@@ -56,18 +59,18 @@ export function Screen({
       keyboardDismissMode="on-drag"
       {...scrollProps}
       style={styles.flex}
-      contentContainerStyle={[paddingStyle, contentContainerStyle]}
+      contentContainerStyle={[horizontalPadding, contentContainerStyle]}
       showsVerticalScrollIndicator={false}>
       {children}
     </ScrollView>
   ) : (
-    <View style={[styles.flex, paddingStyle, contentContainerStyle]}>
+    <View style={[styles.flex, horizontalPadding, contentContainerStyle]}>
       {children}
     </View>
   );
 
   return (
-    <View style={[styles.root, style]} {...rest}>
+    <View style={[styles.root, safeAreaStyle, style]} {...rest}>
       {keyboardAvoiding ? (
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : undefined}

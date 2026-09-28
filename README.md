@@ -407,7 +407,7 @@ export function ExampleWidget() {
 - [x] **Phase 5B**: DEX Token Swap & Fiat On-Ramp Workflows.
 - [x] **Phase 5C**: Web3 Hub, dApp Approvals, and Malicious Signature Safeguards.
 - [x] **Phase 5D**: Onboarding, 12/24-Word Recovery Phrase, and Security Configurations.
-- [x] **Phase 6**: Interactive Interaction Layer & Gated Onboarding Decision State.
+- [ ] **Phase 6 (Planned)**: Interactive Interaction Layer & Gated Onboarding Decision State.
 - [ ] **Phase 7 (Planned)**: Native Kotlin/Swift Trust Wallet Core Method Bindings (BIP-39 mnemonic generation, key derivation, and transaction signing).
 - [ ] **Phase 8 (Planned)**: Blockchain RPC Client Integration (EVM, Bitcoin, Solana node providers).
 
