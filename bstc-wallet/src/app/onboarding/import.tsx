@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { useRouter } from 'expo-router';
 
@@ -12,8 +12,10 @@ import {
   ScreenHeader,
   SegmentedControl,
   Toggle,
+  FeedbackModal,
 } from '@/components/ui';
 import { colors, icons, radii, spacing, typography, resolveFontFamily } from '@/theme';
+import { useWalletState } from '@/state/wallet-state';
 
 export default function ImportWalletScreen() {
   const router = useRouter();
@@ -21,6 +23,19 @@ export default function ImportWalletScreen() {
   const [phrase, setPhrase] = useState('');
   const [walletName, setWalletName] = useState('BSTC Wallet 01');
   const [biometricsEnabled, setBiometricsEnabled] = useState(true);
+
+  const [importing, setImporting] = useState(false);
+  const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const { importWallet, setWalletName: setGlobalWalletName } = useWalletState();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   const targetWordCount = wordMode === '12' ? 12 : 24;
   const words = phrase.trim().split(/\s+/).filter(Boolean);
@@ -39,6 +54,41 @@ export default function ImportWalletScreen() {
       );
     }
     setPhrase(sampleWords.join(' '));
+  };
+
+  const handleImport = async () => {
+    if (importing) return;
+    if (wordCount !== targetWordCount) {
+      setErrorMessage(`Please enter exactly ${targetWordCount} words.`);
+      setImportStatus('error');
+      timeoutRef.current = setTimeout(() => setImportStatus('idle'), 3000);
+      return;
+    }
+
+    setImporting(true);
+    setImportStatus('idle');
+    setErrorMessage('');
+
+    try {
+      await importWallet(phrase);
+      setGlobalWalletName(walletName); // Set user's chosen name globally
+      setImportStatus('success');
+
+      timeoutRef.current = setTimeout(() => {
+        setImportStatus('idle');
+        router.replace('/(tabs)');
+      }, 2500);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setErrorMessage(message);
+      setImportStatus('error');
+
+      timeoutRef.current = setTimeout(() => {
+        setImportStatus('idle');
+      }, 3000);
+    } finally {
+      setImporting(false);
+    }
   };
 
   return (
@@ -152,13 +202,28 @@ export default function ImportWalletScreen() {
       {/* Footer CTA */}
       <View style={styles.footer}>
         <Button
-          label="Import Wallet"
+          label={importing ? 'Importing Wallet...' : 'Import Wallet'}
           variant="primary"
-          iconRight={<Icon name={icons.arrowForward} size={18} color={colors.textOnPrimary} />}
-          onPress={() => router.replace('/onboarding/account-created')}
+          loading={importing}
+          disabled={importing || wordCount === 0}
+          iconRight={
+            !importing ? (
+              <Icon name={icons.arrowForward} size={18} color={colors.textOnPrimary} />
+            ) : null
+          }
+          onPress={handleImport}
           style={styles.primaryBtn}
         />
       </View>
+
+      <FeedbackModal
+        status={importStatus}
+        message={
+          importStatus === 'success'
+            ? 'Wallet imported successfully'
+            : errorMessage
+        }
+      />
     </Screen>
   );
 }

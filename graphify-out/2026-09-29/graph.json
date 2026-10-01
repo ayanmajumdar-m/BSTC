@@ -2499,7 +2499,7 @@
       "file_type": "code",
       "norm_label": "usewalletstate()",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L49"
+      "source_location": "L68"
     },
     {
       "id": "bstc_wallet_src_state_wallet_state_walletprovider",
@@ -2511,7 +2511,7 @@
       "file_type": "code",
       "norm_label": "walletprovider()",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "bstc_wallet_src_theme_fonts_loadappfonts",
@@ -5368,7 +5368,7 @@
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L146"
+      "source_location": "L196"
     },
     {
       "id": "bstc_wallet_src_app_qr",
@@ -6614,7 +6614,7 @@
       "file_type": "code",
       "norm_label": "walletcontext",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "ref_expo_status_bar",
@@ -9385,6 +9385,18 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
+      "target": "bstc_wallet_src_components_ui_button_button",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
       "target": "bstc_wallet_src_components_ui_input_input",
       "relation": "calls",
       "_origin": "ast",
@@ -9392,7 +9404,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L100",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -9404,7 +9416,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L25",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -9416,7 +9428,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L37",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -9428,7 +9440,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L38",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -9440,7 +9452,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L42",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -9452,7 +9464,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L46",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -9464,7 +9476,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L52",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -9476,7 +9488,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L55",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -9488,19 +9500,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L62",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
-      "target": "bstc_wallet_src_components_ui_button_button",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L83",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -30261,17 +30261,6 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_restore_backup",
-      "target": "bstc_wallet_src_app_onboarding_restore_backup_styles",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L146",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_restore_backup",
       "target": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
       "relation": "contains",
       "_origin": "ast",
@@ -30279,6 +30268,17 @@
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_restore_backup",
+      "target": "bstc_wallet_src_app_onboarding_restore_backup_styles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -32885,7 +32885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -32896,7 +32896,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -32918,7 +32918,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L49",
+      "source_location": "L68",
       "weight": 1.0
     },
     {

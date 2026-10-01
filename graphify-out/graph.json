@@ -46,6 +46,32 @@
   },
   "nodes": [
     {
+      "id": "bstc_wallet_src_app_settings_network_management_networkitem",
+      "label": "NetworkItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "networkitem",
+      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_wallet_management_walletitem",
+      "label": "WalletItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "walletitem",
+      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
+      "source_location": "L19"
+    },
+    {
       "id": "bstc_wallet_src_app_tabs_history_dategroup",
       "label": "DateGroup",
       "_callable": true,
@@ -72,6 +98,19 @@
       "source_location": "L5"
     },
     {
+      "id": "bstc_wallet_src_components_ui_transactionrow_transactionkind",
+      "label": "TransactionKind",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "transactionkind",
+      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_transactionrow_transactionrowdata",
       "label": "TransactionRowData",
       "_callable": true,
@@ -83,6 +122,19 @@
       "norm_label": "transactionrowdata",
       "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
       "source_location": "L9"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_transactionrow_transactionrowprops",
+      "label": "TransactionRowProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "transactionrowprops",
+      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
+      "source_location": "L21"
     },
     {
       "id": "bstc_wallet_src_components_wallet_recentactivity_recentactivityprops",
@@ -98,39 +150,13 @@
       "source_location": "L11"
     },
     {
-      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_bstcwalletmodule",
-      "label": "BstcWalletModule",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "expo",
-      "file_type": "code",
-      "norm_label": "bstcwalletmodule",
-      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_web_bstcwalletmodule",
-      "label": "BstcWalletModule",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "expo",
-      "file_type": "code",
-      "norm_label": "bstcwalletmodule",
-      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.web.ts",
-      "source_location": "L3"
-    },
-    {
       "id": "bstc_wallet_src_components_ui_badge_badgeprops",
       "label": "BadgeProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "badgeprops",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
@@ -143,37 +169,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "badgetone",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
       "source_location": "L6"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_transactionrow_transactionkind",
-      "label": "TransactionKind",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TransactionRow.tsx",
-      "file_type": "code",
-      "norm_label": "transactionkind",
-      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_transactionrow_transactionrowprops",
-      "label": "TransactionRowProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TransactionRow.tsx",
-      "file_type": "code",
-      "norm_label": "transactionrowprops",
-      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
-      "source_location": "L21"
     },
     {
       "id": "bstc_wallet_android_app_src_main_java_com_anonymous_bstcwallet_mainapplication_mainapplication",
@@ -215,6 +215,58 @@
       "source_location": "L40"
     },
     {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segment",
+      "label": "Segment",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "SegmentedControl.tsx",
+      "file_type": "code",
+      "norm_label": "segment",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrolprops",
+      "label": "SegmentedControlProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "SegmentedControl.tsx",
+      "file_type": "code",
+      "norm_label": "segmentedcontrolprops",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_bstcwalletmodule",
+      "label": "BstcWalletModule",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "bstcwalletmodule",
+      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_web_bstcwalletmodule",
+      "label": "BstcWalletModule",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "bstcwalletmodule",
+      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.web.ts",
+      "source_location": "L3"
+    },
+    {
       "id": "bstc_wallet_src_components_hint_row_hintrowprops",
       "label": "HintRowProps",
       "_callable": true,
@@ -228,6 +280,19 @@
       "source_location": "L9"
     },
     {
+      "id": "bstc_wallet_src_components_themed_text_themedtextprops",
+      "label": "ThemedTextProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "themedtextprops",
+      "source_file": "bstc-wallet/src/components/themed-text.tsx",
+      "source_location": "L6"
+    },
+    {
       "id": "bstc_wallet_src_components_themed_view_themedviewprops",
       "label": "ThemedViewProps",
       "_callable": true,
@@ -239,6 +304,19 @@
       "norm_label": "themedviewprops",
       "source_file": "bstc-wallet/src/components/themed-view.tsx",
       "source_location": "L6"
+    },
+    {
+      "id": "bstc_wallet_src_constants_theme_themecolor",
+      "label": "ThemeColor",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "themecolor",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L27"
     },
     {
       "id": "bstc_wallet_src_components_ui_button_buttonprops",
@@ -293,6 +371,19 @@
       "source_location": "L124"
     },
     {
+      "id": "bstc_wallet_src_components_ui_card_cardprops",
+      "label": "CardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "cardprops",
+      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
+      "source_location": "L8"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_card_cardvariant",
       "label": "CardVariant",
       "_callable": true,
@@ -319,17 +410,30 @@
       "source_location": "L7"
     },
     {
-      "id": "bstc_wallet_src_components_ui_input_inputprops",
-      "label": "InputProps",
+      "id": "bstc_wallet_src_components_ui_settingrow_settingrowprops",
+      "label": "SettingRowProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 20,
       "community_name": "ui/index.ts",
       "file_type": "code",
-      "norm_label": "inputprops",
-      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
-      "source_location": "L14"
+      "norm_label": "settingrowprops",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_settingrow_settingsectionprops",
+      "label": "SettingSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "settingsectionprops",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L62"
     },
     {
       "id": "bstc_wallet_modules_bstc_wallet_android_src_main_java_expo_modules_bstcwallet_bstcwalletmodule_bstcwalletmodule",
@@ -407,6 +511,19 @@
       "file_type": "code",
       "norm_label": "walletselectorprops",
       "source_file": "bstc-wallet/src/components/wallet/WalletSelector.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_tokenrow_tokenrowdata",
+      "label": "TokenRowData",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "tokenrowdata",
+      "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
       "source_location": "L6"
     },
     {
@@ -592,16 +709,29 @@
       "source_location": "L5"
     },
     {
-      "id": "bstc_wallet_src_components_ui_tokenrow_tokenrowdata",
-      "label": "TokenRowData",
+      "id": "bstc_wallet_src_components_ui_avatar_avatarprops",
+      "label": "AvatarProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
-      "norm_label": "tokenrowdata",
-      "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
+      "norm_label": "avatarprops",
+      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_networkbadge_networkbadgeprops",
+      "label": "NetworkBadgeProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "networkbadgeprops",
+      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
       "source_location": "L6"
     },
     {
@@ -611,11 +741,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
       "norm_label": "tokenrowprops",
       "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
       "source_location": "L21"
+    },
+    {
+      "id": "bstc_wallet_src_theme_radii_radiustoken",
+      "label": "RadiusToken",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "radiustoken",
+      "source_file": "bstc-wallet/src/theme/radii.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodalprops",
+      "label": "FeedbackModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "feedbackmodalprops",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L7"
     },
     {
       "id": "bstc_wallet_src_components_ui_icon_iconprops",
@@ -624,89 +780,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "iconprops",
       "source_file": "bstc-wallet/src/components/ui/Icon.tsx",
       "source_location": "L5"
     },
     {
-      "id": "bstc_wallet_src_components_ui_networkbadge_networkbadgeprops",
-      "label": "NetworkBadgeProps",
+      "id": "bstc_wallet_src_components_ui_input_inputprops",
+      "label": "InputProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "networkbadgeprops",
-      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_wallet_management_walletitem",
-      "label": "WalletItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "walletitem",
-      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
-      "source_location": "L19"
-    },
-    {
-      "id": "bstc_wallet_src_app_token_manage_managedtoken",
-      "label": "ManagedToken",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "managedtoken",
-      "source_file": "bstc-wallet/src/app/token/manage.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_card_cardprops",
-      "label": "CardProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "cardprops",
-      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_listrow_listrowprops",
-      "label": "ListRowProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "listrowprops",
-      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_screen_screenprops",
-      "label": "ScreenProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "screenprops",
-      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
-      "source_location": "L16"
+      "norm_label": "inputprops",
+      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
+      "source_location": "L14"
     },
     {
       "id": "bstc_wallet_src_components_ui_screenheader_screenheaderprops",
@@ -714,8 +805,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "screenheaderprops",
       "source_file": "bstc-wallet/src/components/ui/ScreenHeader.tsx",
@@ -727,77 +818,25 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "searchbarprops",
       "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
       "source_location": "L6"
     },
     {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segment",
-      "label": "Segment",
+      "id": "bstc_wallet_src_theme_colors_colortoken",
+      "label": "ColorToken",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "segment",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrolprops",
-      "label": "SegmentedControlProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "segmentedcontrolprops",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow_settingrowprops",
-      "label": "SettingRowProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "settingrowprops",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow_settingsectionprops",
-      "label": "SettingSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "settingsectionprops",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L62"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_toggle_toggleprops",
-      "label": "ToggleProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "toggleprops",
-      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
-      "source_location": "L5"
+      "norm_label": "colortoken",
+      "source_file": "bstc-wallet/src/theme/colors.ts",
+      "source_location": "L60"
     },
     {
       "id": "bstc_wallet_src_components_wallet_qrcodeview_qrcodeviewprops",
@@ -813,19 +852,6 @@
       "source_location": "L6"
     },
     {
-      "id": "bstc_wallet_src_theme_colors_colortoken",
-      "label": "ColorToken",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "colortoken",
-      "source_file": "bstc-wallet/src/theme/colors.ts",
-      "source_location": "L60"
-    },
-    {
       "id": "bstc_wallet_src_theme_icons_iconname",
       "label": "IconName",
       "_callable": true,
@@ -837,32 +863,6 @@
       "norm_label": "iconname",
       "source_file": "bstc-wallet/src/theme/icons.ts",
       "source_location": "L91"
-    },
-    {
-      "id": "bstc_wallet_src_theme_radii_radiustoken",
-      "label": "RadiusToken",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "radiustoken",
-      "source_file": "bstc-wallet/src/theme/radii.ts",
-      "source_location": "L14"
-    },
-    {
-      "id": "bstc_wallet_src_theme_spacing_spacingtoken",
-      "label": "SpacingToken",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "spacingtoken",
-      "source_file": "bstc-wallet/src/theme/spacing.ts",
-      "source_location": "L20"
     },
     {
       "id": "bstc_wallet_src_theme_typography_typestyle",
@@ -891,30 +891,43 @@
       "source_location": "L107"
     },
     {
-      "id": "bstc_wallet_src_components_themed_text_themedtextprops",
-      "label": "ThemedTextProps",
+      "id": "bstc_wallet_src_components_ui_listrow_listrowprops",
+      "label": "ListRowProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "themedtextprops",
-      "source_file": "bstc-wallet/src/components/themed-text.tsx",
-      "source_location": "L6"
+      "norm_label": "listrowprops",
+      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
+      "source_location": "L7"
     },
     {
-      "id": "bstc_wallet_src_constants_theme_themecolor",
-      "label": "ThemeColor",
+      "id": "bstc_wallet_src_components_ui_toggle_toggleprops",
+      "label": "ToggleProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "themecolor",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
-      "source_location": "L27"
+      "norm_label": "toggleprops",
+      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "bstc_wallet_src_theme_spacing_spacingtoken",
+      "label": "SpacingToken",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "spacing",
+      "file_type": "code",
+      "norm_label": "spacingtoken",
+      "source_file": "bstc-wallet/src/theme/spacing.ts",
+      "source_location": "L20"
     },
     {
       "id": "bstc_wallet_ios_bstcwallet_appdelegate_appdelegate",
@@ -943,30 +956,30 @@
       "source_location": "L54"
     },
     {
-      "id": "bstc_wallet_src_app_settings_network_management_networkitem",
-      "label": "NetworkItem",
+      "id": "bstc_wallet_src_app_token_manage_managedtoken",
+      "label": "ManagedToken",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "networkitem",
-      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "norm_label": "managedtoken",
+      "source_file": "bstc-wallet/src/app/token/manage.tsx",
       "source_location": "L17"
     },
     {
-      "id": "bstc_wallet_src_components_ui_avatar_avatarprops",
-      "label": "AvatarProps",
+      "id": "bstc_wallet_src_components_ui_screen_screenprops",
+      "label": "ScreenProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "avatarprops",
-      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
-      "source_location": "L6"
+      "norm_label": "screenprops",
+      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
+      "source_location": "L16"
     },
     {
       "id": "bstc_wallet_src_state_wallet_state_walletcontexttype",
@@ -975,7 +988,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "walletcontexttype",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
@@ -1087,7 +1100,7 @@
       "file_type": "code",
       "norm_label": "cloudbackupscreen()",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L19"
+      "source_location": "L21"
     },
     {
       "id": "bstc_wallet_src_app_onboarding_create_createwalletscreen",
@@ -1111,7 +1124,7 @@
       "file_type": "code",
       "norm_label": "importwalletscreen()",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L18"
+      "source_location": "L20"
     },
     {
       "id": "bstc_wallet_src_app_onboarding_recovery_phrase_recoveryphrasescreen",
@@ -1135,7 +1148,7 @@
       "file_type": "code",
       "norm_label": "restorebackupscreen()",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "bstc_wallet_src_app_receive_index_receivescreen",
@@ -1318,16 +1331,16 @@
       "source_location": "L19"
     },
     {
-      "id": "bstc_wallet_src_app_tabs_web3_web3screen",
-      "label": "Web3Screen()",
+      "id": "bstc_wallet_src_app_tabs_settings_settingsscreen",
+      "label": "SettingsScreen()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "community_name": "BodyText",
       "file_type": "code",
-      "norm_label": "web3screen()",
-      "source_file": "bstc-wallet/src/app/(tabs)/web3.tsx",
-      "source_location": "L35"
+      "norm_label": "settingsscreen()",
+      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
+      "source_location": "L24"
     },
     {
       "id": "bstc_wallet_src_app_token_id_tokendetailscreen",
@@ -1414,6 +1427,18 @@
       "source_location": "L13"
     },
     {
+      "id": "bstc_wallet_src_components_ui_avatar_avatar",
+      "label": "Avatar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "avatar()",
+      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
+      "source_location": "L11"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_button_button",
       "label": "Button()",
       "_callable": true,
@@ -1486,6 +1511,18 @@
       "source_location": "L34"
     },
     {
+      "id": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "label": "FeedbackModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "feedbackmodal()",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L12"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_icon_bodytext",
       "label": "BodyText()",
       "_callable": true,
@@ -1534,6 +1571,18 @@
       "source_location": "L78"
     },
     {
+      "id": "bstc_wallet_src_components_ui_input_input",
+      "label": "Input()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "input()",
+      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
+      "source_location": "L39"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_screen_screen",
       "label": "Screen()",
       "_callable": true,
@@ -1558,6 +1607,18 @@
       "source_location": "L15"
     },
     {
+      "id": "bstc_wallet_src_components_ui_toggle_toggle",
+      "label": "Toggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "toggle()",
+      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
+      "source_location": "L12"
+    },
+    {
       "id": "bstc_wallet_src_components_wallet_qrcodeview_qrcodeview",
       "label": "QRCodeView()",
       "_callable": true,
@@ -1568,42 +1629,6 @@
       "norm_label": "qrcodeview()",
       "source_file": "bstc-wallet/src/components/wallet/QRCodeView.tsx",
       "source_location": "L15"
-    },
-    {
-      "id": "bstc_wallet_src_services_mockwallet_getbuyquote",
-      "label": "getBuyQuote()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "BodyText",
-      "file_type": "code",
-      "norm_label": "getbuyquote()",
-      "source_file": "bstc-wallet/src/services/mockWallet.ts",
-      "source_location": "L464"
-    },
-    {
-      "id": "bstc_wallet_src_services_mockwallet_getdappconnectionrequest",
-      "label": "getDAppConnectionRequest()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "BodyText",
-      "file_type": "code",
-      "norm_label": "getdappconnectionrequest()",
-      "source_file": "bstc-wallet/src/services/mockWallet.ts",
-      "source_location": "L659"
-    },
-    {
-      "id": "bstc_wallet_src_services_mockwallet_getmalicioussignaturewarningdata",
-      "label": "getMaliciousSignatureWarningData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "BodyText",
-      "file_type": "code",
-      "norm_label": "getmalicioussignaturewarningdata()",
-      "source_file": "bstc-wallet/src/services/mockWallet.ts",
-      "source_location": "L851"
     },
     {
       "id": "bstc_wallet_src_services_mockwallet_getrecentcontacts",
@@ -1642,6 +1667,18 @@
       "source_location": "L141"
     },
     {
+      "id": "bstc_wallet_src_state_wallet_state_usewalletstate",
+      "label": "useWalletState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "usewalletstate()",
+      "source_file": "bstc-wallet/src/state/wallet-state.tsx",
+      "source_location": "L99"
+    },
+    {
       "id": "bstc_wallet_src_app_tabs_history_historyscreen",
       "label": "HistoryScreen()",
       "_callable": true,
@@ -1664,6 +1701,18 @@
       "norm_label": "divider()",
       "source_file": "bstc-wallet/src/components/ui/Divider.tsx",
       "source_location": "L10"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrolrow",
+      "label": "SegmentedControlRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "segmentedcontrolrow()",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L58"
     },
     {
       "id": "bstc_wallet_src_components_ui_transactionrow_transactionrow",
@@ -1690,12 +1739,36 @@
       "source_location": "L17"
     },
     {
+      "id": "bstc_wallet_src_components_animated_icon_animatedicon",
+      "label": "AnimatedIcon()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
+      "file_type": "code",
+      "norm_label": "animatedicon()",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L98"
+    },
+    {
+      "id": "bstc_wallet_src_components_animated_icon_animatedsplashoverlay",
+      "label": "AnimatedSplashOverlay()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
+      "file_type": "code",
+      "norm_label": "animatedsplashoverlay()",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L11"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_badge_badge",
       "label": "Badge()",
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "badge()",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
@@ -1707,7 +1780,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "statusbadge()",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
@@ -1784,6 +1857,18 @@
       "norm_label": ".oncreate()",
       "source_file": "bstc-wallet/android/app/src/main/java/com/anonymous/bstcwallet/MainActivity.kt",
       "source_location": "L15"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrol",
+      "label": "SegmentedControl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "SegmentedControl.tsx",
+      "file_type": "code",
+      "norm_label": "segmentedcontrol()",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L18"
     },
     {
       "id": "bstc_wallet_scripts_reset_project_movedirectories",
@@ -1894,28 +1979,28 @@
       "source_location": "L25"
     },
     {
-      "id": "bstc_wallet_src_components_ui_listrow_listrow",
-      "label": "ListRow()",
+      "id": "bstc_wallet_src_components_ui_settingrow_settingrow",
+      "label": "SettingRow()",
       "_callable": true,
       "_origin": "ast",
       "community": 20,
       "community_name": "ui/index.ts",
       "file_type": "code",
-      "norm_label": "listrow()",
-      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
-      "source_location": "L16"
+      "norm_label": "settingrow()",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L20"
     },
     {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrol",
-      "label": "SegmentedControl()",
+      "id": "bstc_wallet_src_components_ui_settingrow_settingsection",
+      "label": "SettingSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 20,
       "community_name": "ui/index.ts",
       "file_type": "code",
-      "norm_label": "segmentedcontrol()",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L18"
+      "norm_label": "settingsection()",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L67"
     },
     {
       "id": "bstc_wallet_modules_bstc_wallet_android_src_main_java_expo_modules_bstcwallet_bstcwalletmodule_bstcwalletmodule_definition",
@@ -1966,18 +2051,6 @@
       "source_location": "L16"
     },
     {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrolrow",
-      "label": "SegmentedControlRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "(tabs)/index.tsx",
-      "file_type": "code",
-      "norm_label": "segmentedcontrolrow()",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L58"
-    },
-    {
       "id": "bstc_wallet_src_components_wallet_portfolioheader_portfolioheader",
       "label": "PortfolioHeader()",
       "_callable": true,
@@ -2018,12 +2091,84 @@
       "label": "usePortfolio()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "mockWallet.ts",
+      "community": 23,
+      "community_name": "(tabs)/index.tsx",
       "file_type": "code",
       "norm_label": "useportfolio()",
       "source_file": "bstc-wallet/src/hooks/usePortfolio.ts",
       "source_location": "L11"
+    },
+    {
+      "id": "bstc_wallet_src_app_tabs_web3_web3screen",
+      "label": "Web3Screen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "web3screen()",
+      "source_file": "bstc-wallet/src/app/(tabs)/web3.tsx",
+      "source_location": "L35"
+    },
+    {
+      "id": "bstc_wallet_src_app_token_select_selecttokenscreen",
+      "label": "SelectTokenScreen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "selecttokenscreen()",
+      "source_file": "bstc-wallet/src/app/token/select.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_emptystate_emptystate",
+      "label": "EmptyState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "emptystate()",
+      "source_file": "bstc-wallet/src/components/ui/EmptyState.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_networkbadge_networkbadge",
+      "label": "NetworkBadge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "networkbadge()",
+      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_searchbar_searchbar",
+      "label": "SearchBar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "searchbar()",
+      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_tokenrow_tokenrow",
+      "label": "TokenRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "tokenrow()",
+      "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
+      "source_location": "L26"
     },
     {
       "id": "bstc_wallet_src_hooks_useportfolio_usesettingsprofile",
@@ -2038,6 +2183,30 @@
       "source_location": "L30"
     },
     {
+      "id": "bstc_wallet_src_services_mockwallet_getbuyquote",
+      "label": "getBuyQuote()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "getbuyquote()",
+      "source_file": "bstc-wallet/src/services/mockWallet.ts",
+      "source_location": "L464"
+    },
+    {
+      "id": "bstc_wallet_src_services_mockwallet_getdappconnectionrequest",
+      "label": "getDAppConnectionRequest()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "getdappconnectionrequest()",
+      "source_file": "bstc-wallet/src/services/mockWallet.ts",
+      "source_location": "L659"
+    },
+    {
       "id": "bstc_wallet_src_services_mockwallet_getfeaturedprotocols",
       "label": "getFeaturedProtocols()",
       "_callable": true,
@@ -2048,6 +2217,18 @@
       "norm_label": "getfeaturedprotocols()",
       "source_file": "bstc-wallet/src/services/mockWallet.ts",
       "source_location": "L560"
+    },
+    {
+      "id": "bstc_wallet_src_services_mockwallet_getmalicioussignaturewarningdata",
+      "label": "getMaliciousSignatureWarningData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "getmalicioussignaturewarningdata()",
+      "source_file": "bstc-wallet/src/services/mockWallet.ts",
+      "source_location": "L851"
     },
     {
       "id": "bstc_wallet_src_services_mockwallet_getmessagesigningrequest",
@@ -2146,36 +2327,12 @@
       "source_location": "L7"
     },
     {
-      "id": "bstc_wallet_src_components_animated_icon_animatedicon",
-      "label": "AnimatedIcon()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "animatedicon()",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L98"
-    },
-    {
-      "id": "bstc_wallet_src_components_animated_icon_animatedsplashoverlay",
-      "label": "AnimatedSplashOverlay()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "animatedsplashoverlay()",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L11"
-    },
-    {
       "id": "bstc_wallet_src_components_animated_icon_web_animatedicon",
       "label": "AnimatedIcon()",
       "_callable": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "animatedicon()",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -2187,71 +2344,59 @@
       "_callable": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "animatedsplashoverlay()",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
       "source_location": "L8"
     },
     {
-      "id": "bstc_wallet_src_app_token_select_selecttokenscreen",
-      "label": "SelectTokenScreen()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 57,
-      "community_name": "select.tsx",
-      "file_type": "code",
-      "norm_label": "selecttokenscreen()",
-      "source_file": "bstc-wallet/src/app/token/select.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_emptystate_emptystate",
-      "label": "EmptyState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 57,
-      "community_name": "select.tsx",
-      "file_type": "code",
-      "norm_label": "emptystate()",
-      "source_file": "bstc-wallet/src/components/ui/EmptyState.tsx",
-      "source_location": "L13"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_searchbar_searchbar",
-      "label": "SearchBar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 57,
-      "community_name": "select.tsx",
-      "file_type": "code",
-      "norm_label": "searchbar()",
-      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_tokenrow_tokenrow",
-      "label": "TokenRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 57,
-      "community_name": "select.tsx",
-      "file_type": "code",
-      "norm_label": "tokenrow()",
-      "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
-      "source_location": "L26"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_networkbadge_networkbadge",
-      "label": "NetworkBadge()",
+      "id": "bstc_wallet_src_components_app_tabs_apptabs",
+      "label": "AppTabs()",
       "_callable": true,
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "networkbadge()",
-      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
-      "source_location": "L13"
+      "norm_label": "apptabs()",
+      "source_file": "bstc-wallet/src/components/app-tabs.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "bstc_wallet_src_components_app_tabs_web_apptabs",
+      "label": "AppTabs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "apptabs()",
+      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "bstc_wallet_src_components_app_tabs_web_webtabbutton",
+      "label": "WebTabButton()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "webtabbutton()",
+      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "bstc_wallet_src_theme_fonts_resolvefontfamily",
+      "label": "resolveFontFamily()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "resolvefontfamily()",
+      "source_file": "bstc-wallet/src/theme/fonts.ts",
+      "source_location": "L27"
     },
     {
       "id": "bstc_wallet_src_app_qr_qrscannerscreen",
@@ -2278,88 +2423,16 @@
       "source_location": "L13"
     },
     {
-      "id": "bstc_wallet_src_components_app_tabs_apptabs",
-      "label": "AppTabs()",
+      "id": "bstc_wallet_src_components_ui_listrow_listrow",
+      "label": "ListRow()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 7,
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "apptabs()",
-      "source_file": "bstc-wallet/src/components/app-tabs.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "bstc_wallet_src_components_app_tabs_web_apptabs",
-      "label": "AppTabs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "apptabs()",
-      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "bstc_wallet_src_components_app_tabs_web_webtabbutton",
-      "label": "WebTabButton()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "webtabbutton()",
-      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_input_input",
-      "label": "Input()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "input()",
-      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
-      "source_location": "L39"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_toggle_toggle",
-      "label": "Toggle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "toggle()",
-      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "bstc_wallet_src_hooks_use_color_scheme_web_usecolorscheme",
-      "label": "useColorScheme()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "usecolorscheme()",
-      "source_file": "bstc-wallet/src/hooks/use-color-scheme.web.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "bstc_wallet_src_theme_fonts_resolvefontfamily",
-      "label": "resolveFontFamily()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "resolvefontfamily()",
-      "source_file": "bstc-wallet/src/theme/fonts.ts",
-      "source_location": "L27"
+      "norm_label": "listrow()",
+      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
+      "source_location": "L16"
     },
     {
       "id": "bstc_wallet_ios_bstcwallet_appdelegate_appdelegate_application",
@@ -2423,7 +2496,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "bstc-wallet/src/app/_layout.tsx",
@@ -2435,71 +2508,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "rootnavigation()",
       "source_file": "bstc-wallet/src/app/_layout.tsx",
       "source_location": "L26"
     },
     {
-      "id": "bstc_wallet_src_app_tabs_settings_settingsscreen",
-      "label": "SettingsScreen()",
+      "id": "bstc_wallet_src_hooks_use_color_scheme_web_usecolorscheme",
+      "label": "useColorScheme()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "settingsscreen()",
-      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_avatar_avatar",
-      "label": "Avatar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "avatar()",
-      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow_settingrow",
-      "label": "SettingRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "settingrow()",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow_settingsection",
-      "label": "SettingSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "settingsection()",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L67"
-    },
-    {
-      "id": "bstc_wallet_src_state_wallet_state_usewalletstate",
-      "label": "useWalletState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "usewalletstate()",
-      "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L68"
+      "norm_label": "usecolorscheme()",
+      "source_file": "bstc-wallet/src/hooks/use-color-scheme.web.ts",
+      "source_location": "L7"
     },
     {
       "id": "bstc_wallet_src_state_wallet_state_walletprovider",
@@ -2507,11 +2532,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "walletprovider()",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L17"
+      "source_location": "L19"
     },
     {
       "id": "bstc_wallet_src_theme_fonts_loadappfonts",
@@ -2519,7 +2544,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "loadappfonts()",
       "source_file": "bstc-wallet/src/theme/fonts.ts",
@@ -2690,6 +2715,28 @@
       "source_location": "L208"
     },
     {
+      "id": "bstc_wallet_src_app_buy_processing",
+      "label": "buy/processing.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "buy/processing.tsx",
+      "source_file": "bstc-wallet/src/app/buy/processing.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_buy_processing_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/buy/processing.tsx",
+      "source_location": "L135"
+    },
+    {
       "id": "bstc_wallet_src_app_buy_review",
       "label": "buy/review.tsx",
       "_origin": "ast",
@@ -2710,6 +2757,50 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/buy/review.tsx",
       "source_location": "L160"
+    },
+    {
+      "id": "bstc_wallet_src_app_history_id",
+      "label": "history/[id].tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "history/[id].tsx",
+      "source_file": "bstc-wallet/src/app/history/[id].tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_history_id_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/history/[id].tsx",
+      "source_location": "L219"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_account_created",
+      "label": "account-created.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "account-created.tsx",
+      "source_file": "bstc-wallet/src/app/onboarding/account-created.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_account_created_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/onboarding/account-created.tsx",
+      "source_location": "L113"
     },
     {
       "id": "bstc_wallet_src_app_onboarding_backup_confirmation",
@@ -2745,6 +2836,72 @@
       "source_location": "L104"
     },
     {
+      "id": "bstc_wallet_src_app_onboarding_cloud_backup",
+      "label": "onboarding/cloud-backup.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "onboarding/cloud-backup.tsx",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_cloud_backup_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L187"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_create",
+      "label": "create.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "create.tsx",
+      "source_file": "bstc-wallet/src/app/onboarding/create.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_create_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/onboarding/create.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_import",
+      "label": "import.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "import.tsx",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_import_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L231"
+    },
+    {
       "id": "bstc_wallet_src_app_onboarding_recovery_phrase",
       "label": "recovery-phrase.tsx",
       "_origin": "ast",
@@ -2776,6 +2933,28 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/onboarding/recovery-phrase.tsx",
       "source_location": "L143"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_restore_backup",
+      "label": "onboarding/restore-backup.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "onboarding/restore-backup.tsx",
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_onboarding_restore_backup_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L185"
     },
     {
       "id": "bstc_wallet_src_app_receive_index",
@@ -2842,6 +3021,149 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/send/recipient.tsx",
       "source_location": "L169"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_account",
+      "label": "account.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "account.tsx",
+      "source_file": "bstc-wallet/src/app/settings/account.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_account_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/settings/account.tsx",
+      "source_location": "L181"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_cloud_backup",
+      "label": "settings/cloud-backup.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "settings/cloud-backup.tsx",
+      "source_file": "bstc-wallet/src/app/settings/cloud-backup.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_network_management",
+      "label": "network-management.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "network-management.tsx",
+      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_network_management_initial_networks",
+      "label": "INITIAL_NETWORKS",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "initial_networks",
+      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_network_management_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "source_location": "L175"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_restore_backup",
+      "label": "settings/restore-backup.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "settings/restore-backup.tsx",
+      "source_file": "bstc-wallet/src/app/settings/restore-backup.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_security",
+      "label": "security.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "security.tsx",
+      "source_file": "bstc-wallet/src/app/settings/security.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_security_auto_lock_options",
+      "label": "AUTO_LOCK_OPTIONS",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "auto_lock_options",
+      "source_file": "bstc-wallet/src/app/settings/security.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_security_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/settings/security.tsx",
+      "source_location": "L270"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_wallet_management",
+      "label": "wallet-management.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "wallet-management.tsx",
+      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_wallet_management_initial_wallets",
+      "label": "INITIAL_WALLETS",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "initial_wallets",
+      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_wallet_management_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
+      "source_location": "L302"
     },
     {
       "id": "bstc_wallet_src_app_swap_completed",
@@ -3031,6 +3353,28 @@
       "source_location": "L128"
     },
     {
+      "id": "bstc_wallet_src_theme_icons_icons",
+      "label": "icons",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "code",
+      "norm_label": "icons",
+      "source_file": "bstc-wallet/src/theme/icons.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "ref_expo_router",
+      "label": "expo-router",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "BodyText",
+      "file_type": "concept",
+      "norm_label": "expo-router",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L15"
+    },
+    {
       "id": "bstc_wallet_src_app_tabs_history",
       "label": "history.tsx",
       "_origin": "ast",
@@ -3097,6 +3441,39 @@
       "source_location": "L22"
     },
     {
+      "id": "bstc_wallet_src_components_ui_transactionrow",
+      "label": "TransactionRow.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "transactionrow.tsx",
+      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_transactionrow_kindicon",
+      "label": "kindIcon",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "kindicon",
+      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_transactionrow_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "history.tsx",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
+      "source_location": "L118"
+    },
+    {
       "id": "bstc_wallet_src_components_wallet_recentactivity",
       "label": "RecentActivity.tsx",
       "_origin": "ast",
@@ -3119,37 +3496,81 @@
       "source_location": "L56"
     },
     {
-      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule",
-      "label": "BstcWalletModule.ts",
+      "id": "bstc_wallet_src_components_animated_icon",
+      "label": "animated-icon.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "expo",
+      "community_name": "animated-icon.tsx",
       "file_type": "code",
-      "norm_label": "bstcwalletmodule.ts",
-      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.ts",
+      "norm_label": "animated-icon.tsx",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_web",
-      "label": "BstcWalletModule.web.ts",
+      "id": "bstc_wallet_src_components_animated_icon_glowkeyframe",
+      "label": "glowKeyframe",
       "_origin": "ast",
       "community": 10,
-      "community_name": "expo",
+      "community_name": "animated-icon.tsx",
       "file_type": "code",
-      "norm_label": "bstcwalletmodule.web.ts",
-      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.web.ts",
-      "source_location": "L1"
+      "norm_label": "glowkeyframe",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L89"
     },
     {
-      "id": "ref_expo",
-      "label": "expo",
+      "id": "bstc_wallet_src_components_animated_icon_keyframe",
+      "label": "keyframe",
       "_origin": "ast",
       "community": 10,
-      "community_name": "expo",
+      "community_name": "animated-icon.tsx",
+      "file_type": "code",
+      "norm_label": "keyframe",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L62"
+    },
+    {
+      "id": "bstc_wallet_src_components_animated_icon_logokeyframe",
+      "label": "logoKeyframe",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
+      "file_type": "code",
+      "norm_label": "logokeyframe",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "bstc_wallet_src_components_animated_icon_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
+      "source_location": "L113"
+    },
+    {
+      "id": "ref_expo_splash_screen",
+      "label": "expo-splash-screen",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
       "file_type": "concept",
-      "norm_label": "expo",
+      "norm_label": "expo-splash-screen",
       "source_file": "bstc-wallet/package.json",
-      "source_location": "L7"
+      "source_location": "L16"
+    },
+    {
+      "id": "ref_react_native_worklets",
+      "label": "react-native-worklets",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "animated-icon.tsx",
+      "file_type": "concept",
+      "norm_label": "react-native-worklets",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L29"
     },
     {
       "id": "bstc_wallet_package",
@@ -3161,39 +3582,6 @@
       "norm_label": "package.json",
       "source_file": "bstc-wallet/package.json",
       "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L31"
-    },
-    {
-      "id": "bstc_wallet_package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L32"
-    },
-    {
-      "id": "bstc_wallet_package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L33"
     },
     {
       "id": "bstc_wallet_package_main",
@@ -3317,6 +3705,17 @@
       "source_location": "L14"
     },
     {
+      "id": "ref_expo_status_bar",
+      "label": "expo-status-bar",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "expo-status-bar",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L17"
+    },
+    {
       "id": "ref_expo_symbols",
       "label": "expo-symbols",
       "_origin": "ast",
@@ -3420,7 +3819,7 @@
       "label": "Badge.tsx",
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "badge.tsx",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
@@ -3431,7 +3830,7 @@
       "label": "styles",
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
@@ -3442,44 +3841,11 @@
       "label": "toneStyles",
       "_origin": "ast",
       "community": 14,
-      "community_name": "TransactionRow.tsx",
+      "community_name": "Badge.tsx",
       "file_type": "code",
       "norm_label": "tonestyles",
       "source_file": "bstc-wallet/src/components/ui/Badge.tsx",
       "source_location": "L14"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_transactionrow",
-      "label": "TransactionRow.tsx",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TransactionRow.tsx",
-      "file_type": "code",
-      "norm_label": "transactionrow.tsx",
-      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_transactionrow_kindicon",
-      "label": "kindIcon",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TransactionRow.tsx",
-      "file_type": "code",
-      "norm_label": "kindicon",
-      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
-      "source_location": "L28"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_transactionrow_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TransactionRow.tsx",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/TransactionRow.tsx",
-      "source_location": "L118"
     },
     {
       "id": "application",
@@ -3581,6 +3947,28 @@
       "source_location": ""
     },
     {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol",
+      "label": "SegmentedControl.tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "SegmentedControl.tsx",
+      "file_type": "code",
+      "norm_label": "segmentedcontrol.tsx",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_segmentedcontrol_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "SegmentedControl.tsx",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
+      "source_location": "L88"
+    },
+    {
       "id": "bstc_wallet_scripts_reset_project",
       "label": "reset-project.js",
       "_origin": "ast",
@@ -3669,6 +4057,61 @@
       "source_location": "L13"
     },
     {
+      "id": "bstc_wallet_package_devdependencies",
+      "label": "devDependencies",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "devdependencies",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "bstc_wallet_package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "bstc_wallet_package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L33"
+    },
+    {
+      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule",
+      "label": "BstcWalletModule.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "bstcwalletmodule.ts",
+      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_modules_bstc_wallet_src_bstcwalletmodule_web",
+      "label": "BstcWalletModule.web.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "bstcwalletmodule.web.ts",
+      "source_file": "bstc-wallet/modules/bstc-wallet/src/BstcWalletModule.web.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "bstc_wallet_src_components_hint_row",
       "label": "hint-row.tsx",
       "_origin": "ast",
@@ -3689,6 +4132,28 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/hint-row.tsx",
       "source_location": "L25"
+    },
+    {
+      "id": "bstc_wallet_src_components_themed_text",
+      "label": "themed-text.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "themed-text.tsx",
+      "source_file": "bstc-wallet/src/components/themed-text.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_themed_text_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/themed-text.tsx",
+      "source_location": "L33"
     },
     {
       "id": "bstc_wallet_src_components_themed_view",
@@ -3746,6 +4211,61 @@
       "source_location": "L30"
     },
     {
+      "id": "bstc_wallet_src_constants_theme",
+      "label": "theme.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "theme.ts",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_constants_theme_bottomtabinset",
+      "label": "BottomTabInset",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "bottomtabinset",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "bstc_wallet_src_constants_theme_colors",
+      "label": "Colors",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "colors",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "bstc_wallet_src_constants_theme_fonts",
+      "label": "Fonts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "fonts",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "bstc_wallet_src_constants_theme_maxcontentwidth",
+      "label": "MaxContentWidth",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "maxcontentwidth",
+      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "source_location": "L65"
+    },
+    {
       "id": "bstc_wallet_src_constants_theme_spacing",
       "label": "Spacing",
       "_origin": "ast",
@@ -3755,6 +4275,39 @@
       "norm_label": "spacing",
       "source_file": "bstc-wallet/src/constants/theme.ts",
       "source_location": "L54"
+    },
+    {
+      "id": "bstc_wallet_src_hooks_use_color_scheme",
+      "label": "use-color-scheme.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "use-color-scheme.ts",
+      "source_file": "bstc-wallet/src/hooks/use-color-scheme.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_hooks_use_theme",
+      "label": "use-theme.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "code",
+      "norm_label": "use-theme.ts",
+      "source_file": "bstc-wallet/src/hooks/use-theme.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_expo",
+      "label": "expo",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "collapsible.tsx",
+      "file_type": "concept",
+      "norm_label": "expo",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L7"
     },
     {
       "id": "bstc_wallet_src_components_ui_button",
@@ -3777,6 +4330,28 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/ui/Button.tsx",
       "source_location": "L167"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_card",
+      "label": "Card.tsx",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "card.tsx",
+      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_card_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
+      "source_location": "L77"
     },
     {
       "id": "bstc_wallet_src_components_ui_emptystate",
@@ -3810,6 +4385,28 @@
       "norm_label": "ui/index.ts",
       "source_file": "bstc-wallet/src/components/ui/index.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_settingrow",
+      "label": "SettingRow.tsx",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "settingrow.tsx",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_settingrow_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ui/index.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
+      "source_location": "L88"
     },
     {
       "id": "bstc_wallet_modules_bstc_wallet_android_src_main_java_expo_modules_bstcwallet_bstcwalletmodule",
@@ -4260,6 +4857,50 @@
       "source_location": "L94"
     },
     {
+      "id": "bstc_wallet_src_app_buy_payment",
+      "label": "payment.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "payment.tsx",
+      "source_file": "bstc-wallet/src/app/buy/payment.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_buy_payment_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/buy/payment.tsx",
+      "source_location": "L186"
+    },
+    {
+      "id": "bstc_wallet_src_app_tabs_settings",
+      "label": "settings.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "settings.tsx",
+      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_tabs_settings_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
+      "source_location": "L129"
+    },
+    {
       "id": "bstc_wallet_src_app_tabs_web3",
       "label": "web3.tsx",
       "_origin": "ast",
@@ -4291,6 +4932,50 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/(tabs)/web3.tsx",
       "source_location": "L304"
+    },
+    {
+      "id": "bstc_wallet_src_app_token_select",
+      "label": "select.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "select.tsx",
+      "source_file": "bstc-wallet/src/app/token/select.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_token_select_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/token/select.tsx",
+      "source_location": "L91"
+    },
+    {
+      "id": "bstc_wallet_src_app_web3_approvals",
+      "label": "approvals.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "approvals.tsx",
+      "source_file": "bstc-wallet/src/app/web3/approvals.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_web3_approvals_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "mockWallet.ts",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/web3/approvals.tsx",
+      "source_location": "L297"
     },
     {
       "id": "bstc_wallet_src_hooks_useportfolio",
@@ -4975,66 +5660,11 @@
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_components_animated_icon",
-      "label": "animated-icon.tsx",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "animated-icon.tsx",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_animated_icon_glowkeyframe",
-      "label": "glowKeyframe",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "glowkeyframe",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L89"
-    },
-    {
-      "id": "bstc_wallet_src_components_animated_icon_keyframe",
-      "label": "keyframe",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "keyframe",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L62"
-    },
-    {
-      "id": "bstc_wallet_src_components_animated_icon_logokeyframe",
-      "label": "logoKeyframe",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "logokeyframe",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L72"
-    },
-    {
-      "id": "bstc_wallet_src_components_animated_icon_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/animated-icon.tsx",
-      "source_location": "L113"
-    },
-    {
       "id": "bstc_wallet_src_components_animated_icon_web",
       "label": "animated-icon.web.tsx",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "animated-icon.web.tsx",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -5045,7 +5675,7 @@
       "label": "glowKeyframe",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "glowkeyframe",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -5056,7 +5686,7 @@
       "label": "keyframe",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "keyframe",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -5067,7 +5697,7 @@
       "label": "logoKeyframe",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "logokeyframe",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -5078,7 +5708,7 @@
       "label": "styles",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/animated-icon.web.tsx",
@@ -5089,73 +5719,139 @@
       "label": "expo-image",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "concept",
       "norm_label": "expo-image",
       "source_file": "bstc-wallet/package.json",
       "source_location": "L13"
     },
     {
-      "id": "ref_expo_splash_screen",
-      "label": "expo-splash-screen",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "concept",
-      "norm_label": "expo-splash-screen",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L16"
-    },
-    {
       "id": "ref_react_native_reanimated",
       "label": "react-native-reanimated",
       "_origin": "ast",
       "community": 54,
-      "community_name": "animated-icon.tsx",
+      "community_name": "animated-icon.web.tsx",
       "file_type": "concept",
       "norm_label": "react-native-reanimated",
       "source_file": "bstc-wallet/package.json",
       "source_location": "L25"
     },
     {
-      "id": "ref_react_native_worklets",
-      "label": "react-native-worklets",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "file_type": "concept",
-      "norm_label": "react-native-worklets",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "bstc_wallet_src_app_token_select",
-      "label": "select.tsx",
+      "id": "bstc_wallet_src_app_settings_pin",
+      "label": "pin.tsx",
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
-      "norm_label": "select.tsx",
-      "source_file": "bstc-wallet/src/app/token/select.tsx",
+      "norm_label": "pin.tsx",
+      "source_file": "bstc-wallet/src/app/settings/pin.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_token_select_styles",
+      "id": "bstc_wallet_src_app_settings_pin_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/token/select.tsx",
-      "source_location": "L91"
+      "source_file": "bstc-wallet/src/app/settings/pin.tsx",
+      "source_location": "L221"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_secret_phrase",
+      "label": "secret-phrase.tsx",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "secret-phrase.tsx",
+      "source_file": "bstc-wallet/src/app/settings/secret-phrase.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_secret_phrase_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/settings/secret-phrase.tsx",
+      "source_location": "L85"
+    },
+    {
+      "id": "bstc_wallet_src_app_welcome",
+      "label": "welcome.tsx",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "welcome.tsx",
+      "source_file": "bstc-wallet/src/app/welcome.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_app_welcome_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/app/welcome.tsx",
+      "source_location": "L104"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_avatar",
+      "label": "Avatar.tsx",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "avatar.tsx",
+      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_avatar_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_networkbadge",
+      "label": "NetworkBadge.tsx",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "networkbadge.tsx",
+      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_networkbadge_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
+      "source_location": "L28"
     },
     {
       "id": "bstc_wallet_src_components_ui_tokenrow",
       "label": "TokenRow.tsx",
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
       "norm_label": "tokenrow.tsx",
       "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
@@ -5166,18 +5862,106 @@
       "label": "styles",
       "_origin": "ast",
       "community": 57,
-      "community_name": "select.tsx",
+      "community_name": "typography",
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/ui/TokenRow.tsx",
       "source_location": "L107"
     },
     {
+      "id": "bstc_wallet_src_theme_radii",
+      "label": "radii.ts",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "radii.ts",
+      "source_file": "bstc-wallet/src/theme/radii.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_theme_radii_radii",
+      "label": "radii",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "radii",
+      "source_file": "bstc-wallet/src/theme/radii.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "bstc_wallet_src_theme_typography_typography",
+      "label": "typography",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "typography",
+      "file_type": "code",
+      "norm_label": "typography",
+      "source_file": "bstc-wallet/src/theme/typography.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "bstc_wallet_src_components_app_tabs",
+      "label": "app-tabs.tsx",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "app-tabs.tsx",
+      "source_file": "bstc-wallet/src/components/app-tabs.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_app_tabs_web",
+      "label": "app-tabs.web.tsx",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "app-tabs.web.tsx",
+      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_app_tabs_web_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
+      "source_location": "L53"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_feedbackmodal",
+      "label": "FeedbackModal.tsx",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "feedbackmodal.tsx",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "bstc_wallet_src_components_ui_feedbackmodal_styles",
+      "label": "styles",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "colors",
+      "file_type": "code",
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L33"
+    },
+    {
       "id": "bstc_wallet_src_components_ui_icon",
       "label": "Icon.tsx",
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "icon.tsx",
       "source_file": "bstc-wallet/src/components/ui/Icon.tsx",
@@ -5188,187 +5972,99 @@
       "label": "styles",
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/components/ui/Icon.tsx",
       "source_location": "L43"
     },
     {
-      "id": "bstc_wallet_src_components_ui_networkbadge",
-      "label": "NetworkBadge.tsx",
+      "id": "bstc_wallet_src_components_ui_input",
+      "label": "Input.tsx",
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "networkbadge.tsx",
-      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
+      "norm_label": "input.tsx",
+      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_components_ui_networkbadge_styles",
+      "id": "bstc_wallet_src_components_ui_input_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 58,
-      "community_name": "Icon.tsx",
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/NetworkBadge.tsx",
-      "source_location": "L28"
+      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
+      "source_location": "L117"
     },
     {
-      "id": "bstc_wallet_src_app_buy_payment",
-      "label": "payment.tsx",
+      "id": "bstc_wallet_src_components_ui_screenheader",
+      "label": "ScreenHeader.tsx",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "payment.tsx",
-      "source_file": "bstc-wallet/src/app/buy/payment.tsx",
+      "norm_label": "screenheader.tsx",
+      "source_file": "bstc-wallet/src/components/ui/ScreenHeader.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_buy_payment_styles",
+      "id": "bstc_wallet_src_components_ui_screenheader_styles",
       "label": "styles",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/buy/payment.tsx",
-      "source_location": "L186"
+      "source_file": "bstc-wallet/src/components/ui/ScreenHeader.tsx",
+      "source_location": "L56"
     },
     {
-      "id": "bstc_wallet_src_app_buy_processing",
-      "label": "buy/processing.tsx",
+      "id": "bstc_wallet_src_components_ui_searchbar",
+      "label": "SearchBar.tsx",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "buy/processing.tsx",
-      "source_file": "bstc-wallet/src/app/buy/processing.tsx",
+      "norm_label": "searchbar.tsx",
+      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_buy_processing_styles",
+      "id": "bstc_wallet_src_components_ui_searchbar_styles",
       "label": "styles",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/buy/processing.tsx",
-      "source_location": "L135"
+      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
+      "source_location": "L50"
     },
     {
-      "id": "bstc_wallet_src_app_history_id",
-      "label": "history/[id].tsx",
+      "id": "bstc_wallet_src_theme_colors",
+      "label": "colors.ts",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "history/[id].tsx",
-      "source_file": "bstc-wallet/src/app/history/[id].tsx",
+      "norm_label": "colors.ts",
+      "source_file": "bstc-wallet/src/theme/colors.ts",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_history_id_styles",
-      "label": "styles",
+      "id": "bstc_wallet_src_theme_colors_colors",
+      "label": "colors",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
+      "community": 58,
+      "community_name": "colors",
       "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/history/[id].tsx",
-      "source_location": "L219"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_cloud_backup",
-      "label": "onboarding/cloud-backup.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "onboarding/cloud-backup.tsx",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_cloud_backup_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L139"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_create",
-      "label": "create.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "create.tsx",
-      "source_file": "bstc-wallet/src/app/onboarding/create.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_create_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/onboarding/create.tsx",
-      "source_location": "L114"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_import",
-      "label": "import.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "import.tsx",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_import_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L166"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_restore_backup",
-      "label": "onboarding/restore-backup.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "onboarding/restore-backup.tsx",
-      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_onboarding_restore_backup_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L196"
+      "norm_label": "colors",
+      "source_file": "bstc-wallet/src/theme/colors.ts",
+      "source_location": "L4"
     },
     {
       "id": "bstc_wallet_src_app_qr",
@@ -5404,17 +6100,6 @@
       "source_location": "L9"
     },
     {
-      "id": "bstc_wallet_src_app_settings_cloud_backup",
-      "label": "settings/cloud-backup.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "settings/cloud-backup.tsx",
-      "source_file": "bstc-wallet/src/app/settings/cloud-backup.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "bstc_wallet_src_app_settings_notifications",
       "label": "notifications.tsx",
       "_origin": "ast",
@@ -5435,182 +6120,6 @@
       "norm_label": "styles",
       "source_file": "bstc-wallet/src/app/settings/notifications.tsx",
       "source_location": "L121"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_pin",
-      "label": "pin.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "pin.tsx",
-      "source_file": "bstc-wallet/src/app/settings/pin.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_pin_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/pin.tsx",
-      "source_location": "L221"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_preferences",
-      "label": "preferences.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "preferences.tsx",
-      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_preferences_currencies",
-      "label": "CURRENCIES",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "currencies",
-      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_preferences_languages",
-      "label": "LANGUAGES",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "languages",
-      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_preferences_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
-      "source_location": "L192"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_preferences_themes",
-      "label": "THEMES",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "themes",
-      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
-      "source_location": "L27"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_restore_backup",
-      "label": "settings/restore-backup.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "settings/restore-backup.tsx",
-      "source_file": "bstc-wallet/src/app/settings/restore-backup.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_secret_phrase",
-      "label": "secret-phrase.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "secret-phrase.tsx",
-      "source_file": "bstc-wallet/src/app/settings/secret-phrase.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_secret_phrase_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/secret-phrase.tsx",
-      "source_location": "L85"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_security",
-      "label": "security.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "security.tsx",
-      "source_file": "bstc-wallet/src/app/settings/security.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_security_auto_lock_options",
-      "label": "AUTO_LOCK_OPTIONS",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "auto_lock_options",
-      "source_file": "bstc-wallet/src/app/settings/security.tsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_security_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/security.tsx",
-      "source_location": "L270"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_wallet_management",
-      "label": "wallet-management.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "wallet-management.tsx",
-      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_wallet_management_initial_wallets",
-      "label": "INITIAL_WALLETS",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "initial_wallets",
-      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
-      "source_location": "L26"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_wallet_management_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/wallet-management.tsx",
-      "source_location": "L302"
     },
     {
       "id": "bstc_wallet_src_app_tabs_layout",
@@ -5635,314 +6144,6 @@
       "source_location": "L73"
     },
     {
-      "id": "bstc_wallet_src_app_token_manage",
-      "label": "manage.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "manage.tsx",
-      "source_file": "bstc-wallet/src/app/token/manage.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_token_manage_initial_tokens",
-      "label": "INITIAL_TOKENS",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "initial_tokens",
-      "source_file": "bstc-wallet/src/app/token/manage.tsx",
-      "source_location": "L26"
-    },
-    {
-      "id": "bstc_wallet_src_app_token_manage_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/token/manage.tsx",
-      "source_location": "L151"
-    },
-    {
-      "id": "bstc_wallet_src_app_web3_approvals",
-      "label": "approvals.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "approvals.tsx",
-      "source_file": "bstc-wallet/src/app/web3/approvals.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_web3_approvals_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/web3/approvals.tsx",
-      "source_location": "L297"
-    },
-    {
-      "id": "bstc_wallet_src_app_welcome",
-      "label": "welcome.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "welcome.tsx",
-      "source_file": "bstc-wallet/src/app/welcome.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_welcome_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/welcome.tsx",
-      "source_location": "L104"
-    },
-    {
-      "id": "bstc_wallet_src_components_app_tabs",
-      "label": "app-tabs.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "app-tabs.tsx",
-      "source_file": "bstc-wallet/src/components/app-tabs.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_app_tabs_web",
-      "label": "app-tabs.web.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "app-tabs.web.tsx",
-      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_app_tabs_web_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/app-tabs.web.tsx",
-      "source_location": "L53"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_card",
-      "label": "Card.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "card.tsx",
-      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_card_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/Card.tsx",
-      "source_location": "L77"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_input",
-      "label": "Input.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "input.tsx",
-      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_input_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/Input.tsx",
-      "source_location": "L117"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_listrow",
-      "label": "ListRow.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "listrow.tsx",
-      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_listrow_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
-      "source_location": "L54"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_screen",
-      "label": "Screen.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "screen.tsx",
-      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_screen_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
-      "source_location": "L87"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_screenheader",
-      "label": "ScreenHeader.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "screenheader.tsx",
-      "source_file": "bstc-wallet/src/components/ui/ScreenHeader.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_screenheader_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/ScreenHeader.tsx",
-      "source_location": "L56"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_searchbar",
-      "label": "SearchBar.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "searchbar.tsx",
-      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_searchbar_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/SearchBar.tsx",
-      "source_location": "L50"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol",
-      "label": "SegmentedControl.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "segmentedcontrol.tsx",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_segmentedcontrol_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/SegmentedControl.tsx",
-      "source_location": "L88"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow",
-      "label": "SettingRow.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "settingrow.tsx",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_settingrow_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/SettingRow.tsx",
-      "source_location": "L88"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_toggle",
-      "label": "Toggle.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "toggle.tsx",
-      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_toggle_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
-      "source_location": "L35"
-    },
-    {
       "id": "bstc_wallet_src_components_wallet_qrcodeview",
       "label": "QRCodeView.tsx",
       "_origin": "ast",
@@ -5965,39 +6166,6 @@
       "source_location": "L90"
     },
     {
-      "id": "bstc_wallet_src_hooks_use_color_scheme_web",
-      "label": "use-color-scheme.web.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "use-color-scheme.web.ts",
-      "source_file": "bstc-wallet/src/hooks/use-color-scheme.web.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_theme_colors",
-      "label": "colors.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "colors.ts",
-      "source_file": "bstc-wallet/src/theme/colors.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_theme_colors_colors",
-      "label": "colors",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "colors",
-      "source_file": "bstc-wallet/src/theme/colors.ts",
-      "source_location": "L4"
-    },
-    {
       "id": "bstc_wallet_src_theme_icons",
       "label": "icons.ts",
       "_origin": "ast",
@@ -6009,17 +6177,6 @@
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_theme_icons_icons",
-      "label": "icons",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "icons",
-      "source_file": "bstc-wallet/src/theme/icons.ts",
-      "source_location": "L5"
-    },
-    {
       "id": "bstc_wallet_src_theme_index",
       "label": "theme/index.ts",
       "_origin": "ast",
@@ -6029,28 +6186,6 @@
       "norm_label": "theme/index.ts",
       "source_file": "bstc-wallet/src/theme/index.ts",
       "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_theme_radii",
-      "label": "radii.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "radii.ts",
-      "source_file": "bstc-wallet/src/theme/radii.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_theme_radii_radii",
-      "label": "radii",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "radii",
-      "source_file": "bstc-wallet/src/theme/radii.ts",
-      "source_location": "L5"
     },
     {
       "id": "bstc_wallet_src_theme_shadows",
@@ -6075,28 +6210,6 @@
       "source_location": "L7"
     },
     {
-      "id": "bstc_wallet_src_theme_spacing",
-      "label": "spacing.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "spacing.ts",
-      "source_file": "bstc-wallet/src/theme/spacing.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_theme_spacing_spacing",
-      "label": "spacing",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "spacing",
-      "source_file": "bstc-wallet/src/theme/spacing.ts",
-      "source_location": "L5"
-    },
-    {
       "id": "bstc_wallet_src_theme_typography",
       "label": "typography.ts",
       "_origin": "ast",
@@ -6119,39 +6232,6 @@
       "source_location": "L6"
     },
     {
-      "id": "bstc_wallet_src_theme_typography_typography",
-      "label": "typography",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "code",
-      "norm_label": "typography",
-      "source_file": "bstc-wallet/src/theme/typography.ts",
-      "source_location": "L21"
-    },
-    {
-      "id": "ref_expo_router",
-      "label": "expo-router",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "concept",
-      "norm_label": "expo-router",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "ref_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L21"
-    },
-    {
       "id": "ref_react_native",
       "label": "react-native",
       "_origin": "ast",
@@ -6163,114 +6243,70 @@
       "source_location": "L23"
     },
     {
-      "id": "ref_react_native_safe_area_context",
-      "label": "react-native-safe-area-context",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "theme/index.ts",
-      "file_type": "concept",
-      "norm_label": "react-native-safe-area-context",
-      "source_file": "bstc-wallet/package.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "bstc_wallet_src_components_themed_text",
-      "label": "themed-text.tsx",
+      "id": "bstc_wallet_src_components_ui_listrow",
+      "label": "ListRow.tsx",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "themed-text.tsx",
-      "source_file": "bstc-wallet/src/components/themed-text.tsx",
+      "norm_label": "listrow.tsx",
+      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_components_themed_text_styles",
+      "id": "bstc_wallet_src_components_ui_listrow_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/themed-text.tsx",
-      "source_location": "L33"
+      "source_file": "bstc-wallet/src/components/ui/ListRow.tsx",
+      "source_location": "L54"
     },
     {
-      "id": "bstc_wallet_src_constants_theme",
-      "label": "theme.ts",
+      "id": "bstc_wallet_src_components_ui_toggle",
+      "label": "Toggle.tsx",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "theme.ts",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
+      "norm_label": "toggle.tsx",
+      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_constants_theme_bottomtabinset",
-      "label": "BottomTabInset",
+      "id": "bstc_wallet_src_components_ui_toggle_styles",
+      "label": "styles",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "bottomtabinset",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
-      "source_location": "L64"
+      "norm_label": "styles",
+      "source_file": "bstc-wallet/src/components/ui/Toggle.tsx",
+      "source_location": "L35"
     },
     {
-      "id": "bstc_wallet_src_constants_theme_colors",
-      "label": "Colors",
+      "id": "bstc_wallet_src_theme_spacing",
+      "label": "spacing.ts",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "colors",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
-      "source_location": "L10"
-    },
-    {
-      "id": "bstc_wallet_src_constants_theme_fonts",
-      "label": "Fonts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "theme.ts",
-      "file_type": "code",
-      "norm_label": "fonts",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
-      "source_location": "L29"
-    },
-    {
-      "id": "bstc_wallet_src_constants_theme_maxcontentwidth",
-      "label": "MaxContentWidth",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "theme.ts",
-      "file_type": "code",
-      "norm_label": "maxcontentwidth",
-      "source_file": "bstc-wallet/src/constants/theme.ts",
-      "source_location": "L65"
-    },
-    {
-      "id": "bstc_wallet_src_hooks_use_color_scheme",
-      "label": "use-color-scheme.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "theme.ts",
-      "file_type": "code",
-      "norm_label": "use-color-scheme.ts",
-      "source_file": "bstc-wallet/src/hooks/use-color-scheme.ts",
+      "norm_label": "spacing.ts",
+      "source_file": "bstc-wallet/src/theme/spacing.ts",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_hooks_use_theme",
-      "label": "use-theme.ts",
+      "id": "bstc_wallet_src_theme_spacing_spacing",
+      "label": "spacing",
       "_origin": "ast",
       "community": 7,
-      "community_name": "theme.ts",
+      "community_name": "spacing",
       "file_type": "code",
-      "norm_label": "use-theme.ts",
-      "source_file": "bstc-wallet/src/hooks/use-theme.ts",
-      "source_location": "L1"
+      "norm_label": "spacing",
+      "source_file": "bstc-wallet/src/theme/spacing.ts",
+      "source_location": "L5"
     },
     {
       "id": "any",
@@ -6456,7 +6492,7 @@
       "label": "app/_layout.tsx",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "app/_layout.tsx",
       "source_file": "bstc-wallet/src/app/_layout.tsx",
@@ -6467,139 +6503,139 @@
       "label": "bstcDarkTheme",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "bstcdarktheme",
       "source_file": "bstc-wallet/src/app/_layout.tsx",
       "source_location": "L13"
     },
     {
-      "id": "bstc_wallet_src_app_onboarding_account_created",
-      "label": "account-created.tsx",
+      "id": "bstc_wallet_src_app_settings_preferences",
+      "label": "preferences.tsx",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "account-created.tsx",
-      "source_file": "bstc-wallet/src/app/onboarding/account-created.tsx",
+      "norm_label": "preferences.tsx",
+      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_onboarding_account_created_styles",
+      "id": "bstc_wallet_src_app_settings_preferences_currencies",
+      "label": "CURRENCIES",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "currencies",
+      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_preferences_languages",
+      "label": "LANGUAGES",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "languages",
+      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "bstc_wallet_src_app_settings_preferences_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/onboarding/account-created.tsx",
-      "source_location": "L113"
+      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
+      "source_location": "L192"
     },
     {
-      "id": "bstc_wallet_src_app_settings_account",
-      "label": "account.tsx",
+      "id": "bstc_wallet_src_app_settings_preferences_themes",
+      "label": "THEMES",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "account.tsx",
-      "source_file": "bstc-wallet/src/app/settings/account.tsx",
+      "norm_label": "themes",
+      "source_file": "bstc-wallet/src/app/settings/preferences.tsx",
+      "source_location": "L27"
+    },
+    {
+      "id": "bstc_wallet_src_app_token_manage",
+      "label": "manage.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "manage.tsx",
+      "source_file": "bstc-wallet/src/app/token/manage.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_settings_account_styles",
-      "label": "styles",
+      "id": "bstc_wallet_src_app_token_manage_initial_tokens",
+      "label": "INITIAL_TOKENS",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/account.tsx",
-      "source_location": "L181"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_network_management",
-      "label": "network-management.tsx",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "network-management.tsx",
-      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_app_settings_network_management_initial_networks",
-      "label": "INITIAL_NETWORKS",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "initial_networks",
-      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
+      "norm_label": "initial_tokens",
+      "source_file": "bstc-wallet/src/app/token/manage.tsx",
       "source_location": "L26"
     },
     {
-      "id": "bstc_wallet_src_app_settings_network_management_styles",
+      "id": "bstc_wallet_src_app_token_manage_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/settings/network-management.tsx",
-      "source_location": "L175"
+      "source_file": "bstc-wallet/src/app/token/manage.tsx",
+      "source_location": "L151"
     },
     {
-      "id": "bstc_wallet_src_app_tabs_settings",
-      "label": "settings.tsx",
+      "id": "bstc_wallet_src_components_ui_screen",
+      "label": "Screen.tsx",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "settings.tsx",
-      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
+      "norm_label": "screen.tsx",
+      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
       "source_location": "L1"
     },
     {
-      "id": "bstc_wallet_src_app_tabs_settings_styles",
+      "id": "bstc_wallet_src_components_ui_screen_styles",
       "label": "styles",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "styles",
-      "source_file": "bstc-wallet/src/app/(tabs)/settings.tsx",
-      "source_location": "L129"
+      "source_file": "bstc-wallet/src/components/ui/Screen.tsx",
+      "source_location": "L87"
     },
     {
-      "id": "bstc_wallet_src_components_ui_avatar",
-      "label": "Avatar.tsx",
+      "id": "bstc_wallet_src_hooks_use_color_scheme_web",
+      "label": "use-color-scheme.web.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "avatar.tsx",
-      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
+      "norm_label": "use-color-scheme.web.ts",
+      "source_file": "bstc-wallet/src/hooks/use-color-scheme.web.ts",
       "source_location": "L1"
-    },
-    {
-      "id": "bstc_wallet_src_components_ui_avatar_styles",
-      "label": "styles",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "settings.tsx",
-      "file_type": "code",
-      "norm_label": "styles",
-      "source_file": "bstc-wallet/src/components/ui/Avatar.tsx",
-      "source_location": "L34"
     },
     {
       "id": "bstc_wallet_src_state_wallet_state",
       "label": "wallet-state.tsx",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "wallet-state.tsx",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
@@ -6610,22 +6646,33 @@
       "label": "WalletContext",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "walletcontext",
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L15"
+      "source_location": "L17"
     },
     {
-      "id": "ref_expo_status_bar",
-      "label": "expo-status-bar",
+      "id": "ref_react",
+      "label": "react",
       "_origin": "ast",
       "community": 9,
-      "community_name": "settings.tsx",
+      "community_name": "react",
       "file_type": "concept",
-      "norm_label": "expo-status-bar",
+      "norm_label": "react",
       "source_file": "bstc-wallet/package.json",
-      "source_location": "L17"
+      "source_location": "L21"
+    },
+    {
+      "id": "ref_react_native_safe_area_context",
+      "label": "react-native-safe-area-context",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "react",
+      "file_type": "concept",
+      "norm_label": "react-native-safe-area-context",
+      "source_file": "bstc-wallet/package.json",
+      "source_location": "L26"
     },
     {
       "id": "bstc_wallet_android_adaptive_icon_design",
@@ -7861,23 +7908,11 @@
       "type": "external"
     },
     {
-      "id": "bstc_wallet_src_components_animated_icon_module",
-      "label": "bstc_wallet_src_components_animated_icon_module",
-      "_origin": "semantic",
-      "community": 54,
-      "community_name": "animated-icon.tsx",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "bstc_wallet_src_components_animated_icon_module",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "bstc_wallet_src_global",
       "label": "bstc_wallet_src_global",
       "_origin": "semantic",
-      "community": 7,
-      "community_name": "theme.ts",
+      "community": 2,
+      "community_name": "collapsible.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "bstc_wallet_src_global",
@@ -7888,11 +7923,23 @@
       "id": "bstc_wallet_src_hooks_use_color_scheme_usecolorscheme",
       "label": "bstc_wallet_src_hooks_use_color_scheme_usecolorscheme",
       "_origin": "semantic",
-      "community": 7,
-      "community_name": "theme.ts",
+      "community": 2,
+      "community_name": "collapsible.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "bstc_wallet_src_hooks_use_color_scheme_usecolorscheme",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "bstc_wallet_src_components_animated_icon_module",
+      "label": "bstc_wallet_src_components_animated_icon_module",
+      "_origin": "semantic",
+      "community": 54,
+      "community_name": "animated-icon.web.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "bstc_wallet_src_components_animated_icon_module",
       "source_file": "",
       "type": "external"
     }
@@ -8977,102 +9024,6 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_button_button",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L116",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_screen_screen",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_screenheader_screenheader",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_button_iconbutton",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L39",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_icon_icon",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L43",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_card_card",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_icon_headlinetext",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L55",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
-      "target": "bstc_wallet_src_components_ui_icon_bodytext",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L58",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
       "target": "bstc_wallet_src_components_ui_divider_divider",
       "relation": "calls",
       "_origin": "ast",
@@ -9080,7 +9031,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L84",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -9092,7 +9043,127 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L95",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_button_button",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_state_wallet_state_usewalletstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_screen_screen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_screenheader_screenheader",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_button_iconbutton",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_icon_icon",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_card_card",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_icon_headlinetext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup_cloudbackupscreen",
+      "target": "bstc_wallet_src_components_ui_icon_bodytext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -9181,78 +9252,6 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_input_input",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L113",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_toggle_toggle",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L136",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_button_button",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L154",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_screen_screen",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L45",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_screenheader_screenheader",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L46",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
-      "target": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrol",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
       "target": "bstc_wallet_src_components_ui_card_card",
       "relation": "calls",
       "_origin": "ast",
@@ -9260,7 +9259,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L59",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -9272,7 +9271,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L61",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -9284,7 +9283,103 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L67",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_input_input",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_toggle_toggle",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_button_button",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L219",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_state_wallet_state_usewalletstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_screen_screen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_screenheader_screenheader",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
+      "target": "bstc_wallet_src_components_ui_segmentedcontrol_segmentedcontrol",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -9392,7 +9487,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -9404,7 +9499,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L129",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -9416,7 +9523,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -9428,7 +9535,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L66",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -9440,7 +9547,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L67",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -9452,7 +9559,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -9464,7 +9571,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L75",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -9476,7 +9583,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L81",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -9488,7 +9595,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L84",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -9500,7 +9607,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -12744,6 +12851,30 @@
       "weight": 1.0
     },
     {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_icon_icon",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_icon_bodytext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
       "source": "bstc_wallet_src_components_ui_icon_bodytext",
       "target": "bstc_wallet_src_theme_fonts_resolvefontfamily",
       "relation": "calls",
@@ -13514,6 +13645,19 @@
       "context": "export",
       "source_file": "bstc-wallet/src/components/ui/index.ts",
       "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_index",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal",
+      "relation": "re_exports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "export",
+      "source_file": "bstc-wallet/src/components/ui/index.ts",
+      "source_location": "L31",
+      "type_only": true,
       "weight": 1.0
     },
     {
@@ -15933,7 +16077,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -15945,7 +16089,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -15957,7 +16101,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -15969,7 +16113,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -15981,7 +16125,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup",
+      "target": "bstc_wallet_src_state_wallet_state_usewalletstate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -16023,6 +16179,18 @@
     {
       "source": "bstc_wallet_src_app_onboarding_cloud_backup",
       "target": "bstc_wallet_src_components_ui_divider_divider",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16257,7 +16425,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16269,7 +16437,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16281,7 +16449,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16293,7 +16461,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16305,7 +16473,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16317,7 +16485,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import",
+      "target": "bstc_wallet_src_state_wallet_state_usewalletstate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -16335,6 +16515,18 @@
     {
       "source": "bstc_wallet_src_app_onboarding_import",
       "target": "bstc_wallet_src_components_ui_card_card",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16593,7 +16785,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16605,7 +16797,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16617,7 +16809,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16629,7 +16821,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16641,7 +16833,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -16653,7 +16845,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -16683,6 +16875,18 @@
     {
       "source": "bstc_wallet_src_app_onboarding_restore_backup",
       "target": "bstc_wallet_src_components_ui_card_card",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_restore_backup",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -22165,6 +22369,78 @@
       "weight": 1.0
     },
     {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_icon_bodytext",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_icon_icon",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_theme_colors_colors",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_theme_icons_icons",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_theme_radii_radii",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_theme_spacing_spacing",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "bstc_wallet_src_components_ui_icon",
       "target": "bstc_wallet_src_theme_colors_colors",
       "relation": "imports",
@@ -24189,7 +24465,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_cloud_backup",
+      "target": "bstc_wallet_src_state_wallet_state",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -24297,7 +24585,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import",
+      "target": "bstc_wallet_src_state_wallet_state",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -24417,7 +24717,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -24429,7 +24729,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -27266,6 +27566,54 @@
       "weight": 1.0
     },
     {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "ref_react_native",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_icon",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_theme_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "bstc_wallet_src_components_ui_icon",
       "target": "ref_react_native",
       "relation": "imports_from",
@@ -28701,6 +29049,31 @@
       "context": "re-export",
       "source_file": "bstc-wallet/src/components/ui/index.ts",
       "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_index",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "relation": "re_exports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "re-export",
+      "source_file": "bstc-wallet/src/components/ui/index.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_index",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodalprops",
+      "relation": "re_exports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "re-export",
+      "source_file": "bstc-wallet/src/components/ui/index.ts",
+      "source_location": "L32",
+      "type_only": true,
       "weight": 1.0
     },
     {
@@ -30168,7 +30541,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L139",
+      "source_location": "L187",
       "weight": 1.0
     },
     {
@@ -30179,7 +30552,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/app/onboarding/cloud-backup.tsx",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -30206,24 +30579,24 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_import",
-      "target": "bstc_wallet_src_app_onboarding_import_styles",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L166",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_import",
       "target": "bstc_wallet_src_app_onboarding_import_importwalletscreen",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
-      "source_location": "L18",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_import",
+      "target": "bstc_wallet_src_app_onboarding_import_styles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/app/onboarding/import.tsx",
+      "source_location": "L231",
       "weight": 1.0
     },
     {
@@ -30261,24 +30634,24 @@
     },
     {
       "source": "bstc_wallet_src_app_onboarding_restore_backup",
-      "target": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "bstc_wallet_src_app_onboarding_restore_backup",
       "target": "bstc_wallet_src_app_onboarding_restore_backup_styles",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
-      "source_location": "L196",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_app_onboarding_restore_backup",
+      "target": "bstc_wallet_src_app_onboarding_restore_backup_restorebackupscreen",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/app/onboarding/restore-backup.tsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -31734,6 +32107,39 @@
       "weight": 1.0
     },
     {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodal",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_styles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "bstc_wallet_src_components_ui_feedbackmodal",
+      "target": "bstc_wallet_src_components_ui_feedbackmodal_feedbackmodalprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bstc-wallet/src/components/ui/FeedbackModal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "bstc_wallet_src_components_ui_icon",
       "target": "bstc_wallet_src_components_ui_icon_icon",
       "relation": "contains",
@@ -32885,7 +33291,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -32896,7 +33302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -32918,7 +33324,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "bstc-wallet/src/state/wallet-state.tsx",
-      "source_location": "L68",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -34206,5 +34612,5 @@
       "source_file": "bstc-wallet/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
     }
   ],
-  "built_at_commit": "20dad2493f56b4b94322f0b91da9c730f89c2253"
+  "built_at_commit": "165660c941068435603f7494c34cad8a1e0a9abe"
 }

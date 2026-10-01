@@ -264,9 +264,9 @@
     "semantic_hash": "d7545391e51cd82ee42797fb25334443"
   },
   "bstc-wallet/src/app/onboarding/restore-backup.tsx": {
-    "mtime": 1790619405.9854383,
-    "seen": 1790619443.539975,
-    "ast_hash": "445e38715933227bbed18d92e5606b46",
+    "mtime": 1790621941.1890278,
+    "seen": 1790621978.2934296,
+    "ast_hash": "c2b1d27a597e4b105fd429b8c50496d8",
     "semantic_hash": ""
   },
   "bstc-wallet/src/app/qr.tsx": {
@@ -660,10 +660,10 @@
     "semantic_hash": "6e38a73a58aeec3c60c652b289b98ab4"
   },
   "bstc-wallet/src/state/wallet-state.tsx": {
-    "mtime": 1790527260.7701986,
-    "seen": 1790580554.2099054,
-    "ast_hash": "88f89dae452fb55f23cfbc7ae6a45d18",
-    "semantic_hash": "88f89dae452fb55f23cfbc7ae6a45d18"
+    "mtime": 1790621880.1049056,
+    "seen": 1790621978.2935677,
+    "ast_hash": "4a51816f2bfe28db75fcdab29142612e",
+    "semantic_hash": ""
   },
   "bstc-wallet/src/theme/colors.ts": {
     "mtime": 1790508132.814079,

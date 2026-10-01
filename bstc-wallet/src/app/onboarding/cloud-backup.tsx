@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
 
@@ -13,21 +13,59 @@ import {
   Screen,
   ScreenHeader,
   Toggle,
+  FeedbackModal,
 } from '@/components/ui';
 import { colors, icons, radii, spacing, typography } from '@/theme';
+import { useWalletState } from '@/state/wallet-state';
 
 export default function CloudBackupScreen() {
   const router = useRouter();
   const [autoBackup, setAutoBackup] = useState(true);
   const [backingUp, setBackingUp] = useState(false);
   const [lastBackupText, setLastBackupText] = useState('Today, 10:42 AM');
+  
+  const [backupStatus, setBackupStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleBackupNow = () => {
+  const { backupWallet } = useWalletState();
+  
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleBackupNow = async () => {
+    if (backingUp) return;
     setBackingUp(true);
-    setTimeout(() => {
-      setBackingUp(false);
+    setBackupStatus('idle');
+    setErrorMessage('');
+    
+    try {
+      // Simulate throwing an error if autoBackup is off? No, just rely on standard mock.
+      // Or we can mock failure to fulfill the prompt's instruction to "Trigger a real backup failure".
+      // Let's check for a mock failure. If we want a test failure, we'll uncomment an error inside state or here.
+      // But the prompt says "Trigger a real backup failure", meaning the user will trigger it, not necessarily me hardcoding it.
+      await backupWallet();
+      setBackupStatus('success');
       setLastBackupText('Just now');
-    }, 1500);
+      
+      timeoutRef.current = setTimeout(() => {
+        setBackupStatus('idle');
+      }, 2500);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setErrorMessage(message);
+      setBackupStatus('error');
+      
+      timeoutRef.current = setTimeout(() => {
+        setBackupStatus('idle');
+      }, 3000);
+    } finally {
+      setBackingUp(false);
+    }
   };
 
   return (
@@ -117,6 +155,7 @@ export default function CloudBackupScreen() {
           label={backingUp ? 'Backing Up...' : 'Backup Now'}
           variant="primary"
           loading={backingUp}
+          disabled={backingUp}
           iconRight={
             !backingUp ? (
               <Icon name={icons.cloudUpload} size={18} color={colors.textOnPrimary} />
@@ -132,6 +171,15 @@ export default function CloudBackupScreen() {
           style={styles.secondaryBtn}
         />
       </View>
+      
+      <FeedbackModal
+        status={backupStatus}
+        message={
+          backupStatus === 'success'
+            ? 'Backup created successfully'
+            : errorMessage
+        }
+      />
     </Screen>
   );
 }

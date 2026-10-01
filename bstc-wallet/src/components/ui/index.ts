@@ -28,3 +28,5 @@ export type { InputProps } from './Input';
 export { QuickAction } from './QuickAction';
 export { Avatar } from './Avatar';
 export { EmptyState, LoadingState, ErrorState } from './EmptyState';
+export { FeedbackModal } from './FeedbackModal';
+export type { FeedbackModalProps } from './FeedbackModal';

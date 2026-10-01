@@ -1,7 +1,7 @@
-# Graph Report - BSTC  (2026-09-28)
+# Graph Report - BSTC  (2026-09-29)
 
 ## Corpus Check
-- 128 files · ~115,969 words
+- 128 files · ~116,255 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 45 file(s) not represented in the graph (top: .xml 12, .ttf 11, (none) 7)
 
