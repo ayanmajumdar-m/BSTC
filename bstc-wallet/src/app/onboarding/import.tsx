@@ -76,7 +76,7 @@ export default function ImportWalletScreen() {
 
       timeoutRef.current = setTimeout(() => {
         setImportStatus('idle');
-        router.replace('/(tabs)');
+        if (router.canDismiss()) { router.dismissAll(); } router.replace('/(tabs)');
       }, 2500);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);

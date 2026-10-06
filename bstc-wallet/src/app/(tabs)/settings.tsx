@@ -28,7 +28,7 @@ export default function SettingsScreen() {
 
   const handleSignOut = () => {
     signOut();
-    router.replace('/welcome');
+    if (router.canDismiss()) { router.dismissAll(); } router.replace('/welcome');
   };
 
   return (

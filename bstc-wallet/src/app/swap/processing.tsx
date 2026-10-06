@@ -58,7 +58,7 @@ export default function SwapProcessingScreen() {
       {/* Header */}
       <ScreenHeader
         title="Processing Swap"
-        onBack={() => router.replace('/')}
+        onBack={() => { if (router.canDismiss()) { router.dismissAll(); } router.replace('/'); }}
       />
 
       {/* Main Spinner Hero */}

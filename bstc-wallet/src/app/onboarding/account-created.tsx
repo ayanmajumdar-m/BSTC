@@ -26,7 +26,7 @@ export default function AccountCreatedScreen() {
         title="BSTC Wallet"
         onBack={() => {
           setHasWallet(true);
-          router.replace('/');
+          if (router.canDismiss()) { router.dismissAll(); } router.replace('/(tabs)');
         }}
         right={
           <IconButton
@@ -101,7 +101,7 @@ export default function AccountCreatedScreen() {
           iconRight={<Icon name={icons.arrowForward} size={18} color={colors.textOnPrimary} />}
           onPress={() => {
             setHasWallet(true);
-            router.replace('/');
+            if (router.canDismiss()) { router.dismissAll(); } router.replace('/(tabs)');
           }}
           style={styles.primaryBtn}
         />

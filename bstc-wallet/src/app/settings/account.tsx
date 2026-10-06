@@ -166,7 +166,7 @@ export default function AccountDetailsScreen() {
           iconRight={<Icon name={icons.arrowForward} size={16} color={colors.error} />}
           onPress={() => {
             signOut();
-            router.replace('/welcome');
+            if (router.canDismiss()) { router.dismissAll(); } router.replace('/welcome');
           }}
           style={styles.signOutBtn}
         />

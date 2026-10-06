@@ -39,7 +39,7 @@ export default function BuyCompletedScreen() {
   };
 
   const handleDone = () => {
-    router.replace('/');
+    if (router.canDismiss()) { router.dismissAll(); } router.replace('/');
   };
 
   return (

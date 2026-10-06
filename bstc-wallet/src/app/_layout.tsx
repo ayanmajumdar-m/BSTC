@@ -42,9 +42,9 @@ function RootNavigation() {
     const isWelcomeOrOnboarding = rootSegment === 'welcome' || rootSegment === 'onboarding';
 
     if (!hasWallet && !isWelcomeOrOnboarding) {
-      router.replace('/welcome');
+      if (router.canDismiss()) { router.dismissAll(); } router.replace('/welcome');
     } else if (hasWallet && rootSegment === 'welcome') {
-      router.replace('/(tabs)');
+      if (router.canDismiss()) { router.dismissAll(); } router.replace('/(tabs)');
     }
   }, [hasWallet, navReady, segments, router]);
 

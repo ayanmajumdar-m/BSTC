@@ -49,7 +49,7 @@ export default function BuyProcessingScreen() {
       {/* Header */}
       <ScreenHeader
         title="Processing Purchase"
-        onBack={() => router.replace('/')}
+        onBack={() => { if (router.canDismiss()) { router.dismissAll(); } router.replace('/'); }}
       />
 
       {/* Main Status Hero */}
@@ -125,7 +125,7 @@ export default function BuyProcessingScreen() {
           label="Back to Wallet"
           variant="outline"
           style={styles.backBtn}
-          onPress={() => router.replace('/')}
+          onPress={() => { if (router.canDismiss()) { router.dismissAll(); } router.replace('/'); }}
         />
       </View>
     </Screen>
